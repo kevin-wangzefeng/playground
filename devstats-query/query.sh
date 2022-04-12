@@ -27,10 +27,13 @@ do
   
   DATA=$(cat stats-${PROJECT}-${DAY}.json |jq -c '.results.A.frames[0].data')
   
-  for KEY in "Stargazers" "Forkers" "Contributors" "Code committers"
+  cat /dev/null > contributors-${PROJECT}-${DAY}.txt
+
+  #for KEY in "Stargazers" "Forkers" "Contributors" "Code committers"
+  for KEY in "Stargazers" "Repositories" "Pushes" "Pushers" "PRs" "PR reviews" "PR reviewers" "PR review commenters" "PR creators" "Issues" "Issue creators" "Issue commenters" "Forkers" "Events" "Contributors" "Contributions" "Commits" "Commit commenters" "Comments" "Commenters"
   do
-    KEY_INDEX=$(echo ${DATA}| jq -r '.values[0]' | jq "index(\"${KEY}\")")
-    KEY_VALUE=$(echo ${DATA}|jq -r ".values[1][${KEY_INDEX}]")
+    KEY_INDEX=$(echo ${DATA} | jq -r '.values[0]' | jq "index(\"${KEY}\")")
+    KEY_VALUE=$(echo ${DATA} | jq -r ".values[1][${KEY_INDEX}]")
     echo "$KEY|$DAY|$KEY_VALUE" >> contributors-${PROJECT}-${DAY}.txt
   done
 done
