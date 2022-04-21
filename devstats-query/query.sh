@@ -30,7 +30,7 @@ do
   cat /dev/null > contributors-${PROJECT}-${DAY}.txt
 
   #for KEY in "Stargazers" "Forkers" "Contributors" "Code committers"
-  for KEY in "Stargazers" "Repositories" "Pushes" "Pushers" "PRs" "PR reviews" "PR reviewers" "PR review commenters" "PR creators" "Issues" "Issue creators" "Issue commenters" "Forkers" "Events" "Contributors" "Contributions" "Commits" "Commit commenters" "Comments" "Commenters"
+  for KEY in "Stargazers" "Repositories" "Pushes" "Pushers" "PRs" "PR reviews" "PR reviewers" "PR review commenters" "PR creators" "Issues" "Issue creators" "Issue commenters" "Forkers" "Events" "Contributors" "Contributions" "Commits" "Commit commenters" "Comments" "Commenters" "Code committers"
   do
     KEY_INDEX=$(echo ${DATA} | jq -r '.values[0]' | jq "index(\"${KEY}\")")
     KEY_VALUE=$(echo ${DATA} | jq -r ".values[1][${KEY_INDEX}]")
