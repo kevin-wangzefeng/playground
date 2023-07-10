@@ -23,8 +23,10 @@ for PROJECT in "${PROJECTS[@]}"
 do
   echo "$(date): running for ${PROJECT} overall stats"
   curl -X POST https://${PROJECT}.devstats.cncf.io/api/ds/query -H "Content-Type: application/json" -d "{\"queries\":[{\"refId\":\"A\",\"datasource\":{\"uid\":\"P172949F98CB31475\",\"type\":\"postgres\"},\"rawSql\":\"select name, value from \\\"spstat\\\" where series = 'pstatall' and period = 'y10'\",\"format\":\"table\",\"datasourceId\":1,\"intervalMs\":21600000,\"maxDataPoints\":1838}]}" > ./stats-${PROJECT}-${DAY}.json
-  
-  
+
+  # unify category name from "Stargazers/Watchers" to "Stargazers"
+  sed -i "s/Stargazers\/Watchers/Stargazers/g" ./stats-${PROJECT}-${DAY}.json
+
   DATA=$(cat stats-${PROJECT}-${DAY}.json |jq -c '.results.A.frames[0].data')
   
   cat /dev/null > contributors-${PROJECT}-${DAY}.txt
