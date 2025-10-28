@@ -24,7 +24,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install Google Drive SDK and GitPython
-        run: pip install google-auth google-api-python-client GitPython
+        run: pip install google-auth google-api-python-client GitPython packaging
 
       # 写入服务账号密钥文档
       - name: Configure Google Service Account
