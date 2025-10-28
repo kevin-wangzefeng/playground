@@ -13,7 +13,7 @@ TARGET_FILE_PATH = os.environ.get('TARGET_FILE_PATH')
 
 # --- Google Docs API 认证与下载 ---
 def download_markdown_from_drive(doc_id):
-    SCOPES = ['[https://www.googleapis.com/auth/drive.readonly](https://www.googleapis.com/auth/drive.readonly)']
+    SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
     SERVICE_ACCOUNT_FILE = 'service_account.json'
 
     creds = service_account.Credentials.from_service_account_file(
