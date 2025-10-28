@@ -28,8 +28,18 @@ jobs:
 
       # 写入服务账号密钥文档
       - name: Configure Google Service Account
+        id: config_sa
         run: |
-          echo "${{ secrets.G_SERVICE_ACCOUNT_KEY }}" > service_account.json
+          # 使用 Here Document (cat << EOF) 将多行 Secret 内容原样写入文档
+          cat << EOF > service_account.json
+          ${{ secrets.G_SERVICE_ACCOUNT_KEY }}
+          EOF
+          
+          # 验证文档是否成功写入，并且是合法的 JSON (可选，但推荐检查)
+          # python -m json.tool 会尝试解析 JSON，如果成功则不会报错
+          echo "Verifying JSON integrity..."
+          python -m json.tool service_account.json > /dev/null
+          echo "Service Account JSON file successfully created and validated."
           
       - name: Run Python Sync Script
         id: sync
