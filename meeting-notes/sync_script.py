@@ -64,7 +64,13 @@ if __name__ == '__main__':
         
         # 2. 将内容写入本地工作目录并暂存
         write_and_stage_file(markdown_content)
-        
+
     except Exception as e:
         print(f"An error occurred during sync: {e}")
         exit(1)
+
+    finally:
+        # 任务结束时删除密钥文档，防止后续步骤（如 git status）误包含
+        if os.path.exists("service_account.json"):
+            os.remove("service_account.json")
+            print("Cleaned up service_account.json.")
