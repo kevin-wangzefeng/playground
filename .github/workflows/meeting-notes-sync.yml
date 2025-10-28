@@ -34,7 +34,7 @@ jobs:
           cat << EOF > service_account.json
           ${{ secrets.G_SERVICE_ACCOUNT_KEY }}
           EOF
-          
+
           # 验证文档是否成功写入，并且是合法的 JSON (可选，但推荐检查)
           # python -m json.tool 会尝试解析 JSON，如果成功则不会报错
           echo "Verifying JSON integrity..."
@@ -56,13 +56,24 @@ jobs:
       # 检查是否有文档变更
       - name: Check for Changes
         id: check
-        run: |
-          if [ -d .git ] && git diff --exit-code; then
-            echo "::set-output name=has_changes::false"
-          else
-            echo "::set-output name=has_changes::true"
-          fi
         shell: bash
+        run: |
+          # 检查暂存区 (Index) 或工作目录中是否有任何更改需要提交。
+          # git status --porcelain 会以易于解析的格式输出更改列表。
+          # wc -l 计算行数：如果行数 > 0，则存在更改。
+          CHANGE_COUNT=$(git status --porcelain | wc -l)
+          
+          if [ $CHANGE_COUNT -gt 0 ]; then
+            # 存在更改 (包括新文档)
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Detected $CHANGE_COUNT changes (including new files). Proceeding to create PR."
+            # 可选：打印出变更列表
+            git status --porcelain
+          else
+            # 没有更改
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No file changes detected. Skipping PR creation."
+          fi
 
       - name: Commit and Create Pull Request
         if: steps.check.outputs.has_changes == 'true'
