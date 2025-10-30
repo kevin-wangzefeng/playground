@@ -6,71 +6,68 @@ from googleapiclient.http import MediaIoBaseDownload
 from git import Repo
 from git.exc import GitCommandError
 
-# --- 配置 ---
-# 环境变量来自 GitHub Actions
-DOC_ID = os.environ.get('DOC_FILE_ID')
-TARGET_FILE_PATH = os.environ.get('TARGET_FILE_PATH')
+# --- Configuration ---
+# Environment variables from GitHub Actions
+DOC_ID = os.environ.get('MEETING_NOTES_SYNC_DOC_ID')
+TARGET_FILE_PATH = os.environ.get('MEETING_NOTES_SYNC_TARGET_FILE_PATH')
 
-# --- Google Docs API 认证与下载 ---
+# --- Google Docs API Authentication and Download ---
 def download_markdown_from_drive(doc_id):
     SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
-    SERVICE_ACCOUNT_FILE = 'service_account.json'
-
-    creds = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    import json
+    service_account_json = os.environ.get('SERVICE_ACCOUNT_JSON')
+    if not service_account_json:
+        raise RuntimeError('SERVICE_ACCOUNT_JSON env not set')
+    service_account_info = json.loads(service_account_json)
+    creds = service_account.Credentials.from_service_account_info(
+        service_account_info, scopes=SCOPES)
     
-    # 构建 Drive API 客户端
+    # Build Drive API client
     service = build('drive', 'v3', credentials=creds)
 
-    # Docs/Drive API 的导出 MIME 类型：'text/markdown'
+    # Export MIME type for Docs/Drive API: 'text/markdown'
     request = service.files().export_media(
         fileId=doc_id, 
         mimeType='text/markdown'
     )
     
-    # 使用 BytesIO 接收文档内容
+    # Use BytesIO to receive document content
     fh = io.BytesIO()
     downloader = MediaIoBaseDownload(fh, request)
     done = False
     while done is False:
         status, done = downloader.next_chunk()
-        # 打印下载进度 (可选)
+        # Print download progress (optional)
         # print(f"Download {int(status.progress() * 100)}%.")
 
-    # 返回字节内容，确保编码为 UTF-8
-    # 相比 Apps Script 字符串，Python 的 bytes.decode('utf-8') 更加可靠
+    # Return byte content, ensuring UTF-8 encoding
+    # Compared to Apps Script strings, Python's bytes.decode('utf-8') is more reliable
     return fh.getvalue().decode('utf-8')
 
-# --- Git 操作：文档写入和暂存 ---
+# --- Git Operations: Write and Stage File ---
 def write_and_stage_file(content):
-    # 确保目标目录存在
+    # Ensure target directory exists
     os.makedirs(os.path.dirname(TARGET_FILE_PATH), exist_ok=True)
     
-    # 写入文档，使用 utf-8 编码
+    # Write document, using utf-8 encoding
     with open(TARGET_FILE_PATH, 'w', encoding='utf-8') as f:
         f.write(content)
 
-    # 初始化 Git 仓库对象
+    # Initialize Git repository object
     repo = Repo('.')
-    # 暂存更改
+    # Stage changes
     repo.index.add([TARGET_FILE_PATH])
     print(f"File {TARGET_FILE_PATH} written and staged successfully.")
 
-# --- 主执行流程 ---
+# --- Main Execution Flow ---
 if __name__ == '__main__':
     try:
-        # 1. 从 Google Drive 下载 Markdown 内容
+        # 1. Download Markdown content from Google Drive
         markdown_content = download_markdown_from_drive(DOC_ID)
         
-        # 2. 将内容写入本地工作目录并暂存
+        # 2. Write content to local working directory and stage
         write_and_stage_file(markdown_content)
 
     except Exception as e:
         print(f"An error occurred during sync: {e}")
         exit(1)
-
-    finally:
-        # 任务结束时删除密钥文档，防止后续步骤（如 git status）误包含
-        if os.path.exists("service_account.json"):
-            os.remove("service_account.json")
-            print("Cleaned up service_account.json.")
