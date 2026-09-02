@@ -1,0 +1,36 @@
+{
+  "source": {
+    "id": "official-sponsor-hosted",
+    "source_type": "sessionize_api",
+    "url": "https://sessionize.com/api/v2/dzxp7718/view/All",
+    "source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/co-located-events/sponsor-hosted-co-located-schedule/",
+    "event_name": "Sponsor-hosted Co-located Events",
+    "conference_name": "Sponsor-hosted Co-located Events",
+    "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+    "event_type": "community_or_colocated",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-07",
+    "location": "Shanghai",
+    "organizer": null,
+    "organizer_type": "sponsor_or_community",
+    "relationship_strength": "officially_listed",
+    "source_name": "LF Open Source sponsor-hosted co-located schedule"
+  },
+  "headers": {
+    "content-length": "9878",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 28 Aug 2026 17:43:58 GMT",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=240",
+    "expires": "Fri, 28 Aug 2026 17:47:59 GMT",
+    "last-modified": "Fri, 28 Aug 2026 17:43:59 GMT",
+    "set-cookie": "sessionize_settings=90=9aad2f1e-bb56-42ec-90ed-675e83f6b154; expires=Sun, 28-Feb-2027 17:43:59 GMT; path=/; secure; HttpOnly",
+    "vary": "*",
+    "strict-transport-security": "max-age=31536000",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb"
+  },
+  "content_hash": "e2aaf8e4fdc1f28cfe8c6eab6b4cb8267239847f26dceaae2e54499a4cd7750a",
+  "captured_at": "2026-08-28T17:43:52+00:00"
+}

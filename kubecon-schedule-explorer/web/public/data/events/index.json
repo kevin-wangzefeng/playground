@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-08-31T08:12:08+00:00",
+  "events": [
+    {
+      "slug": "kubecon-china-2026",
+      "display_name": "KubeCon + CloudNativeCon China 2026",
+      "location": "Shanghai",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-10",
+      "timezone": "Asia/Shanghai",
+      "default": true,
+      "data_url": "/data/events/kubecon-china-2026/schedule.json"
+    }
+  ]
+}

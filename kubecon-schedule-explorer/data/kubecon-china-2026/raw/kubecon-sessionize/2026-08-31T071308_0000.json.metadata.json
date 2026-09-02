@@ -1,0 +1,26 @@
+{
+  "source": {
+    "event_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "conference_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-09",
+    "location": "Shanghai International Convention Center",
+    "timezone": "Asia/Shanghai",
+    "source_name": "Sessionize public schedule API",
+    "id": "kubecon-sessionize",
+    "source_type": "sessionize_api",
+    "url": "https://sessionize.com/api/v2/yo76vzdv/view/All",
+    "source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/",
+    "detail_url_template": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/?id={session_id}",
+    "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+    "organizer": "CNCF, OpenInfra Foundation, and PyTorch Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "primary_conference"
+  },
+  "headers": {
+    "fetch-fallback": "curl",
+    "urllib-error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  },
+  "content_hash": "8b2a3a546ed7d6dc2d5e678421631a60e4f326b4b1f2b4b5b1028ea856578534",
+  "captured_at": "2026-08-31T07:13:08+00:00"
+}

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html class="no-js no-focus-outline" lang="en-US">
+	<head>
+	<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"fc29769e6a",applicationID:"202445557",browserID:"202445708"};;/*! For license information please see nr-loader-rum-1.320.1.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):e[a]instanceof Map||e[a]instanceof Set||e[a]instanceof Date||e[a]instanceof RegExp?r[a]=e[a]:"object"==typeof e[a]&&null!==t[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,s)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.320.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=""+a?.location,u=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,s,"gm",0,a,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=a?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<a.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),a=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,o=i.i.handlers;if(s&&!s.aborted&&s.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof a.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete o[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[a[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>a,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(i(r,s++).toString(16));return a.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,s){const d=s||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function l(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)("api-"+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",s="browser/blobs",a="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:s,[o.sessionReplay]:s,[o.logging]:a,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,a,"df",0,s])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const s=t[n]={exports:{}};return e[n](s,s.exports,r),s.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],s=t[n++];r.o(e,i)?0===s&&n++:0===s?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:s})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.320.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.320.1.PROD:";r.l=(n,i,s,a)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==s){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+s){o=r;break}}}if(!o){c=!0;var d={296:"sha512-tVt1vBEIdH0cbF0+FX2YAtMEq3dHpAui3eZmJce4ncISLbsfSol5l/6zmO5AGwZq7lhKosE9/EY+uwxfn03iYw=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+s),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[a]&&(o.integrity=d[a])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const s=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=s);const a=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(a,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,s,a]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in s)r.o(s,o)&&(r.m[o]=s[o]);if(a)a(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.320.1.PROD"]=self["webpackChunk:NRBA-1.320.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),s=r(1741);var a=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1};var R=r(7836),A=r(3241);const x={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var E=r(9908);const S="newrelic-iframe-";function k(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,x)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,a.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=R.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(S)&&(0,E.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var T=r(1863),j=r(4261),P=r(1738);var N=r(1687),O=r(4234),M=r(5289),I=r(7767);function D(e){return!!(0,i.dV)().o.MO&&(0,I.V)(e)&&!0===e?.session_trace.enabled}var V=r(6389),W=r(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,V.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,a.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let i;try{if((0,I.V)(e.init)){const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));i=t(e)}}catch(e){(0,f.R)(20,e),this.ee.emit("internal-error",[e]),(0,E.p)(W.qh,[e],void 0,this.featureName,this.ee)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}try{if(!this.#r(this.featureName,i,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};h.RI?(0,M.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return D(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,a.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}k(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=r(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,E.p)("api-"+j.Fw,[(0,T.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>r.e(296).then(r.bind(r,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class L extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),k(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,E.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,E.p)("api-"+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures];r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var F=r(2843),G=r(782);class H extends K{static featureName=G.T;constructor(e){super(e,G.T),h.RI&&((0,F.u)(()=>(0,E.p)("docHidden",[(0,T.t)()],void 0,G.T,this.ee),!0),(0,F.G)(()=>(0,E.p)("winPagehide",[(0,T.t)()],void 0,G.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var z=r(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new L({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>AGNTCon + MCPCon China | LF Open Source, LLC</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<link rel="canonical" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/" />
+<meta name="description" content="The flagship global conference for the open agentic AI ecosystem, uniting builders, contributors &amp; enterprises across the agentic stack." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="LF Open Source, LLC" />
+<meta property="og:title" content="AGNTCon + MCPCon China | LF Open Source, LLC" />
+<meta property="og:description" content="The flagship global conference for the open agentic AI ecosystem, uniting builders, contributors &amp; enterprises across the agentic stack." />
+<meta property="og:url" content="https://www.lfopensource.cn/mcp-dev-summit-shanghai/" />
+<meta property="og:image" content="https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-china-2026-social-snackable.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Agentic AI Foundation AGNTCon + MCPCon China. 2026 September 6-7 in Shanghai, China. #AGNTCon #MCPCon" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@linuxfoundation" />
+<meta name="twitter:title" content="AGNTCon + MCPCon China | LF Open Source, LLC" />
+<meta name="twitter:description" content="The flagship global conference for the open agentic AI ecosystem, uniting builders, contributors &amp; enterprises across the agentic stack." />
+<meta name="twitter:image" content="https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-china-2026-social-snackable.jpg" />
+<meta name="twitter:image:alt" content="Agentic AI Foundation AGNTCon + MCPCon China. 2026 September 6-7 in Shanghai, China. #AGNTCon #MCPCon" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.lfopensource.cn/#/schema/WebSite","url":"https://www.lfopensource.cn/","name":"LF Open Source, LLC","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.lfopensource.cn/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://www.lfopensource.cn/#/schema/Organization","name":"LF Open Source, LLC","url":"https://www.lfopensource.cn/","sameAs":["https://www.facebook.com/TheLinuxFoundation/","https://twitter.com/linuxfoundation","https://www.instagram.com/linux_foundation","https://www.youtube.com/user/TheLinuxFoundation","https://www.linkedin.com/company/the-linux-foundation/"]}},{"@type":"WebPage","@id":"https://www.lfopensource.cn/mcp-dev-summit-shanghai/","url":"https://www.lfopensource.cn/mcp-dev-summit-shanghai/","name":"AGNTCon + MCPCon China | LF Open Source, LLC","description":"The flagship global conference for the open agentic AI ecosystem, uniting builders, contributors & enterprises across the agentic stack.","inLanguage":"en-US","isPartOf":{"@id":"https://www.lfopensource.cn/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.lfopensource.cn/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://www.lfopensource.cn/","name":"LF Open Source, LLC"},{"@type":"ListItem","position":2,"name":"AGNTCon + MCPCon China"}]},"potentialAction":{"@type":"ReadAction","target":"https://www.lfopensource.cn/mcp-dev-summit-shanghai/"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 10.92ms meta | 0.28ms boot -->
+
+<link crossorigin href='//www.lfopensource.cn' rel='preconnect' />
+<link crossorigin href='//js.hs-scripts.com' rel='preconnect' />
+<link crossorigin href='//lfx-segment.platform.linuxfoundation.org' rel='preconnect' />
+<link crossorigin href='//js.hscollectedforms.net' rel='preconnect' />
+<link crossorigin href='//js.hs-banner.com' rel='preconnect' />
+<link crossorigin href='//js.hs-analytics.net' rel='preconnect' />
+<link crossorigin href='//js.hsforms.net' rel='preconnect' />
+<link crossorigin href='//cmp.osano.com' rel='preconnect' />
+<link crossorigin href='//www.googletagmanager.com' rel='preconnect' />
+<link crossorigin href='//js-agent.newrelic.com' rel='preconnect' />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-cover-inline-css">
+.wp-block-cover,.wp-block-cover-image{align-items:center;background-position:50%;box-sizing:border-box;display:flex;justify-content:center;min-height:430px;overflow:hidden;overflow:clip;padding:1em;position:relative}.wp-block-cover .has-background-dim:not([class*=-background-color]),.wp-block-cover-image .has-background-dim:not([class*=-background-color]),.wp-block-cover-image.has-background-dim:not([class*=-background-color]),.wp-block-cover.has-background-dim:not([class*=-background-color]){background-color:#000}.wp-block-cover .has-background-dim.has-background-gradient,.wp-block-cover-image .has-background-dim.has-background-gradient{background-color:initial}.wp-block-cover-image.has-background-dim:before,.wp-block-cover.has-background-dim:before{background-color:inherit;content:""}.wp-block-cover .wp-block-cover__background,.wp-block-cover .wp-block-cover__gradient-background,.wp-block-cover-image .wp-block-cover__background,.wp-block-cover-image .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim:not(.has-background-gradient):before,.wp-block-cover.has-background-dim:not(.has-background-gradient):before{bottom:0;left:0;opacity:.5;position:absolute;right:0;top:0}.wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-10:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-10 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-10:not(.has-background-gradient):before{opacity:.1}.wp-block-cover-image.has-background-dim.has-background-dim-20 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-20:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-20 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-20:not(.has-background-gradient):before{opacity:.2}.wp-block-cover-image.has-background-dim.has-background-dim-30 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-30:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-30 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-30:not(.has-background-gradient):before{opacity:.3}.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before{opacity:.4}.wp-block-cover-image.has-background-dim.has-background-dim-50 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-50:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-50 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-50:not(.has-background-gradient):before{opacity:.5}.wp-block-cover-image.has-background-dim.has-background-dim-60 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-60:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-60 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-60:not(.has-background-gradient):before{opacity:.6}.wp-block-cover-image.has-background-dim.has-background-dim-70 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-70:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-70 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-70:not(.has-background-gradient):before{opacity:.7}.wp-block-cover-image.has-background-dim.has-background-dim-80 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-80:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-80 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-80:not(.has-background-gradient):before{opacity:.8}.wp-block-cover-image.has-background-dim.has-background-dim-90 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-90:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-90 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-90:not(.has-background-gradient):before{opacity:.9}.wp-block-cover-image.has-background-dim.has-background-dim-100 .wp-block-cover__background,.wp-block-cover-image.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background,.wp-block-cover-image.has-background-dim.has-background-dim-100:not(.has-background-gradient):before,.wp-block-cover.has-background-dim.has-background-dim-100 .wp-block-cover__background,.wp-block-cover.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background,.wp-block-cover.has-background-dim.has-background-dim-100:not(.has-background-gradient):before{opacity:1}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-0,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-0,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0{opacity:0}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-10,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-10,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10{opacity:.1}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-20,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-20,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20{opacity:.2}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-30,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-30,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30{opacity:.3}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-40,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-40,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40{opacity:.4}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-50,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-50,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50{opacity:.5}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-60,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-60,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60{opacity:.6}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-70,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-70,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70{opacity:.7}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-80,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-80,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80{opacity:.8}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-90,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-90,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90{opacity:.9}.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-100,.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-100,.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100{opacity:1}.wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright{max-width:420px;width:100%}.wp-block-cover-image.aligncenter,.wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.aligncenter,.wp-block-cover.alignleft,.wp-block-cover.alignright{display:flex}.wp-block-cover .wp-block-cover__inner-container,.wp-block-cover-image .wp-block-cover__inner-container{color:inherit;position:relative;width:100%}.wp-block-cover-image.is-position-top-left,.wp-block-cover.is-position-top-left{align-items:flex-start;justify-content:flex-start}.wp-block-cover-image.is-position-top-center,.wp-block-cover.is-position-top-center{align-items:flex-start;justify-content:center}.wp-block-cover-image.is-position-top-right,.wp-block-cover.is-position-top-right{align-items:flex-start;justify-content:flex-end}.wp-block-cover-image.is-position-center-left,.wp-block-cover.is-position-center-left{align-items:center;justify-content:flex-start}.wp-block-cover-image.is-position-center-center,.wp-block-cover.is-position-center-center{align-items:center;justify-content:center}.wp-block-cover-image.is-position-center-right,.wp-block-cover.is-position-center-right{align-items:center;justify-content:flex-end}.wp-block-cover-image.is-position-bottom-left,.wp-block-cover.is-position-bottom-left{align-items:flex-end;justify-content:flex-start}.wp-block-cover-image.is-position-bottom-center,.wp-block-cover.is-position-bottom-center{align-items:flex-end;justify-content:center}.wp-block-cover-image.is-position-bottom-right,.wp-block-cover.is-position-bottom-right{align-items:flex-end;justify-content:flex-end}.wp-block-cover-image.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container{margin:0}.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-bottom-left .wp-block-cover__inner-container,.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-bottom-right .wp-block-cover__inner-container,.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-center-left .wp-block-cover__inner-container,.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-center-right .wp-block-cover__inner-container,.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-top-left .wp-block-cover__inner-container,.wp-block-cover-image.has-custom-content-position.has-custom-content-position.is-position-top-right .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-bottom-left .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-bottom-right .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-center-left .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-center-right .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-top-left .wp-block-cover__inner-container,.wp-block-cover.has-custom-content-position.has-custom-content-position.is-position-top-right .wp-block-cover__inner-container{margin:0;width:auto}.wp-block-cover .wp-block-cover__image-background,.wp-block-cover video.wp-block-cover__video-background,.wp-block-cover-image .wp-block-cover__image-background,.wp-block-cover-image video.wp-block-cover__video-background{border:none;bottom:0;box-shadow:none;height:100%;left:0;margin:0;max-height:none;max-width:none;object-fit:cover;outline:none;padding:0;position:absolute;right:0;top:0;width:100%}.wp-block-cover .wp-block-cover__embed-background,.wp-block-cover-image .wp-block-cover__embed-background{border:none;bottom:0;box-shadow:none;height:100%;left:0;margin:0;max-height:none;max-width:none;outline:none;padding:0;pointer-events:none;position:absolute;right:0;top:0;width:100%}.wp-block-cover .wp-block-cover__embed-background .wp-block-embed__wrapper,.wp-block-cover-image .wp-block-cover__embed-background .wp-block-embed__wrapper{bottom:0;height:100%;left:0;margin:0;padding:0;position:absolute;right:0;top:0;width:100%}.wp-block-cover .wp-block-cover__embed-background .wp-block-embed__wrapper iframe,.wp-block-cover .wp-block-cover__embed-background iframe,.wp-block-cover-image .wp-block-cover__embed-background .wp-block-embed__wrapper iframe,.wp-block-cover-image .wp-block-cover__embed-background iframe{height:100vh;left:50%;min-height:100%;min-width:100%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%);width:100vw}.wp-block-cover-image.has-parallax,.wp-block-cover.has-parallax,.wp-block-cover__image-background.has-parallax,video.wp-block-cover__video-background.has-parallax{background-attachment:fixed;background-repeat:no-repeat;background-size:cover}@supports (-webkit-touch-callout:inherit){.wp-block-cover-image.has-parallax,.wp-block-cover.has-parallax,.wp-block-cover__image-background.has-parallax,video.wp-block-cover__video-background.has-parallax{background-attachment:scroll}}@media (prefers-reduced-motion:reduce){.wp-block-cover-image.has-parallax,.wp-block-cover.has-parallax,.wp-block-cover__image-background.has-parallax,video.wp-block-cover__video-background.has-parallax{background-attachment:scroll}}.wp-block-cover-image.is-repeated,.wp-block-cover.is-repeated,.wp-block-cover__image-background.is-repeated,video.wp-block-cover__video-background.is-repeated{background-repeat:repeat;background-size:auto}.wp-block-cover-image-text,.wp-block-cover-image-text a,.wp-block-cover-image-text a:active,.wp-block-cover-image-text a:focus,.wp-block-cover-image-text a:hover,.wp-block-cover-text,.wp-block-cover-text a,.wp-block-cover-text a:active,.wp-block-cover-text a:focus,.wp-block-cover-text a:hover,section.wp-block-cover-image h2,section.wp-block-cover-image h2 a,section.wp-block-cover-image h2 a:active,section.wp-block-cover-image h2 a:focus,section.wp-block-cover-image h2 a:hover{color:#fff}.wp-block-cover-image .wp-block-cover.has-left-content{justify-content:flex-start}.wp-block-cover-image .wp-block-cover.has-right-content{justify-content:flex-end}.wp-block-cover-image.has-left-content .wp-block-cover-image-text,.wp-block-cover.has-left-content .wp-block-cover-text,section.wp-block-cover-image.has-left-content>h2{margin-left:0;text-align:left}.wp-block-cover-image.has-right-content .wp-block-cover-image-text,.wp-block-cover.has-right-content .wp-block-cover-text,section.wp-block-cover-image.has-right-content>h2{margin-right:0;text-align:right}.wp-block-cover .wp-block-cover-text,.wp-block-cover-image .wp-block-cover-image-text,section.wp-block-cover-image>h2{font-size:2em;line-height:1.25;margin-bottom:0;max-width:840px;padding:.44em;text-align:center;z-index:1}:where(.wp-block-cover-image:not(.has-text-color)),:where(.wp-block-cover:not(.has-text-color)){color:#fff}:where(.wp-block-cover-image.is-light:not(.has-text-color)),:where(.wp-block-cover.is-light:not(.has-text-color)){color:#000}:root :where(.wp-block-cover h1:not(.has-text-color)),:root :where(.wp-block-cover h2:not(.has-text-color)),:root :where(.wp-block-cover h3:not(.has-text-color)),:root :where(.wp-block-cover h4:not(.has-text-color)),:root :where(.wp-block-cover h5:not(.has-text-color)),:root :where(.wp-block-cover h6:not(.has-text-color)),:root :where(.wp-block-cover p:not(.has-text-color)){color:inherit}body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__embed-background,body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__image-background,body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__video-background{z-index:0}body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__background,body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__gradient-background,body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__inner-container,body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)).has-background-dim:not(.has-background-gradient):before{z-index:1}.has-modal-open body:not(.editor-styles-wrapper) .wp-block-cover:not(.wp-block-cover:has(.wp-block-cover__background+.wp-block-cover__inner-container)) .wp-block-cover__inner-container{z-index:auto}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/cover/style.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns{align-items:normal!important}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/columns/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/group/style.min.css */
+</style>
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=https://www.lfopensource.cn/wp/wp-includes/blocks/spacer/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="event-gradient-inline-style-inline-css">
+.is-style-event-gradient { background: linear-gradient(90deg, #1f213a 0%, #1f213a 100%);}
+
+:root {
+--event-color-1: #1f213a;
+--event-color-2: #1f213a;
+}
+/*# sourceURL=event-gradient-inline-style-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #212326;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fefefe;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--charcoal: #393c41;--wp--preset--color--dark-gray: #5d626a;--wp--preset--color--light-gray: #d3d5d9;--wp--preset--color--off-white: #ecedee;--wp--preset--color--dark-fuschia: #6e1042;--wp--preset--color--dark-violet: #411E4F;--wp--preset--color--dark-indigo: #1A267D;--wp--preset--color--dark-blue: #17405c;--wp--preset--color--dark-aqua: #0e5953;--wp--preset--color--dark-green: #0b5329;--wp--preset--color--light-fuschia: #AD1457;--wp--preset--color--light-violet: #6C3483;--wp--preset--color--light-indigo: #4653B0;--wp--preset--color--light-blue: #2874A6;--wp--preset--color--light-aqua: #148f85;--wp--preset--color--light-green: #117a3d;--wp--preset--color--dark-chartreuse: #3d5e0f;--wp--preset--color--dark-yellow: #878700;--wp--preset--color--dark-gold: #8c7000;--wp--preset--color--dark-orange: #784e12;--wp--preset--color--dark-umber: #6E2C00;--wp--preset--color--dark-red: #641E16;--wp--preset--color--light-chartreuse: #699b23;--wp--preset--color--light-yellow: #b0b000;--wp--preset--color--light-gold: #c29b00;--wp--preset--color--light-orange: #c2770e;--wp--preset--color--light-umber: #b8510d;--wp--preset--color--light-red: #922B21;--wp--preset--color--lf-primary-400: #0099cc;--wp--preset--color--lf-primary-700: #003366;--wp--preset--color--lf-grey-700: #333333;--wp--preset--color--lf-grey-400: #7a7a7a;--wp--preset--color--lf-blue: #0077cc;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-charcoal-color{color: var(--wp--preset--color--charcoal) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-off-white-color{color: var(--wp--preset--color--off-white) !important;}.has-dark-fuschia-color{color: var(--wp--preset--color--dark-fuschia) !important;}.has-dark-violet-color{color: var(--wp--preset--color--dark-violet) !important;}.has-dark-indigo-color{color: var(--wp--preset--color--dark-indigo) !important;}.has-dark-blue-color{color: var(--wp--preset--color--dark-blue) !important;}.has-dark-aqua-color{color: var(--wp--preset--color--dark-aqua) !important;}.has-dark-green-color{color: var(--wp--preset--color--dark-green) !important;}.has-light-fuschia-color{color: var(--wp--preset--color--light-fuschia) !important;}.has-light-violet-color{color: var(--wp--preset--color--light-violet) !important;}.has-light-indigo-color{color: var(--wp--preset--color--light-indigo) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-light-aqua-color{color: var(--wp--preset--color--light-aqua) !important;}.has-light-green-color{color: var(--wp--preset--color--light-green) !important;}.has-dark-chartreuse-color{color: var(--wp--preset--color--dark-chartreuse) !important;}.has-dark-yellow-color{color: var(--wp--preset--color--dark-yellow) !important;}.has-dark-gold-color{color: var(--wp--preset--color--dark-gold) !important;}.has-dark-orange-color{color: var(--wp--preset--color--dark-orange) !important;}.has-dark-umber-color{color: var(--wp--preset--color--dark-umber) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-light-chartreuse-color{color: var(--wp--preset--color--light-chartreuse) !important;}.has-light-yellow-color{color: var(--wp--preset--color--light-yellow) !important;}.has-light-gold-color{color: var(--wp--preset--color--light-gold) !important;}.has-light-orange-color{color: var(--wp--preset--color--light-orange) !important;}.has-light-umber-color{color: var(--wp--preset--color--light-umber) !important;}.has-light-red-color{color: var(--wp--preset--color--light-red) !important;}.has-lf-primary-400-color{color: var(--wp--preset--color--lf-primary-400) !important;}.has-lf-primary-700-color{color: var(--wp--preset--color--lf-primary-700) !important;}.has-lf-grey-700-color{color: var(--wp--preset--color--lf-grey-700) !important;}.has-lf-grey-400-color{color: var(--wp--preset--color--lf-grey-400) !important;}.has-lf-blue-color{color: var(--wp--preset--color--lf-blue) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-charcoal-background-color{background-color: var(--wp--preset--color--charcoal) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-off-white-background-color{background-color: var(--wp--preset--color--off-white) !important;}.has-dark-fuschia-background-color{background-color: var(--wp--preset--color--dark-fuschia) !important;}.has-dark-violet-background-color{background-color: var(--wp--preset--color--dark-violet) !important;}.has-dark-indigo-background-color{background-color: var(--wp--preset--color--dark-indigo) !important;}.has-dark-blue-background-color{background-color: var(--wp--preset--color--dark-blue) !important;}.has-dark-aqua-background-color{background-color: var(--wp--preset--color--dark-aqua) !important;}.has-dark-green-background-color{background-color: var(--wp--preset--color--dark-green) !important;}.has-light-fuschia-background-color{background-color: var(--wp--preset--color--light-fuschia) !important;}.has-light-violet-background-color{background-color: var(--wp--preset--color--light-violet) !important;}.has-light-indigo-background-color{background-color: var(--wp--preset--color--light-indigo) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-light-aqua-background-color{background-color: var(--wp--preset--color--light-aqua) !important;}.has-light-green-background-color{background-color: var(--wp--preset--color--light-green) !important;}.has-dark-chartreuse-background-color{background-color: var(--wp--preset--color--dark-chartreuse) !important;}.has-dark-yellow-background-color{background-color: var(--wp--preset--color--dark-yellow) !important;}.has-dark-gold-background-color{background-color: var(--wp--preset--color--dark-gold) !important;}.has-dark-orange-background-color{background-color: var(--wp--preset--color--dark-orange) !important;}.has-dark-umber-background-color{background-color: var(--wp--preset--color--dark-umber) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-light-chartreuse-background-color{background-color: var(--wp--preset--color--light-chartreuse) !important;}.has-light-yellow-background-color{background-color: var(--wp--preset--color--light-yellow) !important;}.has-light-gold-background-color{background-color: var(--wp--preset--color--light-gold) !important;}.has-light-orange-background-color{background-color: var(--wp--preset--color--light-orange) !important;}.has-light-umber-background-color{background-color: var(--wp--preset--color--light-umber) !important;}.has-light-red-background-color{background-color: var(--wp--preset--color--light-red) !important;}.has-lf-primary-400-background-color{background-color: var(--wp--preset--color--lf-primary-400) !important;}.has-lf-primary-700-background-color{background-color: var(--wp--preset--color--lf-primary-700) !important;}.has-lf-grey-700-background-color{background-color: var(--wp--preset--color--lf-grey-700) !important;}.has-lf-grey-400-background-color{background-color: var(--wp--preset--color--lf-grey-400) !important;}.has-lf-blue-background-color{background-color: var(--wp--preset--color--lf-blue) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-charcoal-border-color{border-color: var(--wp--preset--color--charcoal) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-off-white-border-color{border-color: var(--wp--preset--color--off-white) !important;}.has-dark-fuschia-border-color{border-color: var(--wp--preset--color--dark-fuschia) !important;}.has-dark-violet-border-color{border-color: var(--wp--preset--color--dark-violet) !important;}.has-dark-indigo-border-color{border-color: var(--wp--preset--color--dark-indigo) !important;}.has-dark-blue-border-color{border-color: var(--wp--preset--color--dark-blue) !important;}.has-dark-aqua-border-color{border-color: var(--wp--preset--color--dark-aqua) !important;}.has-dark-green-border-color{border-color: var(--wp--preset--color--dark-green) !important;}.has-light-fuschia-border-color{border-color: var(--wp--preset--color--light-fuschia) !important;}.has-light-violet-border-color{border-color: var(--wp--preset--color--light-violet) !important;}.has-light-indigo-border-color{border-color: var(--wp--preset--color--light-indigo) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-light-aqua-border-color{border-color: var(--wp--preset--color--light-aqua) !important;}.has-light-green-border-color{border-color: var(--wp--preset--color--light-green) !important;}.has-dark-chartreuse-border-color{border-color: var(--wp--preset--color--dark-chartreuse) !important;}.has-dark-yellow-border-color{border-color: var(--wp--preset--color--dark-yellow) !important;}.has-dark-gold-border-color{border-color: var(--wp--preset--color--dark-gold) !important;}.has-dark-orange-border-color{border-color: var(--wp--preset--color--dark-orange) !important;}.has-dark-umber-border-color{border-color: var(--wp--preset--color--dark-umber) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-light-chartreuse-border-color{border-color: var(--wp--preset--color--light-chartreuse) !important;}.has-light-yellow-border-color{border-color: var(--wp--preset--color--light-yellow) !important;}.has-light-gold-border-color{border-color: var(--wp--preset--color--light-gold) !important;}.has-light-orange-border-color{border-color: var(--wp--preset--color--light-orange) !important;}.has-light-umber-border-color{border-color: var(--wp--preset--color--light-umber) !important;}.has-light-red-border-color{border-color: var(--wp--preset--color--light-red) !important;}.has-lf-primary-400-border-color{border-color: var(--wp--preset--color--lf-primary-400) !important;}.has-lf-primary-700-border-color{border-color: var(--wp--preset--color--lf-primary-700) !important;}.has-lf-grey-700-border-color{border-color: var(--wp--preset--color--lf-grey-700) !important;}.has-lf-grey-400-border-color{border-color: var(--wp--preset--color--lf-grey-400) !important;}.has-lf-blue-border-color{border-color: var(--wp--preset--color--lf-blue) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='main-stylesheet-css' href='https://www.lfopensource.cn/wp-content/themes/lfevents/dist/css/app.min.css?ver=1787817520' media='all' />
+<link rel='stylesheet' id='photonic-slider-css' href='https://www.lfopensource.cn/wp-content/plugins/photonic/include/ext/splide/splide.min.css?ver=1787817520' media='all' />
+<link rel='stylesheet' id='photonic-lightbox-css' href='https://www.lfopensource.cn/wp-content/plugins/photonic/include/ext/photoswipe/photoswipe.min.css?ver=1787817520' media='all' />
+<link rel='stylesheet' id='photonic-css' href='https://www.lfopensource.cn/wp-content/plugins/photonic/include/css/front-end/core/photonic.min.css?ver=1787817520' media='all' />
+<style id="photonic-inline-css">
+/* Retrieved from saved CSS */
+.photonic-panel { background:  rgb(17,17,17)  !important;
+
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+ }
+.photonic-flickr-stream .photonic-pad-photosets { margin: 15px; }
+.photonic-flickr-stream .photonic-pad-galleries { margin: 15px; }
+.photonic-flickr-stream .photonic-pad-photos { padding: 5px 15px; }
+.photonic-google-stream .photonic-pad-photos { padding: 5px 15px; }
+.photonic-zenfolio-stream .photonic-pad-photos { padding: 5px 15px; }
+.photonic-zenfolio-stream .photonic-pad-photosets { margin: 5px 15px; }
+.photonic-instagram-stream .photonic-pad-photos { padding: 5px 15px; }
+.photonic-smug-stream .photonic-pad-albums { margin: 15px; }
+.photonic-smug-stream .photonic-pad-photos { padding: 5px 15px; }
+.photonic-flickr-panel .photonic-pad-photos { padding: 10px 15px; box-sizing: border-box; }
+.photonic-smug-panel .photonic-pad-photos { padding: 10px 15px; box-sizing: border-box; }
+.photonic-random-layout .photonic-thumb { padding: 2px}
+.photonic-masonry-layout .photonic-thumb { padding: 2px}
+.photonic-mosaic-layout .photonic-thumb { padding: 2px}
+.photonic-ie .photonic-masonry-layout .photonic-level-1, .photonic-ie .photonic-masonry-layout .photonic-level-2 { width: 200px; }
+
+/*# sourceURL=photonic-inline-css */
+</style>
+<script id="jquery-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/src/js/libraries/jquery-3.7.1.min.js?ver=1787817520"></script>
+<script id="lfx-segment-js" src="https://lfx-segment.platform.linuxfoundation.org/latest/lfx-segment-analytics.min.js"></script>
+<script id="lfx-segment-js-after">
+if(window.LfxAnalytics&&window.LfxAnalytics.LfxSegmentsAnalytics){var analytics=window.LfxAnalytics.LfxSegmentsAnalytics.getInstance();analytics.init().then(function(){}).catch(function(error){console.error('Failed to initialize analytics:',error)});}else{console.warn('LfxAnalytics not found');}
+//# sourceURL=lfx-segment-js-after
+</script>
+<link rel="https://api.w.org/" href="https://www.lfopensource.cn/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.lfopensource.cn/wp-json/wp/v2/pages/4108" />			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.69-->
+			<script class="hsq-set-content-id" data-content-id="standard-page">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "standard-page"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+				<meta name='referrer' content='strict-origin-when-cross-origin' />
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-Favicon-Blue.png">
+	<script type="application/ld+json">{
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "name": "AGNTCon + MCPCon China",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-07",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": [
+        {
+            "@type": "Place",
+            "name": "",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "",
+                "addressLocality": "Shanghai",
+                "postalCode": "",
+                "addressRegion": "",
+                "addressCountry": "China"
+            }
+        }
+    ],
+    "image": [
+        "https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-china-2026-social-snackable.jpg"
+    ],
+    "description": "AGNTCon + MCPCon China is the flagship global conference for the open agentic AI ecosystem. The event brings together the builders, contributors, and enterprises working across the agentic stack – from MCP and agent protocols to real-world systems – to share learnings, surface common challenges, and advance open, interoperable approaches to building AI agents at scale."
+}</script>	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TK7D99');</script>
+	<!-- End Google Tag Manager -->
+	<meta name="google-site-verification" content="-gukSsqWFlePhF0bBHUrwFbg7eaR4N09IFCKY9QmtYc" />	<style id="conditional-blocks-frontend-inline-css">
+@media (min-width: 1025px) {.conblock-hide-desktop { display: none !important; }}
+	@media (min-width: 768px) and (max-width: 1024px) {.conblock-hide-tablet {display: none !important;}}
+	@media(max-width: 767px) {.conblock-hide-mobile {display: none !important;}}
+/*# sourceURL=conditional-blocks-frontend-inline-css */
+</style>
+<style id="core-block-supports-inline-css">
+.wp-container-core-columns-is-layout-8f761849{flex-wrap:nowrap;}.wp-elements-1a3c6fb761bce9d622164e0e4f63ae4e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+</head>
+
+	<body class="wp-singular page-template-default page page-id-4108 page-parent wp-theme-lfevents lfasiallcci">
+				<a class="skip-link" href="#main">Skip to content</a>
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7D99"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+		<div class="site-container add-overflow">
+
+<div data-sticky-container class="use-cncf-font">
+	<header class="event-header sticky" data-sticky data-sticky-on="large" data-options="marginTop:0;"
+		style="background: linear-gradient(90deg, #1f213a 0%, #1f213a 100%);color: white;">
+
+		
+		<div class="pre-nav">
+			<a class="event-home-link" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/"><img loading="lazy" src="https://www.lfopensource.cn/wp-content/uploads/2026/05/agnt_mcpcon_cn_white.svg" alt="AGNTCon + MCPCon China"></a>			<button class="menu-toggler button alignright" type="button"
+				aria-label="Toggle Menu" data-toggle="event-menu">
+				<span
+					class="hamburger-icon is-white"></span>
+			</button>
+		</div>
+
+		<nav id="event-menu" class="event-menu show-for-large" data-toggler="show-for-large">
+			<ul
+				class="event-menu-list is-white">
+				<li class="page_item event-home-link" id="popout-header-link"><a
+						href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/"
+						style="background-color:#1f213a;"><img loading="lazy" src="https://www.lfopensource.cn/wp-content/uploads/2026/05/agnt_mcpcon_cn_white.svg" alt="AGNTCon + MCPCon China"></a>
+				</li>
+				<li class="page_item page-item-4110"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/register/">Register</a></li>
+<li class="page_item page-item-4118 page_item_has_children"><a href="#">Attend</a>
+<ul class='children' style='background: #1f213a;'>
+	<li class="page_item page-item-4494"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/about/">About</a></li>
+	<li class="page_item page-item-4125"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/venue-travel/">Venue &amp; Travel</a></li>
+	<li class="page_item page-item-4142"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/health-safety/">Health &amp; Safety</a></li>
+	<li class="page_item page-item-4140"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/about-shanghai/">About Shanghai</a></li>
+	<li class="page_item page-item-4138"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/visa-letter-request/">Visa Letter Request</a></li>
+	<li class="page_item page-item-4136"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/travel-funding/">Travel Funding</a></li>
+	<li class="page_item page-item-4134"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/child-care/">Child Care</a></li>
+	<li class="page_item page-item-4132"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/inclusion-accessibility/">Inclusion &amp; Accessibility</a></li>
+	<li class="page_item page-item-4130"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/code-of-conduct/">Code of Conduct</a></li>
+	<li class="page_item page-item-5174"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/see-whos-attending/">See Who&#039;s Attending</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4120"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/sponsor/">Sponsor</a></li>
+<li class="page_item page-item-4116 page_item_has_children"><a href="#">Program</a>
+<ul class='children' style='background: #1f213a;'>
+	<li class="page_item page-item-4156"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/schedule/">Schedule</a></li>
+	<li class="page_item page-item-4146"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/featured-keynote-speakers/">Featured Keynote Speakers</a></li>
+	<li class="page_item page-item-3444"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/explore-the-tracks/">Explore the Tracks</a></li>
+	<li class="page_item page-item-5144"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/program-committee/">Program Committee</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4114 page_item_has_children"><a href="#">Features &amp; Add-Ons</a>
+<ul class='children' style='background: #1f213a;'>
+	<li class="page_item page-item-5008"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/features-add-ons/model-context-protocol-associate-mcpa-certification/">Model Context Protocol Associate (MCPA) Certification</a></li>
+	<li class="page_item page-item-4388"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/features-add-ons/co-located-events/">Co-Located Events</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4112"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/contact-us/">Contact Us</a></li>
+<li class="page_item page_item_has_children other-events"><a href="#">查看所有活动<br>View All Events</a><ul class="children" style="background: #1f213a;"><li><a href="https://events.linuxfoundation.org/"><div class="other-logo-wrapper">
+		<img width="109" height="36" alt="The Linux Foundation logo" src="https://www.lfopensource.cn/wp-content/themes/lfevents/src/images/lf-logo-white.svg"><span class="other-seperator white">Events</span></div><span class="other-text">All Upcoming Events</span></a></li><li><a href="https://events.linuxfoundation.org/about/calendar/archive/?_sft_lfevent-category=agentic-ai-foundation-events"><span class="subtext">Past Agentic AI Foundation Events</span></a></li></ul></li>			</ul>
+		</nav>
+
+	</header>
+</div>
+	
+<div class="main-container" id="main">
+	<div class="main-grid">
+		<main class="main-content-full-width">
+
+			
+						<h1 class="show-for-sr">
+				AGNTCon + MCPCon China			</h1>
+					
+<article id="post-4108" class="post-4108 page type-page status-publish has-post-thumbnail hentry">
+	<div class="entry-content">
+		
+<div class="wp-block-cover alignfull" style="min-height:330px;aspect-ratio:unset;"><img fetchpriority="high" decoding="async" width="1920" height="960" class="wp-block-cover__image-background wp-image-4499 size-fp-xlarge" alt="&quot;&quot;" src="https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-1920x960.jpg" style="object-position:50% 75%" data-object-fit="cover" data-object-position="50% 75%" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-1920x960.jpg 1920w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-300x150.jpg 300w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-1024x512.jpg 1024w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-768x384.jpg 768w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-1536x768.jpg 1536w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-2048x1024.jpg 2048w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-640x320.jpg 640w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-1200x600.jpg 1200w, https://www.lfopensource.cn/wp-content/uploads/2026/05/agntcon-mcpcon-2026-hero-600x300.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#292847"></span><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:55%"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img decoding="async" width="698" height="168" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AAIF-tagline-stacked-white.svg" alt="Tagline: Where the agent stack is being built." class="wp-image-5013" style="width:575px"/></figure>
+</div></div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:45%">
+<h4 class="wp-block-heading is-style-section-heading">2026 September 6-7</h4>
+
+
+
+<h5 class="wp-block-heading is-style-section-heading">Shanghai International<br>Convention Center</h5>
+
+
+
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer is-style-default"></div>
+
+
+
+<div class="wp-block-lf-buttons-with-expiry">
+<div class="wp-block-lf-button-with-expiry"><a class="wp-block-button__link has-text-color has-black-color has-background button-large" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/register" style="background-color:#83ffde;border-radius:5px">Register</a></div>
+
+
+
+<div class="wp-block-lf-button-with-expiry"><a class="wp-block-button__link has-text-color has-black-color has-background button-large" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/sponsor/" style="background-color:#ea6289;border-radius:5px">Sponsor</a></div>
+
+
+
+
+
+<div class="wp-block-lf-button-with-expiry"><a class="wp-block-button__link has-text-color has-black-color has-background button-large" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/schedule/" style="background-color:#ea6289;border-radius:5px">View the Schedule</a></div>
+
+
+
+<div class="wp-block-lf-button-with-expiry"><a class="wp-block-button__link has-text-color has-black-color has-background button-large" href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/see-whos-attending/" style="background-color:#ea6289;border-radius:5px">See Who&#8217;s Attending</a></div>
+
+
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group is-style-event-gradient"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading has-text-align-center is-style-section-heading has-white-color has-text-color has-link-color wp-elements-1a3c6fb761bce9d622164e0e4f63ae4e">Featured Keynote Speakers</h3>
+
+
+
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+		<div class="sb2-block-wrapper alignwide">
+			<div class="sb2-speaker has-animation-scale-2">
+	
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Huawei headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-300x300.jpg 300w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-200x200.jpg 200w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-600x600.jpg 600w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1.jpg 612w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Huawei			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Speaker to be Announced			</h4>
+								<img decoding="async" width="241" height="245" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Huawei.svg" class="sb2-speaker__company-logo" alt="Huawei logo" />						</div>
+		</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="AWS headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-300x300.jpg 300w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-200x200.jpg 200w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1-600x600.jpg 600w, https://www.lfopensource.cn/wp-content/uploads/2026/08/istockphoto-2168774111-612x612-1.jpg 612w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				AWS			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Speaker to be Announced			</h4>
+								<img loading="lazy" decoding="async" width="312" height="191" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/AWS_logo_RGB_1c_Gray850-4.svg" class="sb2-speaker__company-logo" alt="AWS logo" />						</div>
+		</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Jingyi-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Jingyi Wang headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/08/Jingyi-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Jingyi-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Jingyi-200x200.jpg 200w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Jingyi Wang			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Forward Deployed Engineer			</h4>
+								<img loading="lazy" decoding="async" width="409" height="144" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/google-logo-web-2.svg" class="sb2-speaker__company-logo" alt="Google logo" />						</div>
+		</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+	<button data-modal-content-id="modal-5291"
+		data-modal-slug="zhou-qi"
+		data-modal-prefix-class="speaker" class="js-modal button-reset">
+		
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="296" height="237" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Screenshot-2026-08-18-at-12.24.15-PM.jpg" class="attachment-profile-310 size-profile-310" alt="Zhou Qi headshot" loading="lazy" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Zhou Qi			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Head of Cloud-Native Application Platform &amp; Vice Chair, Open Source Committee			</h4>
+								<img loading="lazy" decoding="async" width="399" height="63" src="https://www.lfopensource.cn/wp-content/uploads/alibaba-cloud.svg" class="sb2-speaker__company-logo" alt="Alibaba logo" />							<div class="modal-hide"
+				id="modal-5291"
+				aria-hidden="true">
+				<div class="speaker-modal-wrapper">
+
+					<div class="speaker-modal__header">
+
+												<figure class="sb2-speaker__figure">
+							<img decoding="async" width="296" height="237" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Screenshot-2026-08-18-at-12.24.15-PM.jpg" class="attachment-profile-310 size-profile-310" alt="Zhou Qi headshot" loading="lazy" />						</figure>
+									
+						<div class="speaker-modal__header-text">
+
+							<h3 class="sb2-speaker__name">
+								Zhou Qi							</h3>
+
+														<h4 class="sb2-speaker__title">
+								Head of Cloud-Native Application Platform &amp; Vice Chair, Open Source Committee</h4>
+																<img loading="lazy" decoding="async" width="399" height="63" src="https://www.lfopensource.cn/wp-content/uploads/alibaba-cloud.svg" class="sb2-speaker__company-logo" alt="Alibaba logo" />														</div>
+					</div>
+
+					<div class="speaker-modal__text-content">
+						
+<p class="wp-block-paragraph">Zhou Qi is Head of Cloud-Native Application Platform and Vice Chair of the Open Source Committee, Alibaba Cloud Intelligence Group.</p>
+
+						<div class="speaker-modal__social">
+													</div>
+					</div>
+				</div>
+								</div>
+						</div>
+			</button>
+	</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+	<button data-modal-content-id="modal-5351"
+		data-modal-slug="dr-junlan-feng"
+		data-modal-prefix-class="speaker" class="js-modal button-reset">
+		
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Dr. Junlan Feng headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-300x300.jpg 300w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-640x640.jpg 640w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-200x200.jpg 200w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-600x600.jpg 600w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng.jpg 737w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Dr. Junlan Feng			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Chief Scientist			</h4>
+								<img loading="lazy" decoding="async" width="434" height="451" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/china-mobile-communication-company-ltd.svg" class="sb2-speaker__company-logo" alt="China Mobile Group logo" />							<div class="modal-hide"
+				id="modal-5351"
+				aria-hidden="true">
+				<div class="speaker-modal-wrapper">
+
+					<div class="speaker-modal__header">
+
+												<figure class="sb2-speaker__figure">
+							<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Dr. Junlan Feng headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-300x300.jpg 300w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-640x640.jpg 640w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-200x200.jpg 200w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng-600x600.jpg 600w, https://www.lfopensource.cn/wp-content/uploads/2026/08/Junlan-Feng.jpg 737w" sizes="auto, (max-width: 310px) 100vw, 310px" />						</figure>
+									
+						<div class="speaker-modal__header-text">
+
+							<h3 class="sb2-speaker__name">
+								Dr. Junlan Feng							</h3>
+
+														<h4 class="sb2-speaker__title">
+								Chief Scientist</h4>
+																<img loading="lazy" decoding="async" width="434" height="451" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/china-mobile-communication-company-ltd.svg" class="sb2-speaker__company-logo" alt="China Mobile Group logo" />														</div>
+					</div>
+
+					<div class="speaker-modal__text-content">
+						
+<p class="wp-block-paragraph">Dr. Feng Junlan is the Chief Scientist of China Mobile Group, an IEEE Fellow, and served as Chair of the Linux Foundation Networking Board of Directors (2020-2023). She earned her Ph.D. in Acoustics from the Chinese Academy of Sciences in 2001 and subsequently worked as a Senior and Principal Researcher at AT&amp;T Labs Research.</p>
+
+
+
+<p class="wp-block-paragraph">Since joining China Mobile in 2013, Dr. Feng has led the company&#8217;s AI team in developing core algorithms and technologies. Her work has shaped the comprehensive &#8220;Jiutian&#8221; AI portfolio, which now supports over 3,700 production applications. Under her leadership, her team has undertaken 21 national-level research projects and won more than 30 international algorithm competitions, alongside numerous national and ministerial honors.</p>
+
+
+
+<p class="wp-block-paragraph">As an accomplished author, Dr. Feng has published over 200 academic papers, co-authored a book, and holds more than 150 patents. She actively contributes to the global academic community as a reviewer and program committee member for top AI conferences and journals, and has held over 15 roles, including committee member or vice chair, in organizations such as the IEEE.</p>
+
+						<div class="speaker-modal__social">
+													</div>
+					</div>
+				</div>
+								</div>
+						</div>
+			</button>
+	</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+	<button data-modal-content-id="modal-4974"
+		data-modal-slug="richard-sikang-bian"
+		data-modal-prefix-class="speaker" class="js-modal button-reset">
+		
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Richard Sikang Bian headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-200x200.jpg 200w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Richard Sikang Bian			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Head of Product and Operations, Ant Ling LLM by InclusionAI			</h4>
+								<img loading="lazy" decoding="async" width="291" height="139" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-3.37.31-AM.jpg" class="sb2-speaker__company-logo" alt="Ant Group logo" />							<div class="modal-hide"
+				id="modal-4974"
+				aria-hidden="true">
+				<div class="speaker-modal-wrapper">
+
+					<div class="speaker-modal__header">
+
+												<figure class="sb2-speaker__figure">
+							<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-310x310.jpg" class="attachment-profile-310 size-profile-310" alt="Richard Sikang Bian headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-310x310.jpg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-08-12-at-7.25.44-AM-200x200.jpg 200w" sizes="auto, (max-width: 310px) 100vw, 310px" />						</figure>
+									
+						<div class="speaker-modal__header-text">
+
+							<h3 class="sb2-speaker__name">
+								Richard Sikang Bian							</h3>
+
+														<h4 class="sb2-speaker__title">
+								Head of Product and Operations, Ant Ling LLM by InclusionAI</h4>
+																<img loading="lazy" decoding="async" width="291" height="139" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-3.37.31-AM.jpg" class="sb2-speaker__company-logo" alt="Ant Group logo" />														</div>
+					</div>
+
+					<div class="speaker-modal__text-content">
+						
+<p class="wp-block-paragraph">Richard Sikang Bian is the Head of Product and Operations for Ant Ling, the foundational LLM at Ant inclusionAI. Leading the &#8220;Model as a Product&#8221; team, he drives GTM strategy, ecosystem development, and data sourcing while building innovative proofs-of-concept. A former software engineer at Microsoft and Square/Block, Richard previously served as Head of Open Source at Ant, successfully scaling the initiative into a dedicated cross-functional team through internal incubation. With extensive international experience spanning Singapore, Canada, the US, and China, he specializes in steering zero-to-one strategic initiatives and fostering cross-cultural collaboration to build world-class, user-centric products.</p>
+
+
+
+<p class="wp-block-paragraph">Richard is also an AAIF Ambassador and the former Outreach Chair of LFAI &amp; Data Foundation.</p>
+
+						<div class="speaker-modal__social">
+													</div>
+					</div>
+				</div>
+								</div>
+						</div>
+			</button>
+	</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+	<button data-modal-content-id="modal-4967"
+		data-modal-slug="angie-jones"
+		data-modal-prefix-class="speaker" class="js-modal button-reset">
+		
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-310x310.jpeg" class="attachment-profile-310 size-profile-310" alt="Angie Jones headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-310x310.jpeg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-150x150.jpeg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-200x200.jpeg 200w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Angie Jones			</h3>
+
+						<h4 class="sb2-speaker__title">
+				VP, Developer Experience			</h4>
+								<img loading="lazy" decoding="async" width="871" height="235" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AAIF_Primary_Logo_Black.svg" class="sb2-speaker__company-logo" alt="Agentic AI Foundation logo" />							<div class="modal-hide"
+				id="modal-4967"
+				aria-hidden="true">
+				<div class="speaker-modal-wrapper">
+
+					<div class="speaker-modal__header">
+
+												<figure class="sb2-speaker__figure">
+							<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-310x310.jpeg" class="attachment-profile-310 size-profile-310" alt="Angie Jones headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-310x310.jpeg 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-150x150.jpeg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Angie-Jones-200x200.jpeg 200w" sizes="auto, (max-width: 310px) 100vw, 310px" />						</figure>
+									
+						<div class="speaker-modal__header-text">
+
+							<h3 class="sb2-speaker__name">
+								Angie Jones							</h3>
+
+														<h4 class="sb2-speaker__title">
+								VP, Developer Experience</h4>
+																<img loading="lazy" decoding="async" width="871" height="235" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AAIF_Primary_Logo_Black.svg" class="sb2-speaker__company-logo" alt="Agentic AI Foundation logo" />														</div>
+					</div>
+
+					<div class="speaker-modal__text-content">
+						
+<p class="wp-block-paragraph">Angie Jones is the VP of Developer Experience at the ​Agentic AI Foundation<br><br>An award-winning educator and international keynote speaker, Angie shares her extensive knowledge with software companies and conference audiences worldwide.<br><br>As a Master Inventor, Angie is recognized for her innovative, out-of-the-box thinking, which has led to 27 patented inventions in virtual worlds, collaboration software, social networking, smarter planet initiatives, and software development processes.</p>
+
+						<div class="speaker-modal__social">
+													</div>
+					</div>
+				</div>
+								</div>
+						</div>
+			</button>
+	</div>
+<div class="sb2-speaker has-animation-scale-2">
+	
+	<button data-modal-content-id="modal-4971"
+		data-modal-slug="mazin-gilbert"
+		data-modal-prefix-class="speaker" class="js-modal button-reset">
+		
+				<figure class="sb2-speaker__figure">
+			<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-310x310.avif" class="attachment-profile-310 size-profile-310" alt="Mazin Gilbert headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-310x310.avif 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-300x300.avif 300w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-150x150.avif 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-200x200.avif 200w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin.avif 412w" sizes="auto, (max-width: 310px) 100vw, 310px" />		</figure>
+			
+		<div class="sb2-speaker__text">
+
+			<h3 class="sb2-speaker__name">
+				Mazin Gilbert			</h3>
+
+						<h4 class="sb2-speaker__title">
+				Executive Director			</h4>
+								<img loading="lazy" decoding="async" width="871" height="235" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AAIF_Primary_Logo_Black.svg" class="sb2-speaker__company-logo" alt="Agentic AI Foundation logo" />							<div class="modal-hide"
+				id="modal-4971"
+				aria-hidden="true">
+				<div class="speaker-modal-wrapper">
+
+					<div class="speaker-modal__header">
+
+												<figure class="sb2-speaker__figure">
+							<img decoding="async" width="310" height="310" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-310x310.avif" class="attachment-profile-310 size-profile-310" alt="Mazin Gilbert headshot" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-310x310.avif 310w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-300x300.avif 300w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-150x150.avif 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin-200x200.avif 200w, https://www.lfopensource.cn/wp-content/uploads/2026/07/Mazin.avif 412w" sizes="auto, (max-width: 310px) 100vw, 310px" />						</figure>
+									
+						<div class="speaker-modal__header-text">
+
+							<h3 class="sb2-speaker__name">
+								Mazin Gilbert							</h3>
+
+														<h4 class="sb2-speaker__title">
+								Executive Director</h4>
+																<img loading="lazy" decoding="async" width="871" height="235" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AAIF_Primary_Logo_Black.svg" class="sb2-speaker__company-logo" alt="Agentic AI Foundation logo" />														</div>
+					</div>
+
+					<div class="speaker-modal__text-content">
+						
+<p class="wp-block-paragraph">Mazin Gilbert is the Executive Director of the Agentic AI Foundation, part of the Linux Foundation. An IEEE Fellow with a Ph.D. in Artificial Intelligence and a Wharton MBA, Mazin brings 25+ years of experience driving AI innovation from research to global-scale deployment. His career spans senior leadership at Google as Director of Engineering for Google Distributed Cloud AI/ML, and at AT&amp;T as VP of Network Analytics and Automation.</p>
+
+
+
+<p class="wp-block-paragraph">Mazin has built production-grade GenAI, machine learning, and agentic AI platforms at scale. He co-founded open-source landmarks including ONAP, Akraino, and Acumos, and helped found the LF Networking, LF Edge, and LF AI. He has served on the boards of the Open Network Foundation, NSF MLWINS, and the International Computer Science Institute at Berkeley.</p>
+
+
+
+<p class="wp-block-paragraph">Mazin holds 260+ U.S. patents, has authored 100+ research papers, and became an IEEE Fellow in 2012 for pioneering contributions to speech processing.</p>
+
+						<div class="speaker-modal__social">
+													</div>
+					</div>
+				</div>
+								</div>
+						</div>
+			</button>
+	</div>
+		</div>
+	</div></div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer is-style-40-responsive"></div>
+</div></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:43%">
+<p class="has-medium-font-size wp-block-paragraph"><strong>Where the agentic stack is being built.</strong></p>
+
+
+
+<p class="wp-block-paragraph">The event brings together developers, researchers, platform builders, and enterprises working across the agentic stack – from MCP and agent protocols to infrastructure, orchestration, and production systems.</p>
+
+
+
+<p class="wp-block-paragraph">Through deep technical sessions, real-world case studies, and ecosystem collaboration, AGNTCon + MCPCon explores how teams are building reliable, scalable, and secure agent systems in practice.</p>
+
+
+
+<p class="wp-block-paragraph">Each regional event connects local and global communities working to advance agentic AI systems at scale.</p>
+</div>
+
+
+<div class="conblock-hide-mobile wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:7%"></div>
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
+<p class="wp-block-paragraph"><strong>Who Attends?</strong> <strong>AGNTCon + MCPCon</strong> attracts a highly technical and influential audience, including:</p>
+
+
+
+<ul class="wp-block-list has-icon-check has-two-columns has-list-gap-10">
+<li><strong>Open source developers and contributors</strong> building MCP and other agentic AI projects</li>
+
+
+
+<li><strong>Project maintainers and foundation leaders</strong> guiding standards and governance</li>
+
+
+
+<li><strong>Enterprise engineers and architects</strong> adopting agent-based systems in production</li>
+
+
+
+<li><strong>Platform, infrastructure, and tooling teams</strong> supporting agent orchestration, security, and observability</li>
+
+
+
+<li><strong>Researchers and academics</strong> exploring the foundations and future of agentic systems</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Attendees are practitioners actively shaping how agentic AI is designed, implemented, and deployed.</p>
+</div>
+</div>
+
+
+
+
+
+<div class="wp-block-group is-style-constrained-50"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group is-style-border"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h4 class="wp-block-heading has-text-align-center is-style-section-heading">Connect with us on WeChat</h4>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="224" height="224" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat.jpg" alt="AGNTCon + MCPCon China We Chat QR" class="wp-image-4951" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat.jpg 224w, https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat-200x200.jpg 200w" sizes="auto, (max-width: 224px) 100vw, 224px" /></figure>
+</div></div></div>
+</div></div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer is-style-40-responsive"></div>
+		</div>
+</article>
+			<article id="post-4122" class="post-4122 page type-page status-publish hentry">
+				<div class="entry-content">
+					
+<div class="wp-block-group alignfull is-style-event-gradient"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h3 class="wp-block-heading has-text-align-center is-style-one-line-section-heading has-white-color has-text-color">Sponsors</h3>
+</div></div>
+
+
+<div class="wp-block-cgb-sponsors-block"><h3 class="sponsors-logos--header">Diamond</h3><div class="sponsors-logos jumbo even"><div class="sponsors-logo-item"><a href="https://www.amazonaws.cn/" title="Go to AWS" style="-webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7);" target="_blank" rel="noopener"><img decoding="async" width="615" height="201" src="https://www.lfopensource.cn/wp-content/uploads/2021/10/AmazonCloudTechnologies-CN_logo_RGB_2c_SquidInk-Orange.svg" class="logo wp-post-image" alt="AWS logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://www.huawei.com/en/" title="Go to Huawei" target="_blank" rel="noopener"><img decoding="async" width="2355" height="585" src="https://www.lfopensource.cn/wp-content/uploads/2021/11/Huawei-01.svg" class="logo wp-post-image" alt="Huawei logo" loading="lazy" /></a></div></div></div>
+
+<div class="wp-block-cgb-sponsors-block"><h3 class="sponsors-logos--header">Platinum</h3><div class="sponsors-logos largest odd orphan-by-3 orphan-by-4 orphan-by-5 orphan-by-6 orphan-by-7 orphan-by-8"><div class="sponsors-logo-item"><a href="https://platform.stepfun.ai/" title="Go to StepFun" target="_blank" rel="noopener"><img decoding="async" width="312" height="96" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/StepFun_Logo_英文_黑-1.svg" class="logo wp-post-image" alt="StepFun logo" loading="lazy" /></a></div></div></div>
+
+
+
+
+
+<div class="wp-block-cgb-sponsors-block"><h3 class="sponsors-logos--header">Startup</h3><div class="sponsors-logos medium odd orphan-by-3 orphan-by-4 orphan-by-5 orphan-by-6 orphan-by-7 orphan-by-8"><div class="sponsors-logo-item"><a href="https://obot.ai/" title="Go to Obot" target="_blank" rel="noopener"><img decoding="async" width="1917" height="722" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/obot-logo-blue-black-text-3.svg" class="logo wp-post-image" alt="Obot logo" loading="lazy" /></a></div></div></div>
+
+
+
+<div class="wp-block-cgb-sponsors-block"><h3 class="sponsors-logos--header">Community Partners</h3><div class="sponsors-logos small even orphan-by-7"><div class="sponsors-logo-item"><a href="https://www.copu.org.cn/" title="Go to COPU" style="-webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3);" target="_blank" rel="noopener"><img decoding="async" width="395" height="70" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/COPU-logo.svg" class="logo wp-post-image" alt="COPU logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://kaiyuanshe.cn/" title="Go to Kaiyuanshe" target="_blank" rel="noopener"><img decoding="async" width="1190" height="401" src="https://www.lfopensource.cn/wp-content/uploads/2023/09/KAIYUANSHE.svg" class="logo wp-post-image" alt="Kaiyuanshe logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://go-kratos.dev/" title="Go to Kratos" target="_blank" rel="noopener"><img decoding="async" width="613" height="201" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/Kratos-logo-cn.svg" class="logo wp-post-image" alt="Kratos logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://openanolis.cn/" title="Go to OpenAnolis" target="_blank" rel="noopener"><img decoding="async" width="1133" height="850" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/龙蜥社区黑.svg" class="logo wp-post-image" alt="OpenAnolis logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://www.openeuler.org/zh/" title="Go to OpenEuler" target="_blank" rel="noopener"><img decoding="async" width="976" height="263" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/openEuler-logo.svg" class="logo wp-post-image" alt="OpenEuler logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://www.openfuyao.cn/en/" title="Go to openFuyao" target="_blank" rel="noopener"><img decoding="async" width="1152" height="342" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/openfuyao-logo-横版-转曲-彩黑字.svg" class="logo wp-post-image" alt="openFuyao logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://shanghaiopen.org.cn/" title="Go to SHOpen" target="_blank" rel="noopener"><img decoding="async" width="1379" height="475" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/SHOPEN-LOGO.svg" class="logo wp-post-image" alt="SHOpen logo" loading="lazy" /></a></div><div class="sponsors-logo-item"><a href="https://www.waytoagi.com/zh" title="Go to WaytoAGI" target="_blank" rel="noopener"><img decoding="async" width="305" height="297" src="https://www.lfopensource.cn/wp-content/uploads/2026/08/waytoagi-logo.svg" class="logo wp-post-image" alt="WaytoAGI logo" loading="lazy" /></a></div></div></div>									</div>
+			</article>
+					</main>
+	</div>
+</div>
+
+<section class="event-footer xlarge-padding-y"
+	style="background: linear-gradient(90deg, #1f213a 0%, #1f213a 100%); color: white;">
+
+	
+	<div
+		class="event-footer-newsletter white">
+		<p
+			class="event-footer-newsletter__title">Join our mailing list to hear all the latest about events, news and more</p>
+		
+						<script>
+							window.hsFormsOnReady = window.hsFormsOnReady || [];
+							window.hsFormsOnReady.push(()=>{
+								hbspt.forms.create({
+									portalId: 8112310,
+									formId: "f974d4fc-77b9-4e3e-aaa4-ac23d12236bb",
+									target: "#hbspt-form-1787883550000-9984351768",
+									region: "na1",
+									
+							})});
+						</script>
+						<div class="hbspt-form" id="hbspt-form-1787883550000-9984351768"></div>		<p class="event-footer-newsletter__privacy">
+	By submitting this form, I consent to receive marketing emails from the LF and its projects regarding their events, training, research, developments, and related announcements. I understand that I can unsubscribe at any time using the links in the footers of the emails I receive. <a target="_blank" href="https://www.linuxfoundation.org/privacy/">Privacy Policy</a>.	</p>
+	</div>
+
+		<div class="event-footer-alignment">
+
+		<div class="event-footer-logo-social">
+
+			<div class="event-footer-logo-social__logo">
+				<a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/"><img loading="lazy" src="https://www.lfopensource.cn/wp-content/uploads/2026/05/agnt_mcpcon_cn_white.svg" alt="AGNTCon + MCPCon China"></a>			</div>
+
+			
+			<div
+				class="event-footer-logo-social__wrapper white">
+				<ul class="event-footer-logo-social__icons white"><li><a data-toggle="wechat-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154m-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4m-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2M563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4m-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6m107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6"/></svg>
+</a><div class="dropdown-pane" id="wechat-dropdown" data-dropdown data-hover="true" data-hover-pane="true" data-hover-delay="0" data-position="top" data-alignment="center"><img width="150" height="150" src="https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="AGNTCon + MCPCon China We Chat QR" decoding="async" loading="lazy" srcset="https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat-150x150.jpg 150w, https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat-200x200.jpg 200w, https://www.lfopensource.cn/wp-content/uploads/2026/07/AGNTCon-MCPCon-China-WeChat.jpg 224w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div></li><li><a rel="noopener" title="X" target="_blank" href="https://x.com/AgenticAIFdn"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-24.52 -24.52 1248.04 1275.04"><path d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284zM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854z"/></svg>
+</a></li><li><a rel="noopener" title="Bluesky" target="_blank" href="https://bsky.app/profile/aaif.io"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="2.96 3.83 18.46 16.27"><path d="M7.20057 5.27426c-1.44899-1.13849-3.82948-1.96649-3.82948.7245 0 .56924.3105 4.55394.46575 5.22674.67275 2.2252 2.94973 2.7945 5.01972 2.484-3.57073.5692-4.50222 2.5874-2.53573 4.6057 3.72597 3.8812 5.38197-.9315 5.79597-2.1735l.1035-.2588.1035.2588c.414 1.242 2.07 6.0547 5.796 2.1735 1.9664-2.0183 1.0349-4.0365-2.5358-4.6057 2.07.3105 4.347-.2588 5.0197-2.484.1553-.6728.4658-4.6575.4658-5.22674 0-2.69099-2.3805-1.86299-3.8295-.7245-2.0182 1.50074-4.2435 4.60572-5.0197 6.26174-.7763-1.65602-3.00149-4.761-5.01973-6.26174z"/></svg></a></li><li><a rel="noopener" title="X" target="_blank" href="https://github.com/aaif"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-1.95 -1.95 101.4 99.78"><path fill-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a47 47 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0" clip-rule="evenodd"/></svg>
+</a></li><li><a rel="noopener" title="Linkedin" target="_blank" href="https://www.linkedin.com/company/agentic-ai-foundation/"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+</a></li><li><a rel="noopener" title="YouTube" target="_blank" href="https://www.youtube.com/@AgenticAI-Foundation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+</a></li></ul>				<div class="event-footer-logo-social__hashtag">
+					<p>#AGNTCon #MCPCon</p>
+				</div>
+							</div>
+		</div>
+		
+				<ul
+			class="event-footer-menu white">
+			<li class="page_item page-item-4110"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/register/">Register</a></li>
+	<li class="page_item page-item-4494"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/about/">About</a></li>
+	<li class="page_item page-item-4125"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/venue-travel/">Venue &amp; Travel</a></li>
+	<li class="page_item page-item-4142"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/health-safety/">Health &amp; Safety</a></li>
+	<li class="page_item page-item-4140"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/about-shanghai/">About Shanghai</a></li>
+	<li class="page_item page-item-4138"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/visa-letter-request/">Visa Letter Request</a></li>
+	<li class="page_item page-item-4136"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/travel-funding/">Travel Funding</a></li>
+	<li class="page_item page-item-4134"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/child-care/">Child Care</a></li>
+	<li class="page_item page-item-4132"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/inclusion-accessibility/">Inclusion &amp; Accessibility</a></li>
+	<li class="page_item page-item-4130"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/code-of-conduct/">Code of Conduct</a></li>
+	<li class="page_item page-item-5174"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/attend/see-whos-attending/">See Who&#039;s Attending</a></li>
+
+</li>
+<li class="page_item page-item-4120"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/sponsor/">Sponsor</a></li>
+	<li class="page_item page-item-4156"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/schedule/">Schedule</a></li>
+	<li class="page_item page-item-4146"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/featured-keynote-speakers/">Featured Keynote Speakers</a></li>
+	<li class="page_item page-item-3444"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/explore-the-tracks/">Explore the Tracks</a></li>
+	<li class="page_item page-item-5144"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/program-committee/">Program Committee</a></li>
+
+</li>
+	<li class="page_item page-item-5008"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/features-add-ons/model-context-protocol-associate-mcpa-certification/">Model Context Protocol Associate (MCPA) Certification</a></li>
+	<li class="page_item page-item-4388"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/features-add-ons/co-located-events/">Co-Located Events</a></li>
+
+</li>
+<li class="page_item page-item-4112"><a href="https://www.lfopensource.cn/mcp-dev-summit-shanghai/contact-us/">Contact Us</a></li>
+		</ul>
+				</div>
+</section>
+<footer
+	class="event-footer--legal">
+
+
+	<section class="lf-copyright container wrap">
+
+				<p>Copyright 2026 &copy; LF Open Source, LLC. | info@lfopensource.cn, icp license, no. <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener">京ICP备17074266号-8</a></p>
+			</section>
+
+	</footer>
+</div> <!-- end .site-container -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/lfevents/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="flying-scripts">const loadScriptsTimer=setTimeout(loadScripts,5*1000);const userInteractionEvents=['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){loadScripts();clearTimeout(loadScriptsTimer);userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}
+function loadScripts(){document.querySelectorAll("script[data-type='lazy']").forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-src"))})}</script>
+    <script id="flying-pages-js-before">
+window.FPConfig= {
+	delay: 0,
+	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg"],
+	maxRPS: 3,
+    hoverDelay: 50
+};
+//# sourceURL=flying-pages-js-before
+</script>
+<script id="flying-pages-js" defer src="https://www.lfopensource.cn/wp-content/plugins/flying-pages/flying-pages.min.js?ver=1787817520"></script>
+<script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"11.3.69"};
+//# sourceURL=leadin-script-loader-js-js-extra
+</script>
+<script async defer id='hs-script-loader' data-type="lazy" data-src="https://js.hs-scripts.com/8112310.js?integration=WordPress&#038;ver=1787817520"></script>
+<script id="foundation-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/dist/js/app.js?ver=1787817520"></script>
+<script id="responsive-table-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/src/js/libraries/restable.js?ver=1787817520"></script>
+<script id="responsive-table-code-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/dist/js/responsive-table.js?ver=1787817520"></script>
+<script id="lfe_china-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/dist/js/china.js?ver=1787817520"></script>
+<script id="modal-js" defer src="https://www.lfopensource.cn/wp-content/themes/lfevents/dist/js/modal.js?ver=1787817520"></script>
+<script id="leadin-forms-v2-js" defer data-type="lazy" data-src="https://js.hsforms.net/forms/embed/v2.js?ver=1787817520"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"fc29769e6a","applicationID":"202445557","transactionName":"ZgdRbUEHXUYHVRJbVl9NclpHD1xbSUUPXF5EDlJL","queueTime":0,"applicationTime":302,"atts":"SkBSGwkdTkg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

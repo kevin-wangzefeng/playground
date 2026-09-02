@@ -1,0 +1,8 @@
+/data/events/index.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/data/events/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,38 @@
+{
+  "source": {
+    "id": "agntcon-mcpcon",
+    "source_type": "web_page",
+    "url": "https://www.lfopensource.cn/mcp-dev-summit-shanghai/",
+    "event_name": "AGNTCon + MCPCon China",
+    "conference_name": "AGNTCon + MCPCon China",
+    "track_name": "main track",
+    "start_date": "2026-09-06",
+    "end_date": "2026-09-07",
+    "location": "Shanghai International Convention Center",
+    "source_name": "AGNTCon + MCPCon China official website"
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "151069",
+    "cache-control": "public, max-age=60, s-maxage=43200, stale-while-revalidate=86400, stale-if-error=604800",
+    "content-security-policy": "frame-ancestors 'self';",
+    "content-type": "text/html; charset=UTF-8",
+    "link": "<https://www.lfopensource.cn/?p=4108>; rel=shortlink",
+    "server": "nginx",
+    "strict-transport-security": "max-age=31622400; includeSubDomains; preload",
+    "x-frame-options": "SAMEORIGIN",
+    "x-pantheon-styx-hostname": "styx-us-a-55f5b7b84b-fd7jc",
+    "x-styx-req-id": "da61aea9-a286-11f1-b126-265f9f9acb90",
+    "age": "20318",
+    "accept-ranges": "bytes",
+    "via": "1.1 varnish, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+    "date": "Fri, 28 Aug 2026 07:57:48 GMT",
+    "x-served-by": "cache-chi-kigq8000063-CHI, cache-itm1220025-ITM, cache-itm1220058-ITM, cache-itm1220058-ITM",
+    "x-cache": "HIT, MISS, MISS, MISS",
+    "x-cache-hits": "1, 0, 0, 0",
+    "x-timer": "S1787903869.698678,VS0,VE159",
+    "vary": "Accept-Encoding, Cookie, Cookie"
+  },
+  "content_hash": "427e6a11e8591534f6b43177f246c29dc3f2670406acd48392484995b811755b",
+  "captured_at": "2026-08-28T07:57:26+00:00"
+}

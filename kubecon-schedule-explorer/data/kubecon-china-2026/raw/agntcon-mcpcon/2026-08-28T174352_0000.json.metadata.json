@@ -1,0 +1,35 @@
+{
+  "source": {
+    "id": "agntcon-mcpcon",
+    "source_type": "sessionize_api",
+    "url": "https://sessionize.com/api/v2/9ehg6kbz/view/All",
+    "source_url": "https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/schedule/",
+    "event_name": "AGNTCon + MCPCon China",
+    "conference_name": "AGNTCon + MCPCon China",
+    "detail_base_url": "https://mcp-dev-summit-shanghai-2026.sessionize.com",
+    "start_date": "2026-09-06",
+    "end_date": "2026-09-07",
+    "location": "Shanghai International Convention Center",
+    "organizer": "Agentic AI Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "official_colocated",
+    "source_name": "AGNTCon + MCPCon China official website"
+  },
+  "headers": {
+    "content-length": "110331",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 28 Aug 2026 17:43:57 GMT",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=240",
+    "expires": "Fri, 28 Aug 2026 17:47:57 GMT",
+    "last-modified": "Fri, 28 Aug 2026 17:43:57 GMT",
+    "set-cookie": "sessionize_settings=90=0b3dbd4d-29c1-44be-b704-052227ec5c48; expires=Sun, 28-Feb-2027 17:43:57 GMT; path=/; secure; HttpOnly",
+    "vary": "*",
+    "strict-transport-security": "max-age=31536000",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb"
+  },
+  "content_hash": "74326ece5c574ed17ccd0835ab68a8dba8f84ea57183b48c2840255d5b95d7b0",
+  "captured_at": "2026-08-28T17:43:52+00:00"
+}

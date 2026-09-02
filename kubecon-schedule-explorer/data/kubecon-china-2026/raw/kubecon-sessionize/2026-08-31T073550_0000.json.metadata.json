@@ -1,0 +1,37 @@
+{
+  "source": {
+    "event_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "conference_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-09",
+    "location": "Shanghai International Convention Center",
+    "timezone": "Asia/Shanghai",
+    "source_name": "Sessionize public schedule API",
+    "id": "kubecon-sessionize",
+    "source_type": "sessionize_api",
+    "url": "https://sessionize.com/api/v2/yo76vzdv/view/All",
+    "source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/",
+    "detail_url_template": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/?id={session_id}",
+    "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+    "organizer": "CNCF, OpenInfra Foundation, and PyTorch Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "primary_conference"
+  },
+  "headers": {
+    "content-length": "385423",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 31 Aug 2026 07:35:53 GMT",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=240",
+    "expires": "Mon, 31 Aug 2026 07:39:54 GMT",
+    "last-modified": "Mon, 31 Aug 2026 07:35:54 GMT",
+    "set-cookie": "sessionize_settings=90=97551797-c9df-4860-9c77-a830d392b753; expires=Sun, 28-Feb-2027 07:35:54 GMT; path=/; secure; HttpOnly",
+    "vary": "*",
+    "strict-transport-security": "max-age=31536000",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb"
+  },
+  "content_hash": "b48b1fc563be6154091f42fa5bbde00bbc3e384b18f2c777270367b02d89815f",
+  "captured_at": "2026-08-31T07:35:50+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "source": {
+    "id": "official-sponsor-hosted",
+    "source_type": "web_page",
+    "url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/co-located-events/sponsor-hosted-co-located-schedule/",
+    "event_name": "Sponsor-hosted Co-located Events",
+    "conference_name": "Sponsor-hosted Co-located Events",
+    "track_name": "main track",
+    "start_date": "2026-09-06",
+    "end_date": "2026-09-10",
+    "location": "Shanghai",
+    "source_name": "LF Open Source sponsor-hosted co-located schedule"
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "146448",
+    "cache-control": "public, max-age=60, s-maxage=43200, stale-while-revalidate=86400, stale-if-error=604800",
+    "content-security-policy": "frame-ancestors 'self';",
+    "content-type": "text/html; charset=UTF-8",
+    "link": "<https://www.lfopensource.cn/?p=3469>; rel=shortlink",
+    "server": "nginx",
+    "strict-transport-security": "max-age=31622400; includeSubDomains; preload",
+    "x-frame-options": "SAMEORIGIN",
+    "x-pantheon-styx-hostname": "styx-us-a-55f5b7b84b-4vkr7",
+    "x-styx-req-id": "2bea459a-a2b6-11f1-8dc7-42069d3f5114",
+    "age": "3996",
+    "accept-ranges": "bytes",
+    "via": "1.1 varnish, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+    "date": "Fri, 28 Aug 2026 09:04:29 GMT",
+    "x-served-by": "cache-chi-klot8100082-CHI, cache-itm1220043-ITM, cache-itm1220025-ITM, cache-itm1220025-ITM",
+    "x-cache": "MISS, HIT, MISS, MISS",
+    "x-cache-hits": "0, 0, 0, 0",
+    "x-timer": "S1787907870.557242,VS0,VE15",
+    "vary": "Accept-Encoding, Cookie, Cookie"
+  },
+  "content_hash": "b1ba3f8c417a75e8ac214ae40e75c1fd66c28dbf4d6d72e0cf7b7c9f02478022",
+  "captured_at": "2026-08-28T09:04:25+00:00"
+}

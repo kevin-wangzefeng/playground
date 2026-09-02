@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "slug": "kubecon-china-2026",
+  "display_name": "KubeCon + CloudNativeCon China 2026",
+  "default": true,
+  "official_urls": [
+    "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/"
+  ],
+  "keywords": ["KubeCon", "CloudNativeCon", "OpenInfra", "PyTorch", "AGNTCon", "MCPCon"],
+  "event_window": {
+    "start": "2026-09-06",
+    "end": "2026-09-10",
+    "city": "Shanghai",
+    "timezone": "Asia/Shanghai"
+  },
+  "sources": [
+    {
+      "id": "kubecon-sessionize",
+      "source_type": "sessionize_api",
+      "url": "https://sessionize.com/api/v2/yo76vzdv/view/All",
+      "source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/",
+      "style_source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/",
+      "detail_url_template": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/?id={session_id}",
+      "event_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+      "conference_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+      "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-09",
+      "location": "Shanghai International Convention Center",
+      "organizer": "CNCF, OpenInfra Foundation, and PyTorch Foundation",
+      "organizer_type": "foundation",
+      "relationship_strength": "primary_conference",
+      "source_name": "Sessionize public schedule API"
+    },
+    {
+      "id": "agntcon-mcpcon",
+      "source_type": "sessionize_api",
+      "url": "https://sessionize.com/api/v2/9ehg6kbz/view/All",
+      "source_url": "https://www.lfopensource.cn/mcp-dev-summit-shanghai/program/schedule/",
+      "event_name": "AGNTCon + MCPCon China",
+      "conference_name": "AGNTCon + MCPCon China",
+      "detail_base_url": "https://mcp-dev-summit-shanghai-2026.sessionize.com",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-07",
+      "location": "Shanghai International Convention Center",
+      "organizer": "Agentic AI Foundation",
+      "organizer_type": "foundation",
+      "relationship_strength": "official_colocated",
+      "source_name": "AGNTCon + MCPCon China official website"
+    },
+    {
+      "id": "official-sponsor-hosted",
+      "source_type": "sessionize_api",
+      "url": "https://sessionize.com/api/v2/dzxp7718/view/All",
+      "source_url": "https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/co-located-events/sponsor-hosted-co-located-schedule/",
+      "event_name": "Sponsor-hosted Co-located Events",
+      "conference_name": "Sponsor-hosted Co-located Events",
+      "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+      "event_type": "community_or_colocated",
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-07",
+      "location": "Shanghai",
+      "organizer": null,
+      "organizer_type": "sponsor_or_community",
+      "relationship_strength": "officially_listed",
+      "source_name": "LF Open Source sponsor-hosted co-located schedule"
+    }
+  ]
+}

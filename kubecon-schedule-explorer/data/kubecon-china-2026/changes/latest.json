@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-08-31T08:12:05+00:00",
+  "events": {
+    "inserted": 0,
+    "updated": 0,
+    "removed": 0
+  },
+  "sessions": {
+    "inserted": 0,
+    "updated": 127,
+    "removed": 0
+  },
+  "speakers": {
+    "inserted": 0,
+    "updated": 0,
+    "removed": 0
+  },
+  "sources_fetched": [
+    "kubecon-sessionize"
+  ],
+  "discovery_candidates": 0
+}

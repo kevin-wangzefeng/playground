@@ -1,0 +1,30 @@
+{
+  "source": {
+    "id": "kubecon-sessionize",
+    "source_type": "sessionize_api",
+    "url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com/api/schedule",
+    "event_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "conference_name": "KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026",
+    "detail_base_url": "https://kubecon-cloudnativecon-openinfra-pytorch-2026.sessionize.com",
+    "source_name": "Sessionize public schedule API"
+  },
+  "headers": {
+    "content-length": "270814",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 28 Aug 2026 07:57:28 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=5",
+    "expires": "Fri, 28 Aug 2026 07:57:34 GMT",
+    "last-modified": "Fri, 28 Aug 2026 07:57:29 GMT",
+    "set-cookie": "sessionize_settings=90=a2e48a0f-253c-4ddd-8691-385a554b8cad; expires=Sun, 28-Feb-2027 07:57:29 GMT; path=/; secure; HttpOnly",
+    "vary": "host,Accept-Encoding",
+    "strict-transport-security": "max-age=31536000",
+    "x-sz-datahash": "ac531c184703115ede41d50fcac7d5159812a18f",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb",
+    "x-powered-by": "ASP.NET"
+  },
+  "content_hash": "b5c134544b248a56a155981a78efbee31181a5e163847c4493a5b5793340fed5",
+  "captured_at": "2026-08-28T07:57:26+00:00"
+}

@@ -1,0 +1,248 @@
+{
+  "sessions": [
+    {
+      "id": "1312720",
+      "title": "Open Computing: Building Open Software for Diverse Hardware Hosted by FlagOS",
+      "description": "From September 7–9, 2026, KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China will be co-located in Shanghai, expected to draw over 1,000 developers, architects, and technical decision-makers, alongside 400+ participating companies. As a flagship co-located event, Open AI Computing: Building an Open-Source Software Ecosystem for Diverse Heterogeneous Hardware will be held on September 7. It's a high-caliber platform for AI framework developers, compiler and runtime researchers, open-source infrastructure builders, and hardware architects to exchange ideas.\r\n\r\n\r\nAI chip diversification is now an industry reality, yet a fragmented software stack ecosystem has become the critical bottleneck preventing compute from scaling into large-model and agent applications. Every new chip demands repeated porting of operators, compilers, and inference engines; every framework must independently contend with the long tail of multiple backends. In this multi-chip era, a unified AI system software stack is essential. FlagOS is an open-source AI system software stack for multi-chip scenarios, spanning a unified operator library, a multi-backend AI compiler, training and inference frameworks, a communication library and other core components. As the host of this event, the FlagOS community will bring together the most representative experts from Beijing Academy of Artificial Intelligence (BAAI), Shanghai AI Laboratory, PyTorch Foundation, vLLM, SGLang, NVIDIA,etc. to jointly explore the technical roadmaps and collaboration models of an open AI system software stack—showcasing new system software technologies that span multiple chip architectures, and discussing hardware–software co-optimization approaches across emerging AI chip architectures, open-source compilers and acceleration frameworks.\r\n\r\nFor questions regarding the event, please contact: contact@flagos.io \r\n\r\nRegistration will open by August 26, 2026.",
+      "startsAt": "2026-09-07T13:00:00",
+      "endsAt": "2026-09-07T17:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        503598
+      ],
+      "questionAnswers": [],
+      "roomId": 85688,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1312708",
+      "title": "AI Native Open Session Hosted by ETSI ISG NFV",
+      "description": "Please note that this is an off-site Sponsor-hosted Co-located event.\r\n\r\nLocation: Pudong Shangri-La, Shanghai\r\n\r\nCNCF has led the revolution of cloud native for the IT industry, and telecommunications have followed this direction since CNCF issued the definition of cloud native. Organizations like ETSI NFV ISG have aligned with CNCF’s flagship direction, and global telecom operators have deployed their 5G networks with a cloud‑native vision.\r\n\r\nWith the rapid growth of AI and agent technologies, cloud‑native platforms offer a scalable, reliable, and standardized foundation for modern applications. CNCF is proactively defining and leading the AI‑Native paradigm through open standards and projects, ensuring future software development efficiently leverages artificial intelligence at scale.\r\n\r\nETSI NFV ISG held the first AI‑Native Open Session at KubeCon + CloudNativeCon Europe 2026 and encouraged CNCF to continue leading this direction. On 7 September 2026, during KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch + AgntCon China 2026, ETSI NFV ISG will organize the 2nd AI Native Open Session, gathering global AI‑native leaders in Shanghai.\r\n\r\nETSI NFV ISG held the first AI native summit and encouraged CNCF to continue to lead ‘AI Native’ direction at Kubecon EU Amsterdam 2026.\r\n\r\nAttendance is free of charge.\r\n\r\nFor questions regarding the event, please contact: denghui02@hotmail.com",
+      "startsAt": "2026-09-07T13:30:00",
+      "endsAt": "2026-09-07T18:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        503598
+      ],
+      "questionAnswers": [],
+      "roomId": 88856,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1312719",
+      "title": "Hardware-Aware AI: Building PyTorch Workloads Across Accelerators Hosted by Huawei",
+      "description": "Driven by the vigorous growth of diverse computing resources, AI workloads are required to run seamlessly on a wide range of heterogeneous accelerators such as GPUs, NPUs and XPUs. Centered on hardware‑aware AI, this forum focuses on building the cross‑accelerator ecosystem for PyTorch. It shares hands‑on industry practices covering framework‑level adaptation, operator implementation, compiler co‑optimization, workload migration and performance tuning, and jointly explores the practical challenges and future technical pathways for integrating domestic heterogeneous computing into the upstream PyTorch community.\r\n\r\nFor questions regarding the event, please contact: zesheng.zong@outlook.com \r\n\r\nRegistration will open by August 26, 2026",
+      "startsAt": "2026-09-07T14:00:00",
+      "endsAt": "2026-09-07T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        503598
+      ],
+      "questionAnswers": [],
+      "roomId": 80137,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    }
+  ],
+  "speakers": [],
+  "questions": [],
+  "categories": [
+    {
+      "id": 123901,
+      "title": "All Sessions",
+      "items": [
+        {
+          "id": 447046,
+          "name": "AI + ML + Agentic AI + Data Systems",
+          "sort": 1
+        },
+        {
+          "id": 447047,
+          "name": "AI Infrastructure + Accelerators + Performance Engineering",
+          "sort": 2
+        },
+        {
+          "id": 447048,
+          "name": "Platform Engineering + Cloud Native Architecture",
+          "sort": 3
+        },
+        {
+          "id": 447049,
+          "name": "Application Development + Developer Experience",
+          "sort": 4
+        },
+        {
+          "id": 447050,
+          "name": "Operations + Observability + Reliability",
+          "sort": 5
+        },
+        {
+          "id": 447051,
+          "name": "Security + Privacy + Trusted Computing",
+          "sort": 6
+        },
+        {
+          "id": 447052,
+          "name": "Networking + Edge + Distributed Systems",
+          "sort": 7
+        },
+        {
+          "id": 447053,
+          "name": "Cloud Infrastructure + Virtualization + Storage",
+          "sort": 8
+        },
+        {
+          "id": 447054,
+          "name": "Emerging Technologies + Research + Advanced Topics",
+          "sort": 9
+        },
+        {
+          "id": 447055,
+          "name": "Community + Open Source + Getting Started",
+          "sort": 10
+        },
+        {
+          "id": 447056,
+          "name": "Hardware Enablement + Diversification",
+          "sort": 11
+        },
+        {
+          "id": 482870,
+          "name": "Keynote Sessions",
+          "sort": 12
+        },
+        {
+          "id": 485106,
+          "name": "Breaks",
+          "sort": 13
+        },
+        {
+          "id": 485107,
+          "name": "Registration + Badge Pick-up",
+          "sort": 14
+        },
+        {
+          "id": 485108,
+          "name": "Maintainer Track",
+          "sort": 15
+        },
+        {
+          "id": 485109,
+          "name": "Project Opportunities",
+          "sort": 16
+        },
+        {
+          "id": 485110,
+          "name": "Solutions Showcase",
+          "sort": 17
+        },
+        {
+          "id": 485111,
+          "name": "Experiences",
+          "sort": 18
+        },
+        {
+          "id": 485112,
+          "name": "⚡Lightning Talks",
+          "sort": 19
+        },
+        {
+          "id": 485113,
+          "name": "📚 Tutorials",
+          "sort": 20
+        },
+        {
+          "id": 500857,
+          "name": "Sponsor Demos",
+          "sort": 21
+        },
+        {
+          "id": 502427,
+          "name": "CNCF-Hosted Co-located Events",
+          "sort": 22
+        },
+        {
+          "id": 503598,
+          "name": "Sponsor-hosted Co-located Events",
+          "sort": 23
+        }
+      ],
+      "sort": 5,
+      "type": "session"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 80134,
+      "name": "Mandarin Hall I",
+      "sort": 0
+    },
+    {
+      "id": 80135,
+      "name": "Mandarin Hall II",
+      "sort": 1
+    },
+    {
+      "id": 80136,
+      "name": "Grand Ballroom II + III",
+      "sort": 2
+    },
+    {
+      "id": 80137,
+      "name": "Pearl Hall",
+      "sort": 3
+    },
+    {
+      "id": 85688,
+      "name": "5B + C",
+      "sort": 4
+    },
+    {
+      "id": 85877,
+      "name": "1F Foyer",
+      "sort": 5
+    },
+    {
+      "id": 85878,
+      "name": "Grand Ballroom I",
+      "sort": 6
+    },
+    {
+      "id": 87761,
+      "name": "5D + E",
+      "sort": 7
+    },
+    {
+      "id": 88309,
+      "name": "7F Foyer",
+      "sort": 8
+    },
+    {
+      "id": 88631,
+      "name": "Jiu Zhou Hall",
+      "sort": 9
+    },
+    {
+      "id": 88856,
+      "name": "Off-Site Location",
+      "sort": 10
+    }
+  ]
+}
