@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T08:12:08+00:00",
+  "generated_at": "2026-09-02T17:14:19+00:00",
   "events": [
     {
       "slug": "kubecon-china-2026",
@@ -10,6 +10,16 @@
       "timezone": "Asia/Shanghai",
       "default": true,
       "data_url": "/data/events/kubecon-china-2026/schedule.json"
+    },
+    {
+      "slug": "kubecon-north-america-2026",
+      "display_name": "KubeCon + CloudNativeCon North America 2026",
+      "location": "Salt Palace Convention Center",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-12",
+      "timezone": "America/Denver",
+      "default": false,
+      "data_url": "/data/events/kubecon-north-america-2026/schedule.json"
     }
   ]
 }

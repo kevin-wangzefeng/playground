@@ -181,7 +181,7 @@ h3 {
   border-radius: 10px;
   background: var(--paper);
 }
-.calendar-filter-heading {
+.filter-strip-heading {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -252,22 +252,6 @@ h3 {
   background: var(--paper);
   box-shadow: 0 12px 30px #1a3b540c;
 }
-.list-filters {
-  position: sticky;
-  top: 12px;
-  align-self: start;
-  max-height: calc(100vh - 24px);
-  overflow: auto;
-  background: #fbfcfd;
-}
-.list-filters .filter-grid {
-  display: block;
-  border-top: 0;
-}
-.list-filters .filter-group {
-  border-right: 0;
-}
-.filter-heading,
 .list-heading {
   display: flex;
   align-items: center;
@@ -276,13 +260,8 @@ h3 {
   padding: 0 18px;
   border-bottom: 1px solid var(--line);
 }
-.filter-heading h2,
 .list-heading h2 {
   margin: 0;
-}
-.filter-heading span {
-  color: var(--muted);
-  font-size: 12px;
 }
 .resize-handle {
   position: relative;
@@ -843,12 +822,12 @@ h3 {
 }
 @media (max-width: 1100px) {
   .list-workspace {
-    grid-template-columns: 220px 8px minmax(350px, 1fr) !important;
+    grid-template-columns: minmax(350px, 1fr) !important;
   }
   .list-details {
     display: none;
   }
-  .list-workspace > .resize-handle:last-of-type {
+  .list-workspace > .resize-handle {
     display: none;
   }
   .detail-backdrop {
@@ -905,7 +884,6 @@ h3 {
   .list-workspace {
     display: block;
   }
-  .list-filters,
   .resize-handle {
     display: none !important;
   }

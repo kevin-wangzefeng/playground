@@ -272,6 +272,7 @@ def normalize_sessionize(source: dict[str, Any], schedule: dict[str, Any], captu
         track_name = choose_track(category_ids, item_names, item_categories)
         sessions.append({
             "session_id": f"{source['id']}:{raw['id']}",
+            "source_session_id": str(raw["id"]),
             "event_id": event_id,
             "event_name": source["event_name"],
             "conference_name": source["conference_name"],
@@ -301,6 +302,31 @@ def normalize_sessionize(source: dict[str, Any], schedule: dict[str, Any], captu
             "captured_at": captured_at
         })
     return list(events.values()), sessions, list(speaker_records.values())
+
+
+def deduplicate_sessions(sessions: list[dict[str, Any]], sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep the highest-priority copy of explicitly configured duplicate Sessionize sessions."""
+    priorities = {
+        source["id"]: source["session_deduplication_priority"]
+        for source in sources
+        if "session_deduplication_priority" in source
+    }
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for session in sessions:
+        if session["event_id"] not in priorities:
+            continue
+        grouped.setdefault(session["source_session_id"], []).append(session)
+
+    discarded_ids: set[str] = set()
+    for copies in grouped.values():
+        if len(copies) < 2:
+            continue
+        highest_priority = max(priorities[copy["event_id"]] for copy in copies)
+        winners = [copy for copy in copies if priorities[copy["event_id"]] == highest_priority]
+        # Equal priority means the manifest has not expressed a safe preference.
+        if len(winners) == 1:
+            discarded_ids.update(copy["session_id"] for copy in copies if copy is not winners[0])
+    return [session for session in sessions if session["session_id"] not in discarded_ids]
 
 
 def normalize_web_page(source: dict[str, Any], captured_at: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
@@ -520,6 +546,7 @@ def main() -> int:
         all_events.extend(events)
         all_sessions.extend(sessions)
         all_speakers.extend(speakers)
+    all_sessions = deduplicate_sessions(all_sessions, selected)
     connection = sqlite3.connect(paths["database"])
     try:
         initialize_database(connection)

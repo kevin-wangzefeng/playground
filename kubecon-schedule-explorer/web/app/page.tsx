@@ -69,7 +69,7 @@ type View = "list" | "calendar";
 type CalendarMode = "rooms" | "tracks";
 type CalendarDensity = "standard" | "tall";
 type LaneSession = { session: Session; lane: number; laneCount: number };
-type ListWidths = { filters: number; details: number };
+type ListWidths = { details: number };
 type TimeWindow = { start: number; end: number };
 type TimeWindowDrag = {
   mode: "start" | "end" | "move";
@@ -375,14 +375,18 @@ export function ScheduleExplorer({
   const [expandedRooms, setExpandedRooms] = useState<Set<string>>(new Set());
   const [expandedTracks, setExpandedTracks] = useState<Set<string>>(new Set());
   const [widths, setWidths] = useState<ListWidths>(() => {
-    if (typeof window === "undefined") return { filters: 250, details: 420 };
+    if (typeof window === "undefined") return { details: 420 };
     try {
-      return JSON.parse(
+      const stored = JSON.parse(
         localStorage.getItem("schedule-list-widths") ??
-          '{"filters":250,"details":420}',
-      ) as ListWidths;
+          '{"details":420}',
+      ) as Partial<ListWidths>;
+      return {
+        details:
+          typeof stored.details === "number" ? stored.details : 420,
+      };
     } catch {
-      return { filters: 250, details: 420 };
+      return { details: 420 };
     }
   });
 
@@ -540,24 +544,20 @@ export function ScheduleExplorer({
     window.history.replaceState({}, "", url);
   }
   function resize(
-    kind: "filters" | "details",
+    kind: "details",
     event: React.PointerEvent<HTMLButtonElement>,
   ) {
     event.preventDefault();
     const startX = event.clientX;
     const start = widths[kind];
-    const sign = kind === "filters" ? 1 : -1;
     let finalWidths = widths;
     const move = (pointer: PointerEvent) =>
       setWidths((current) => {
         finalWidths = {
           ...current,
-          [kind]: Math.max(
-            kind === "filters" ? 180 : 300,
-            Math.min(
-              kind === "filters" ? 420 : 700,
-              start + (pointer.clientX - startX) * sign,
-            ),
+          details: Math.max(
+            300,
+            Math.min(700, start - (pointer.clientX - startX)),
           ),
         };
         return finalWidths;
@@ -1111,35 +1111,19 @@ export function ScheduleExplorer({
           {results.length} matching sessions · {timezone}
         </span>
       </section>
-      {view === "calendar" ? (
-        <div className="filter-strip">
-          <div className="calendar-filter-heading">
-            Filters {activeCount ? `(${activeCount})` : ""}
-          </div>
-          {filterContent(true)}
+      <div className="filter-strip">
+        <div className="filter-strip-heading">
+          Filters {activeCount ? `(${activeCount})` : ""}
         </div>
-      ) : null}
+        {filterContent(true)}
+      </div>
       {view === "list" ? (
         <section
           className="list-workspace"
           style={{
-            gridTemplateColumns: `${widths.filters}px 8px minmax(360px, 1fr) 8px ${widths.details}px`,
+            gridTemplateColumns: `minmax(360px, 1fr) 8px ${widths.details}px`,
           }}
         >
-          <aside className="list-filters">
-            <div className="filter-heading">
-              <h2>Filters</h2>
-              <span>
-                {activeCount ? `${activeCount} selected` : "All sessions"}
-              </span>
-            </div>
-            {filterContent()}
-          </aside>
-          <button
-            className="resize-handle"
-            aria-label="Resize filters"
-            onPointerDown={(event) => resize("filters", event)}
-          />
           <section className="session-list">
             <div className="list-heading">
               <h2>{results.length} matching sessions</h2>

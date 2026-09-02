@@ -1,0 +1,39 @@
+{
+  "source": {
+    "event_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+    "conference_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-09",
+    "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+    "timezone": "America/Denver",
+    "source_name": "CNCF-hosted co-located events official Sessionize schedule",
+    "id": "cncf-hosted-colocated-na",
+    "source_type": "sessionize_api",
+    "url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com/api/schedule",
+    "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cncf-hosted-co-located-schedule/",
+    "detail_base_url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com",
+    "event_type": "community_or_colocated",
+    "organizer": "Cloud Native Computing Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "official_colocated"
+  },
+  "headers": {
+    "content-length": "472587",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 02 Sep 2026 16:43:10 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=5",
+    "expires": "Wed, 02 Sep 2026 16:43:15 GMT",
+    "last-modified": "Wed, 02 Sep 2026 16:43:10 GMT",
+    "set-cookie": "sessionize_settings=90=7681493d-2fcb-4a64-9f49-6cae4b673f78; expires=Tue, 02-Mar-2027 16:43:10 GMT; path=/; secure; HttpOnly",
+    "vary": "host,Accept-Encoding",
+    "strict-transport-security": "max-age=31536000",
+    "x-sz-datahash": "bad8bc38238998fe30118f85d5711d601dc78e7c",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb",
+    "x-powered-by": "ASP.NET"
+  },
+  "content_hash": "b3dca08c6e8da8f84f03dc700de3b2f72dad7791cf429dff9e7d575694b3f287",
+  "captured_at": "2026-09-02T16:43:01+00:00"
+}

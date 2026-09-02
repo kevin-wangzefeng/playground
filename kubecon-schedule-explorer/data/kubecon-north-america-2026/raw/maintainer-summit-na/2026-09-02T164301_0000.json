@@ -1,0 +1,2017 @@
+{
+  "sessions": [
+    {
+      "id": "1318418",
+      "title": "Registration + Badge Pick-up",
+      "description": null,
+      "startsAt": "2026-11-08T08:00:00",
+      "endsAt": "2026-11-08T17:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505300
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 139498,
+          "answerValue": "https://www.google.com/maps/d/edit?mid=17D29-f7uLLhY9xe5G6HcK0yByoRPMOs&ll=40.76530435558402%2C-111.89561170388541&z=20"
+        }
+      ],
+      "roomId": 89291,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318419",
+      "title": "Coat + Bag Check",
+      "description": null,
+      "startsAt": "2026-11-08T08:00:00",
+      "endsAt": "2026-11-08T18:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505300
+      ],
+      "questionAnswers": [],
+      "roomId": 89290,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318416",
+      "title": "Coffee + Networking",
+      "description": null,
+      "startsAt": "2026-11-08T08:15:00",
+      "endsAt": "2026-11-08T09:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89293,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318410",
+      "title": "Keynote: Opening Remarks",
+      "description": null,
+      "startsAt": "2026-11-08T09:00:00",
+      "endsAt": "2026-11-08T09:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2b2add40-e4d0-4686-b135-a90532540cb7",
+        "42e06dea-6eb3-40b1-832a-9301671fed82",
+        "df955802-af3a-4eb9-9b36-1f94aabd9328"
+      ],
+      "categoryItems": [
+        505298
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318411",
+      "title": "Keynote: Session To Be Announced",
+      "description": null,
+      "startsAt": "2026-11-08T09:15:00",
+      "endsAt": "2026-11-08T09:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0f2bd339-765f-41cf-86b4-7b845eb07052",
+        "7183f972-9602-48c2-80ce-9bdac7d70c36"
+      ],
+      "categoryItems": [
+        505298
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1267342",
+      "title": "Keynote: Learning to Let Go as an Open Source Maintainer",
+      "description": "Congratulations: you're officially an open source maintainer! But once the excitement fades, reality hits. You aren’t just writing code anymore; you’re triaging issues, managing community expectations, and protecting project stability. It’s an entirely different job.\r\n\r\nThis talk is a survival guide for making the leap from \"PR author\" to \"project steward\" without losing your mind along the way.\r\n\r\nYou'll learn how to navigate the psychological leap from writing code to reviewing, steering, and mentoring, how to graciously reject out-of-scope features while keeping contributors engaged, and practical tactics to protect your limited time. \r\n\r\nWhether you just got maintainer rights or are aiming for them, you'll leave with actionable strategies to sustain your project and your sanity.",
+      "startsAt": "2026-11-08T09:30:00",
+      "endsAt": "2026-11-08T09:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "72603dee-57ad-45ed-b99b-362e314abd05",
+        "0bab4841-8e90-4d40-8295-80b7a116918e"
+      ],
+      "categoryItems": [
+        505298
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1318412",
+      "title": "Break",
+      "description": null,
+      "startsAt": "2026-11-08T09:45:00",
+      "endsAt": "2026-11-08T10:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89293,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1290687",
+      "title": "Reviewing AI-Generated PRs When Every Bug Is a CVE: Envoy's Playbook",
+      "description": "Envoy sits in the request path of much of the internet. A bug that slips through review can become a CVE with a coordinated disclosure, an embargo, and patch releases across supported versions. That math changed when AI-generated pull requests arrived. They look polished, they compile, they pass CI, and they are wrong in ways human contributions rarely are.\r\n\r\nThis talk shares the review playbook Envoy maintainers built in response. We cover the failure patterns we see in AI-written changes, how we adjusted reviewer expectations without banning AI outright, the signals that separate a careful contributor using AI from drive-by slop, and how our security team treats these changes in sensitive code paths like parsers and filters.\r\n\r\nAttendees leave with a review checklist, contributor policy language they can copy, and real numbers on what this costs maintainer time. Every lesson applies to any project where a bad merge has consequences beyond a revert.",
+      "startsAt": "2026-11-08T10:15:00",
+      "endsAt": "2026-11-08T10:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "6ddf7b4d-d365-4fe9-956f-aa66e1681707",
+        "06422133-31f6-4bfe-b039-07b688511d46"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1290421",
+      "title": "Health Check Hell: A Call to Standardize CRD Health Across the Ecosystem",
+      "description": "After 10 years of Kubernetes, maintainers across the ecosystem still independently answer the same question: is this resource healthy? Every CRD defines status, conditions, and readiness differently, so every tool - Argo CD, Flux, kubectl plugins, dashboards, CI/CD systems - ends up reimplementing health interpretation for the same resources, causing duplicated work, inconsistent behavior, and operational drift.\r\n\r\nThis session is a working discussion. Together, we'll explore what a shared specification for CRD health and readiness could look like, building on efforts such as kstatus. We'll discuss how conformance should be achieved: through a shared library, independent implementations against a common specification and conformance suite, or another approach. The goal is to reach consensus on whether this is worth pursuing formally, for example through a CNCF Sandbox project or working group, and who's willing to help drive it.",
+      "startsAt": "2026-11-08T10:15:00",
+      "endsAt": "2026-11-08T10:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "5cc7c134-e804-439f-a1a3-01317315816f",
+        "8ede12d4-12f1-4e7b-af7e-488e307091af"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1286718",
+      "title": "What the TAGs Are Building and How Maintainers Plug In",
+      "description": "TAGs are where cross-project initiatives, shared practices, and maturity guidance get built, and that work is a collaboration with maintainers rather than something separate from them.\r\nThis panel brings one representative from each of the five TAGs onto one stage to show what each group is working on right now and, concretely, how a maintainer plugs in. This session treats the relationship as a two-way street: how maintainers join initiatives that shape industry-wide practices in their domain, how TAG output such as guidance, assessments, landscape analyses, and best practices helps a project mature as it moves from sandbox to incubating to graduated, and how a problem that several projects share can become a new initiative. Instead of five status updates, we want to share five real collaboration paths.\r\nAttendees leave knowing which initiatives are relevant to their project, how to join or start one, and how TAG expertise feeds the project journey across maturity levels.",
+      "startsAt": "2026-11-08T10:15:00",
+      "endsAt": "2026-11-08T10:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "3c02a7bf-40b4-41b4-8b43-2de3be4b093c",
+        "58b969cb-a81d-4982-b9fc-fbd505ad62fa",
+        "5cc0c60c-5600-4e1f-bc5e-4907e7e3eb74",
+        "8469681d-3827-40aa-b160-ab8fd49e0415",
+        "245b7436-992d-4ec4-bab5-21b966994e65"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1290688",
+      "title": "Handling Vulnerability Reports in the Age of AI-Generated Submissions",
+      "description": "The AI boom created a distinct operational challenge for open source security. Instead of uncovering hidden zero day exploits, automated scanners frequently flood maintainers with perfectly formatted, technically accurate reports that completely ignore the project threat model.\r\n\r\nThis talk provides a realistic look at how the Kubernetes Security Response Committee (SRC) handles the modern vulnerability gold rush. We will explore the heavy triage tax caused by AI submissions and how we counter it using radical pragmatism. Attendees will learn how we partner with HackerOne to enforce strict threat model rubrics, managing waves of duplicate reports without burning out maintainers. We will also detail our internal OPSEC practices, specifically why the SRC relies on simple, local, air gapped LLMs to safely process embargoed vulnerability data.",
+      "startsAt": "2026-11-08T11:00:00",
+      "endsAt": "2026-11-08T11:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0bf505f2-9a5e-48b4-85d6-84d2cb90c7f3",
+        "fc0c71de-923a-4e27-b798-45605c2be92e"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": false
+    },
+    {
+      "id": "1290321",
+      "title": "Source Control Is Not Enough: Owning the Distribution Path",
+      "description": "CNCF has a well-established model for source-code stewardship. But once a release is cut, many projects hand critical parts of their relationship with users to infrastructure they do not control.\r\n\r\nImages, charts, and other artifacts are published through a patchwork of vendor-operated registries. Once registry addresses appear in manifests, policies, mirrors, and downstream products, changing them becomes an ecosystem-wide operation.\r\n\r\nThis talk examines distribution as an overlooked part of open source governance. The distribution channel defines an artifact’s canonical identity, availability, retention, and trust metadata. It also determines whether a project can change providers without disrupting users.\r\n\r\nDrawing on our experience as Harbor maintainers, we will give maintainers a framework for deciding which parts of the distribution path must remain under project or foundation control, which can be delegated, and where CNCF may need a shared strategy.",
+      "startsAt": "2026-11-08T11:00:00",
+      "endsAt": "2026-11-08T11:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "c362f727-6d5b-406f-b3ab-88e2e50d73ea"
+      ],
+      "categoryItems": [
+        483202
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1318468",
+      "title": "TAG Workshop [80 minutes]",
+      "description": null,
+      "startsAt": "2026-11-08T11:00:00",
+      "endsAt": "2026-11-08T12:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505302
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1292147",
+      "title": "Agentic SDLC for Open Source Projects: What Maintainers Need to Know",
+      "description": "AI coding agents are changing how software gets built — but what does that mean for open source maintainers? This talk shares practical lessons from integrating agentic AI into real CNCF project workflows: due diligence evaluation, project health monitoring, adopter interviews, and governance reviews.\r\n\r\nWe'll cover three things every maintainer needs to understand: skills (structured, composable units of agent work), evals (how you know an agent's output is correct before it ships), and observability (how you monitor agent behavior the same way you monitor your services).\r\n\r\nMaintainers are already dealing with AI-generated PRs, bot-authored commits, and agent-driven reviews. We'll share patterns for integrating agents into your own project workflows: CI/CD, issue triage, release management, documentation, and the eval and observability infrastructure that makes them trustworthy rather than risky.\r\n\r\nConcrete examples from both TOC governance workflows and CNCF project adoption patterns.",
+      "startsAt": "2026-11-08T11:45:00",
+      "endsAt": "2026-11-08T12:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "f081c79e-a563-49e9-a25b-634058cc046e",
+        "f6c9e874-fe51-4a29-a732-fc078cb33c3b"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": false
+    },
+    {
+      "id": "1290737",
+      "title": "Contributing to CNCF Project Reviews: A Practical Guide for Community Members",
+      "description": "CNCF project reviews are essential for helping open source projects improve quality, sustainability, security, and overall maturity. Yet many community members are interested in contributing to these reviews and do not know where to start.\r\n\r\nIn this interactive session, we will explore the CNCF project review assets and discuss how contributors can participate in evaluating and strengthening projects across the cloud native ecosystem. We will cover Governance Reviews, Technical Reviews, General Technical Reviews, and Security Reviews, explaining their purpose, structure, and role in supporting projects through Sandbox, Incubation, and Graduation.\r\n\r\nThe session will also gather community feedback on existing documentation and processes, identify opportunities for improvement, and discuss how to make participation more accessible for reviewers and maintainers. Attendees will gain practical insights into one of the key mechanisms that supports CNCF project maturity and ecosystem health.",
+      "startsAt": "2026-11-08T11:45:00",
+      "endsAt": "2026-11-08T12:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "5cc0c60c-5600-4e1f-bc5e-4907e7e3eb74",
+        "245b7436-992d-4ec4-bab5-21b966994e65",
+        "cfb4aac7-6b65-4928-8c73-44539e0146f7"
+      ],
+      "categoryItems": [
+        483201
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1318414",
+      "title": "Lunch",
+      "description": null,
+      "startsAt": "2026-11-08T12:20:00",
+      "endsAt": "2026-11-08T13:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89292,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1284587",
+      "title": "Steering the Ship: Ask the Kubernetes Steering Committee",
+      "description": "Kubernetes is the second largest open source project in the world, and its future is driven by an elected committee of seven people serving two-year terms. Especially in a project of our size, it’s important to work publicly and in the open, so join us for an open-format interactive session with representatives of the Kubernetes Steering Committee. Bring your questions about project governance, the future of Kubernetes, how you can get involved (or more involved!), or anything else you can think of that we might be able to help you with. A form will be provided to ask questions anonymously.",
+      "startsAt": "2026-11-08T13:35:00",
+      "endsAt": "2026-11-08T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "58a91e8e-bcd3-4748-991f-c4ea35df823b",
+        "6d808fb9-6635-49ee-aca2-7e57b02752ee",
+        "dd481bd7-e625-4e56-a76b-4baa54d457a5",
+        "585aee7d-55fc-4411-b570-97a69f90628f"
+      ],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318472",
+      "title": "Session To Be Announced",
+      "description": null,
+      "startsAt": "2026-11-08T13:35:00",
+      "endsAt": "2026-11-08T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483203
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318474",
+      "title": "Unconference Session 1",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T13:35:00",
+      "endsAt": "2026-11-08T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318422",
+      "title": "Project Meeting | Gateway API",
+      "description": "SIG-Network Gateway API subproject meeting \r\n\r\nJoin us to discuss the future of Gateway API, next needs, what is going on, how you can help.",
+      "startsAt": "2026-11-08T13:35:00",
+      "endsAt": "2026-11-08T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483204
+      ],
+      "questionAnswers": [],
+      "roomId": 85583,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318421",
+      "title": "Project Meeting | Karmada",
+      "description": "The Karmada maintainers and contributors will gather for a focused project meeting to discuss upcoming features, roadmap priorities, and community collaboration initiatives.\r\n\r\nMeeting Agenda:\r\n\r\n- Release Planning: Discuss the next major release timeline, feature priorities, and breaking changes\r\n- Architecture Discussions: Review proposed enhancements to multi-cluster scheduling and workload distribution\r\n- Community Growth: Strategies for expanding contributor base and improving documentation\r\n- Technical Challenges: Address current issues in cluster federation and resource propagation\r\n- Cross-Project Collaboration: Explore integration opportunities with other CNCF projects\r\n\r\nThis face-to-face meeting provides a valuable opportunity for the Karmada community to align on technical direction, resolve blockers, and strengthen collaboration among distributed team members.\r\n",
+      "startsAt": "2026-11-08T13:35:00",
+      "endsAt": "2026-11-08T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483204
+      ],
+      "questionAnswers": [],
+      "roomId": 89172,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318479",
+      "title": "Unconference Session 2",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T14:20:00",
+      "endsAt": "2026-11-08T14:55:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318476",
+      "title": "Unconference Session 3",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T14:20:00",
+      "endsAt": "2026-11-08T14:55:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318475",
+      "title": "  Unconference Session 4",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T14:20:00",
+      "endsAt": "2026-11-08T14:55:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318423",
+      "title": "Project Meeting | SIG-etcd",
+      "description": "Live SIG-etcd community meeting, at which we will work on etcd 3.8 planning and deliverables, as well as subprojects like benchmarking.",
+      "startsAt": "2026-11-08T14:20:00",
+      "endsAt": "2026-11-08T14:55:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483204
+      ],
+      "questionAnswers": [],
+      "roomId": 85583,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318482",
+      "title": "Unconference Session 5",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T15:05:00",
+      "endsAt": "2026-11-08T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318481",
+      "title": "Unconference Session 6",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T15:05:00",
+      "endsAt": "2026-11-08T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318480",
+      "title": "Unconference Session 7",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T15:05:00",
+      "endsAt": "2026-11-08T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318424",
+      "title": "Project Meeting | OpenTelemetry",
+      "description": "This meeting is for OpenTelemetry Maintainers and the Governance and Technical Committees to attend, plan, and discuss OpenTelemetry initiatives, roadmap and community growth.\r\n",
+      "startsAt": "2026-11-08T15:05:00",
+      "endsAt": "2026-11-08T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483204
+      ],
+      "questionAnswers": [],
+      "roomId": 85583,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318413",
+      "title": "Break",
+      "description": null,
+      "startsAt": "2026-11-08T15:40:00",
+      "endsAt": "2026-11-08T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89293,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318486",
+      "title": "Unconference Session 8",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T16:00:00",
+      "endsAt": "2026-11-08T16:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318484",
+      "title": "Unconference Session 9",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T16:00:00",
+      "endsAt": "2026-11-08T16:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85581,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318483",
+      "title": "Unconference Session 10",
+      "description": "Got an idea for a session? Submit your topic or upvote existing ones that catch your eye. The Summit co-chairs and CNCF Projects Team will make decisions about which sessions to add to the schedule midday during the Summit, based on community votes.\r\n\r\nTopic submission and voting details will be shared closer to the event.",
+      "startsAt": "2026-11-08T16:00:00",
+      "endsAt": "2026-11-08T16:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505301
+      ],
+      "questionAnswers": [],
+      "roomId": 85582,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318426",
+      "title": "Project Meeting | KubeVirt",
+      "description": "KubeVirt Project Meetiing",
+      "startsAt": "2026-11-08T16:00:00",
+      "endsAt": "2026-11-08T16:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        483204
+      ],
+      "questionAnswers": [],
+      "roomId": 85583,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318499",
+      "title": "Keynote: Closing Remarks & Awards",
+      "description": null,
+      "startsAt": "2026-11-08T16:45:00",
+      "endsAt": "2026-11-08T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505298
+      ],
+      "questionAnswers": [],
+      "roomId": 85580,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318415",
+      "title": "Group Photo",
+      "description": null,
+      "startsAt": "2026-11-08T17:15:00",
+      "endsAt": "2026-11-08T17:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89293,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1318417",
+      "title": "Reception",
+      "description": null,
+      "startsAt": "2026-11-08T17:30:00",
+      "endsAt": "2026-11-08T20:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        505299
+      ],
+      "questionAnswers": [],
+      "roomId": 89294,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    }
+  ],
+  "speakers": [
+    {
+      "id": "72603dee-57ad-45ed-b99b-362e314abd05",
+      "firstName": "Alexander",
+      "lastName": "Perlman",
+      "bio": "Alexander Perlman is a senior lead software engineer at Capital One's Machine Learning Experience organization. His areas of focus include distributed compute and workflow orchestration. He lives in the NYC metro area (aka NJ and ashamed) with his wife and three young children. He believes that the correct pronunciation of \"kubectl\" is \"kube-control,\" not \"kube-cuddle.\"",
+      "tagLine": "Senior Lead Software Engineer @ Capital One",
+      "profilePicture": "https://cdn.sessionize.com/image/a2d5-400o400o1-EbFdwgggNNVQAjD9SSoBbq.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexander-perlman-a396a654/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.capitalone.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1267342
+      ],
+      "fullName": "Alexander Perlman",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Capital One"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Distinguished Engineer"
+        }
+      ]
+    },
+    {
+      "id": "cfb4aac7-6b65-4928-8c73-44539e0146f7",
+      "firstName": "Brandt",
+      "lastName": "Keller",
+      "bio": "As a member of the CNCF Technical Oversight Committee, Brandt helps support the technical stewardship and long-term health of the cloud native ecosystem. He is a Staff Software Engineer with a passion for open source, a Cloud Native Ambassador, and a maintainer of the Zarf project within OpenSSF. His work focuses on open source security, cloud native delivery, and producing practical guidance that helps end users adopt secure, resilient platforms.",
+      "tagLine": "CNCF TOC | Staff Software Engineer | OpenSSF Maintainer",
+      "profilePicture": "https://cdn.sessionize.com/image/8c78-400o400o1-R1bUnS2R1cWTuARaMT81Nt.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/brandtkeller/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://brandtkeller.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.defenseunicorns.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/brandt-keller",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1290737
+      ],
+      "fullName": "Brandt Keller",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Defense Unicorns"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "OSS Maintainer"
+        }
+      ]
+    },
+    {
+      "id": "5cc0c60c-5600-4e1f-bc5e-4907e7e3eb74",
+      "firstName": "Carol",
+      "lastName": "Valencia",
+      "bio": "Carol is a Cloud Architect with a strong focus on security and observability, boasting over 7 years of experience in cloud-native technologies. She is an open-source contributor to Kubernetes, OpenTelemetry, Kubernetes Release, and CNCF Glossary. Carol is an active member of the community, serving as a TAG Lead in Operational Resilience, CNCF Ambassador, AWS Community Builder, and Cloud Native chapter organizer, together with KCD events in Brazil.",
+      "tagLine": "Cloud Architect @ KrolCloud | Open-Source Contributor",
+      "profilePicture": "https://cdn.sessionize.com/image/9593-400o400o1-LSvpExxvU2pKGHKVLCAk6y.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/krol_valencia",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/carolgv/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/krol3/",
+          "linkType": "Instagram"
+        },
+        {
+          "title": "Blog",
+          "url": "https://krolcloud.com/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://krolcloud.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Credly",
+          "url": "https://www.credly.com/users/carol-valencia",
+          "linkType": "Other"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/krol3",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/krol3",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1286718,
+        1290737
+      ],
+      "fullName": "Carol Valencia",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "KrolCloud"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Solution Architect"
+        }
+      ]
+    },
+    {
+      "id": "7183f972-9602-48c2-80ce-9bdac7d70c36",
+      "firstName": "Cortney",
+      "lastName": "Nickerson",
+      "bio": "Cortney is a CNCF Ambassador, Kyverno Community leader and co-organizer of CNCF Bilbao, various Kubernetes Community Days and serves on the State of OpenCon Advisory Board.\r\n\r\nA recognized speaker at international events, Cortney transitioned from a non-technical background to tech writing content for Data on Kubernetes Community.\r\n\r\nBeyond tech, she's an advocate for DEI (Diversity, Equity & Inclusion) and shares her experience with imposter syndrome and getting her kids to bed on time.",
+      "tagLine": "Head of Community at Nirmata",
+      "profilePicture": "https://cdn.sessionize.com/image/f30a-400o400o1-DBnwKZV58JxShQyZPir95.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/TechTalkingMom",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/cortney-nickerson-26836413a/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://nirmata.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/cortney-nickerson",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1318411
+      ],
+      "fullName": "Cortney Nickerson",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Kyverno"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Community Kyverno"
+        }
+      ]
+    },
+    {
+      "id": "8ede12d4-12f1-4e7b-af7e-488e307091af",
+      "firstName": "Dag",
+      "lastName": "Bjerre Andersen",
+      "bio": "I’m passionate about almost everything related to Kubernetes | Speaker at KubeCon, ArgoCon, KCD, and Cloud Native Denmark 🗣️ | Kubestronaut 🚀",
+      "tagLine": "Senior Platform Engineer, Egmont",
+      "profilePicture": "https://cdn.sessionize.com/image/02d0-400o400o1-JMAy9aPpWsfP2Fpu23Ctri.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dagbjerreandersen/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.egmont.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/dag-bjerre-andersen",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1290421
+      ],
+      "fullName": "Dag Bjerre Andersen",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Egmont"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Senior Platform Engineer"
+        }
+      ]
+    },
+    {
+      "id": "245b7436-992d-4ec4-bab5-21b966994e65",
+      "firstName": "Dylan",
+      "lastName": "Page",
+      "bio": "Dylan Page is the Manager of the Core Infrastructure team at Lambda, K8s SIG Infra Co-Chair, CNCF TAG Infrastructure Co-Chair, and a maintainer of Atlantis, a CNCF sandbox project. He is currently focused on scaling bare-metal Kubernetes for AI/ML workloads across cloud and on-premises environments. Before Lambda, Dylan spent four years at Autodesk, supporting an internal developer platform, and five years at DigitalOcean, contributing to their global cloud platform.",
+      "tagLine": "Manager, Core Infra @ Lambda | Co-Chair @ K8s SIG Infra | Co-Chair @ CNCF TAG Infrastructure | Maintainer @ Atlantis",
+      "profilePicture": "https://cdn.sessionize.com/image/6b56-400o400o1-WFwR9YgAPXdK9gWu3QX61o.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dylandanielpage/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://www.pagefortress.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://lambda.ai",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/genpage",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1286718,
+        1290737
+      ],
+      "fullName": "Dylan Page",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Lambda.ai"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Manager, Core Infra"
+        }
+      ]
+    },
+    {
+      "id": "3c02a7bf-40b4-41b4-8b43-2de3be4b093c",
+      "firstName": "Graziano",
+      "lastName": "Casto",
+      "bio": "Graziano is a DevRel Engineer at Akamas, where he spends his days convincing computers to stop being lazy and start being efficient. A former distributed systems developer and product manager, he’s now on a mission to optimize the entire cloud-native universe, one Pod at a time. As a Co-Chair for the CNCF TAG DevEx and a member of the Kubernetes Release Team since v1.34, he balances deep infrastructure roots with a passion for developer happiness. \r\n\r\nMore on: https://castograziano.com/",
+      "tagLine": "Developer Relations Engineer @ Akamas | Co-Chair @ CNCF TAG DevEx | Kubernetes v1.35 Comms Lead",
+      "profilePicture": "https://cdn.sessionize.com/image/9d25-400o400o1-wCQjLBc3rcQkAf7SeDdSvV.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/cst_grzn",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/castograziano/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://castograziano.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://akamas.io/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/graziano-casto",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1286718
+      ],
+      "fullName": "Graziano Casto",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Akamas"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "DevRel Engineer"
+        }
+      ]
+    },
+    {
+      "id": "0f2bd339-765f-41cf-86b4-7b845eb07052",
+      "firstName": "Jared",
+      "lastName": "Watts",
+      "bio": "Jared Watts is a Founding Engineer at Upbound, where he is working on advancing cloud-native computing by enabling anyone to build their own cloud platform. He is also a co-creator of the open source Crossplane (https://crossplane.io) and Rook (https://rook.io) projects. Prior to Upbound, Jared worked on P2P storage distributed across the public internet at Symform, a startup later acquired by Quantum. Jared began his career at Microsoft working on applications for Windows Server management.",
+      "tagLine": "Founding Engineer - Upbound",
+      "profilePicture": "https://cdn.sessionize.com/image/9da5-400o400o1-hMVfQVmhzBqkxu2TN4qEqg.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jared-watts-jbw976/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://upbound.io",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/jared-watts",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1318411
+      ],
+      "fullName": "Jared Watts",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Upbound"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Founding Engineer"
+        }
+      ]
+    },
+    {
+      "id": "0bf505f2-9a5e-48b4-85d6-84d2cb90c7f3",
+      "firstName": "Joel",
+      "lastName": "Smith",
+      "bio": "Joel Smith is a software developer who loves building open source computing systems. He currently serves on the Kubernetes Security Response Committee.",
+      "tagLine": "Principal Software Engineer - Red Hat & Kubernetes SRC member",
+      "profilePicture": "https://cdn.sessionize.com/image/d75e-400o400o1-VyS3v9kVy2vqSv1ZG38tDU.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Company Website",
+          "url": "https://redhat.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1290688
+      ],
+      "fullName": "Joel Smith",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Red Hat"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Principal Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "58b969cb-a81d-4982-b9fc-fbd505ad62fa",
+      "firstName": "John",
+      "lastName": "Kjell",
+      "bio": "John is a Principal Consultant at ControlPlane, where he helps some of the world's most security-conscious organizations build and assure mission-critical platforms. He is a member of the in-toto Steering Committee and a maintainer of its Witness and Archivista sub-projects. He also serves as a co-chair of the CNCF's TAG Security. Within the OpenSSF, John is a member of the inaugural Ambassador cohort and contributes to several initiatives, including the SBOMit project.",
+      "tagLine": "Principal Cloud Native Consultant - ControlPlane",
+      "profilePicture": "https://cdn.sessionize.com/image/06ec-400o400o1-GJ8vKrsPWj58AWAYprkqvR.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/john-kjell/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.control-plane.io",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/john-kjell",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1286718
+      ],
+      "fullName": "John Kjell",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "ControlPlane"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Principal Consultant"
+        }
+      ]
+    },
+    {
+      "id": "f6c9e874-fe51-4a29-a732-fc078cb33c3b",
+      "firstName": "Joseph",
+      "lastName": "Sandoval",
+      "bio": "Joseph Sandoval is a platform engineering and distributed systems practitioner with 25 years of experience across SRE, DevOps, cloud-native infrastructure, and production operations. \r\n\r\nJoseph is a member of the CNCF Technical Oversight Committee and the vice-chair of the CNCF End User Technical Advisory Board. He speaks regularly on platform engineering, open source, and the practical work of evolving cloud-native infrastructure for AI-enabled systems.",
+      "tagLine": "Adobe Inc, Principal Product Mgr, Developer Platforms",
+      "profilePicture": "https://cdn.sessionize.com/image/ff82-400o400o1-79ead374-f437-482a-ae2f-347a25fcab03.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/wannabetaquero",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/josephrsandoval/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.adobe.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/joseph-sandoval",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1292147
+      ],
+      "fullName": "Joseph Sandoval",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Adobe"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Principal Product Manager"
+        }
+      ]
+    },
+    {
+      "id": "f081c79e-a563-49e9-a25b-634058cc046e",
+      "firstName": "Karena",
+      "lastName": "Angell",
+      "bio": "Karena Angell is a Senior Principal Product Manager at Red Hat focusing on cloud native application workloads for Kubernetes, open source software projects, as well as solutions for the 'open' hybrid cloud. She is a Helm maintainer and TAG App Delivery Technical Lead.",
+      "tagLine": "Senior Principal Product Manager",
+      "profilePicture": "https://cdn.sessionize.com/image/1940-400o400o1-7DKscASZ8QqNXfzXQAf6cp.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/karenaangell/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.redhat.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1292147
+      ],
+      "fullName": "Karena Angell",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Red Hat"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Senior Principal Technical Strategist, Global Engineering"
+        }
+      ]
+    },
+    {
+      "id": "58a91e8e-bcd3-4748-991f-c4ea35df823b",
+      "firstName": "Kat",
+      "lastName": "Cosgrove",
+      "bio": "Kat is the Head of Developer Advocacy at VillageSQL, focused on the growth and nurturing of open source through authentic contribution. In particular, her specialties are approachable 101-level content and deep dives on the history of technology, with a focus on DevOps and cloud native. She was the Kubernetes Release Lead for 1.30 Uwubernetes, and currently serves as a member of the Kubernetes Steering Committee, the Release Team Subproject Lead, and a SIG Docs Tech Lead.",
+      "tagLine": "Village Sorcerer at VillageSQL | Kubernetes Steering Committee",
+      "profilePicture": "https://cdn.sessionize.com/image/299a-400o400o1-MJwEuh2xdrWAqiLhX9AK7d.JPG",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "http://twitter.com/dixie3flatline",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/katcosgrove",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Bluesky",
+          "url": "https://bsky.app/profile/kat.lol",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/kat",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1284587
+      ],
+      "fullName": "Kat Cosgrove",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "VillageSQL"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Village Sorcerer"
+        }
+      ]
+    },
+    {
+      "id": "06422133-31f6-4bfe-b039-07b688511d46",
+      "firstName": "Kateryna",
+      "lastName": "Nezdolii",
+      "bio": "Engineer @ Isovalent ",
+      "tagLine": "Engineer @ Isovalent ",
+      "profilePicture": "https://cdn.sessionize.com/image/6395-400o400o1-7Y8ThmLuSdizjoxzRU3wfQ.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1290687
+      ],
+      "fullName": "Kateryna Nezdolii",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Isovalent "
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Engineer @ Isovalent "
+        }
+      ]
+    },
+    {
+      "id": "6d808fb9-6635-49ee-aca2-7e57b02752ee",
+      "firstName": "Maciej",
+      "lastName": "Szulik",
+      "bio": "Maciej has spent more than 20 years building software and hasn't lost his curiosity yet. By day, he’s tackling Kubernetes challenges for Defense Unicorns. By night, he’s a Python tinkerer working on side projects. A firm believer in the \"always be learning\" mindset, he balances his technical life with a love for photography and a deep stack of books.",
+      "tagLine": "Defense Unicorns, Staff Platform Engineer",
+      "profilePicture": "https://cdn.sessionize.com/image/1d1a-400o400o1-4nATG91g3gztTMGJLGNGaa.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/soltysh",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/maciejszulik/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "@soltysh.bsky.social",
+          "url": "https://bsky.app/profile/soltysh.bsky.social",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/maciej-szulik",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1284587
+      ],
+      "fullName": "Maciej Szulik",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Defense Unicorns"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Staff Platform Engineer"
+        }
+      ]
+    },
+    {
+      "id": "2b2add40-e4d0-4686-b135-a90532540cb7",
+      "firstName": "Martin",
+      "lastName": "Hickey",
+      "bio": "Martin Hickey is a Senior Technical Staff Member at IBM Research, focused on Open Source, Cloud Native Computing, and AI. Martin has notable contributions to various prominent open source projects including vLLM, LMCache, Kubernetes, Helm, OpenTelemetry, OpenStack, and the Elastic community. Martin is a core maintainer for LMCache and an emeritus core maintainer of the Helm project and a TOC member of the Helm organization. He's spoken at tech conferences around the world, including KubeCon, Open Source Summit, FOSDEM, Helm Summit and Elasticon, CNCF events and workshops, and local Open Source Meetups. He founded the Cork Open Technology Meetup.",
+      "tagLine": "Senior Technical Staff Member, IBM Research",
+      "profilePicture": "https://cdn.sessionize.com/image/134a-400o400o1-HHfmyEiLMdv6LWBma3AodF.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/mhickeybot",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/martin-hickey-b64a374/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://hickeyma.github.io",
+          "linkType": "Blog"
+        }
+      ],
+      "sessions": [
+        1318410
+      ],
+      "fullName": "Martin Hickey",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "0bab4841-8e90-4d40-8295-80b7a116918e",
+      "firstName": "Michael",
+      "lastName": "Zazula",
+      "bio": "Mike is an engineer on the ML tooling team within Capital One. His primary focus is on building reusable tools and components across the Machine Learning Development Lifecycle for Data Scientists within the Org. Mike lives in New Jersey with his wife. Outside of work, his hobbies include home renovations (electrical, plumbing, tiling, etc.), gardening, and most recently has taken up beekeeping. ",
+      "tagLine": "Lead Machine Learning Engineer @ Capital One",
+      "profilePicture": "https://cdn.sessionize.com/image/dc88-400o400o1-Mkayp6ebHeremhbekyuebz.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/michael-zazula/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.capitalone.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/michael-zazula",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1267342
+      ],
+      "fullName": "Michael Zazula",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Capital One"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Lead Machine Learning Engineer"
+        }
+      ]
+    },
+    {
+      "id": "fc0c71de-923a-4e27-b798-45605c2be92e",
+      "firstName": "Mo",
+      "lastName": "Khan",
+      "bio": "Mo Khan is a software engineer who is passionate about open source and security. He started working on Kubernetes in 2016, and currently serves as a technical lead and subproject owner for Kubernetes SIG Auth, a member of the Kubernetes Security Response Committee and a contributor to SIG API Machinery.",
+      "tagLine": "Software Engineer, Microsoft",
+      "profilePicture": "https://cdn.sessionize.com/image/147e-400o400o1-QY3jN9HzTDy2Sfp1He44N8.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Company Website",
+          "url": "https://microsoft.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1290688
+      ],
+      "fullName": "Mo Khan",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Microsoft"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "df955802-af3a-4eb9-9b36-1f94aabd9328",
+      "firstName": "Natali",
+      "lastName": "Vlatko",
+      "bio": "Natali Vlatko (she/her) is a Director of Open Source Software Engineering at Cisco, specializing in open software, policy, and governance. She is a SIG Docs Co-Chair for Kubernetes and a member of the TODO Group Steering Committee. She plays on the fun computer in her spare time. Her academic background is in Egyptology and Archaeology; specifically, burial customs across the various kingdoms of Ancient Egypt. Ask her about dead stuff. ",
+      "tagLine": "Director of Open Source Software Engineering at Cisco, SIG Docs Co-Chair for Kubernetes",
+      "profilePicture": "https://cdn.sessionize.com/image/4a73-400o400o1-n9eBuQMP92xgxsRvLf933j.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/natalivlatko/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://opensource.cisco.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1318410
+      ],
+      "fullName": "Natali Vlatko",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Cisco"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Director of Open Source Software Engineering"
+        }
+      ]
+    },
+    {
+      "id": "dd481bd7-e625-4e56-a76b-4baa54d457a5",
+      "firstName": "Paco",
+      "lastName": "Xu",
+      "bio": "Paco is a member of Kubernetes Steering Committee, and co-chair of KubeCon+CloudNativeCon China 2024.\r\n\r\nPaco is a kubeadm maintainer and an active kubernetes contributor. His interest includes SIG-Node, LTS and CoreDNS.\r\n\r\nHe is the leader of the open-source team in DaoCloud. He organized KCD Chengdu 2022 and KCS China 2023, and speaked in KCD Shanghai, KubeCon EU 2023 & 2024 & 2025, and KubeCon China 2021, 2023, 2024 & 2025. He is also LFAPAC Evangelist.",
+      "tagLine": "DaoCloud, Lead of open source team.",
+      "profilePicture": "https://cdn.sessionize.com/image/9acd-400o400o1-SvGVWdN7HRTMDfXf9JHXBn.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/xu_paco",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/pacoxu2020/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://pacoxu.wordpress.com/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.daocloud.io/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/pacoxu",
+          "linkType": "Other"
+        },
+        {
+          "title": "DaoCloud",
+          "url": "https://github.com/DaoCloud",
+          "linkType": "Other"
+        },
+        {
+          "title": "🦋",
+          "url": "https://bsky.app/profile/pacoxu.bsky.social",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/pacoxu",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1284587
+      ],
+      "fullName": "Paco Xu",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "DaoCloud"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Open Source Team Lead"
+        }
+      ]
+    },
+    {
+      "id": "5cc7c134-e804-439f-a1a3-01317315816f",
+      "firstName": "Regina",
+      "lastName": "Voloshin",
+      "bio": "Regina is a GitOps fan, an ArgoCD maintainer and a CNCF Ambassador.",
+      "tagLine": "Argo CD Maintainer, Octopus Deploy",
+      "profilePicture": "https://cdn.sessionize.com/image/9e38-400o400o1-W6tor2PTkSr8KvULyJneGK.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/regina-voloshin-09b9841/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://octopus.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1290421
+      ],
+      "fullName": "Regina Voloshin",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Octopus Deploy"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Argo CD Maintainer"
+        }
+      ]
+    },
+    {
+      "id": "585aee7d-55fc-4411-b570-97a69f90628f",
+      "firstName": "Rita",
+      "lastName": "Zhang",
+      "bio": "Rita Zhang is a Principal software engineer at CoreWeave, based in San Francisco bay area. She works on the inference platform powering the serverless and dedicated inference products. She is a Kubernetes sig-auth chair, a Kubernetes AI Conformance program chair, and a maintainer of the Open policy agent Gatekeeper project. Rita is passionate about open source and running distributed workloads at scale.",
+      "tagLine": "Principal software engineer, Kubernetes AI Conformance program chair and sig-auth chair",
+      "profilePicture": "https://cdn.sessionize.com/image/7a68-400o400o1-n2FJKzHhmf6AQTfyVikdyJ.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ritazhang",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.linkedin.com/in/ritazhang",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/rita-zhang",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1284587
+      ],
+      "fullName": "Rita Zhang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "CoreWeave"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Principal software engineer"
+        }
+      ]
+    },
+    {
+      "id": "6ddf7b4d-d365-4fe9-956f-aa66e1681707",
+      "firstName": "Rohit",
+      "lastName": "Agrawal",
+      "bio": "Rohit is a Sr. Staff Software Engineer at Databricks, leading the Traffic Platform team. He is a core maintainer of Envoy Proxy and one of its top contributors globally, shaping the project through code, security reviews, and design decisions. He is the co-author of Dynamic Modules and many other features in Envoy.\r\n\r\nAt Databricks, he builds the networking infrastructure that powers data movement at scale. He has spoken at KubeCon and EnvoyCon, sharing work rooted in real production experience.",
+      "tagLine": "Sr. Staff Software Engineer, Databricks",
+      "profilePicture": "https://cdn.sessionize.com/image/66de-400o400o1-fMQ5D9ycdMHCozE8aJdQeM.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/agrawroh",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://medium.com/@agrawroh",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.databricks.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/agrawroh",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1290687
+      ],
+      "fullName": "Rohit Agrawal",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Databricks, Inc."
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Sr. Staff Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "42e06dea-6eb3-40b1-832a-9301671fed82",
+      "firstName": "Sean",
+      "lastName": "McGinnis",
+      "bio": "Sean has spent over two decades working at the crossroads of infrastructure and open source. He has been a frequent contributor, leader, and mentor in several communities to help grow and share the benefits of open collaboration.",
+      "tagLine": "Software Engineer - Lambda",
+      "profilePicture": "https://cdn.sessionize.com/image/400b-400o400o1-43h1HTSDzT2W2qHiXBoSzz.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/stmcginnis/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.lambdal.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1318410
+      ],
+      "fullName": "Sean McGinnis",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8469681d-3827-40aa-b160-ab8fd49e0415",
+      "firstName": "Stephen",
+      "lastName": "Rust",
+      "bio": "Stephen Rust is a Principal Architect at Akamai Cloud, where he leads Cloud Native architecture. Stephen has over 20 years of experience in operating systems, storage, and working in open source with containers, Kubernetes, and Cloud Native systems. At Akamai Cloud, Stephen is helping build Managed Kubernetes Services, Kubernetes Platforms, and Managed Services built with Cloud Native technologies.\r\n\r\nStephen is currently a Tech Lead of CNCF TAG Workload Foundations.",
+      "tagLine": "Principal Architect, Akamai Cloud",
+      "profilePicture": "https://cdn.sessionize.com/image/368c-400o400o1-f9Z4D32ZmbF7fsxdRAQcyt.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/srust-dev/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.akamai.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/stephen-rust",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1286718
+      ],
+      "fullName": "Stephen Rust",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "Akamai Cloud"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Principal Architect"
+        }
+      ]
+    },
+    {
+      "id": "c362f727-6d5b-406f-b3ab-88e2e50d73ea",
+      "firstName": "Vadim",
+      "lastName": "Bauer",
+      "bio": "Vadim Bauer is a Container Silverback with over a decade of experience in running containers in production. As a maintainer of the CNCF project Harbor, he focuses on extending the boundaries of OCI artifact management, adoption, and developer experience. At 8gears, Vadim helps cloud providers, ISVs and enterprises adopt Harbor and use OCI capabilities.",
+      "tagLine": "Cloud Native builder in the Clouds with Kubernetes. CNCF Project Harbor maintainer.",
+      "profilePicture": "https://cdn.sessionize.com/image/94dc-400o400o1-pzAfSRvvhBo4GrQwokjuPJ.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/vad1mo",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/vadim-bauer/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://container-registry.com/posts/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://container-registry.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/vad1mo",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1290321
+      ],
+      "fullName": "Vadim Bauer",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 133345,
+          "answerValue": "8gears Container Registry"
+        },
+        {
+          "questionId": 133346,
+          "answerValue": "Harbor Maintainer"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 133345,
+      "question": "Company",
+      "questionType": "Short_Text",
+      "sort": 37
+    },
+    {
+      "id": 133346,
+      "question": "Speaker Title",
+      "questionType": "Short_Text",
+      "sort": 36
+    },
+    {
+      "id": 139364,
+      "question": "Presentation Slides",
+      "questionType": "File_upload",
+      "sort": 57
+    },
+    {
+      "id": 139498,
+      "question": "Location Map",
+      "questionType": "Web_address",
+      "sort": 72
+    }
+  ],
+  "categories": [
+    {
+      "id": 133367,
+      "title": "Session Category",
+      "items": [
+        {
+          "id": 483201,
+          "name": "Growing Contributors",
+          "sort": 1
+        },
+        {
+          "id": 483202,
+          "name": "CI / CD / Distribution",
+          "sort": 2
+        },
+        {
+          "id": 483204,
+          "name": "Project Meeting",
+          "sort": 3
+        },
+        {
+          "id": 483203,
+          "name": "Main Track",
+          "sort": 4
+        },
+        {
+          "id": 505298,
+          "name": "Keynote Sessions",
+          "sort": 5
+        },
+        {
+          "id": 505299,
+          "name": "Breaks + Networking + Special Events",
+          "sort": 6
+        },
+        {
+          "id": 505300,
+          "name": "Registration + Badge Pick-up",
+          "sort": 7
+        },
+        {
+          "id": 505301,
+          "name": "Unconference Sessions",
+          "sort": 8
+        },
+        {
+          "id": 505302,
+          "name": "Workshops",
+          "sort": 9
+        }
+      ],
+      "sort": 8,
+      "type": "session"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 89291,
+      "name": "200 South Entrance (South)",
+      "sort": 0
+    },
+    {
+      "id": 89290,
+      "name": "Salt Palace | Level 2 | East Registration",
+      "sort": 1
+    },
+    {
+      "id": 89293,
+      "name": "Salt Palace | Level 2 | Upper Concourse",
+      "sort": 2
+    },
+    {
+      "id": 85580,
+      "name": "Salt Palace | Level 2 | 250 A-C",
+      "sort": 3
+    },
+    {
+      "id": 85581,
+      "name": "Salt Palace | Level 2 | 250 D-F",
+      "sort": 4
+    },
+    {
+      "id": 85582,
+      "name": "Salt Palace | Level 2 | 251 A-C",
+      "sort": 5
+    },
+    {
+      "id": 89292,
+      "name": "Salt Palace | Level 2 | 251 D-F",
+      "sort": 6
+    },
+    {
+      "id": 85583,
+      "name": "Salt Palace | Level 2 | ​2​53 B",
+      "sort": 7
+    },
+    {
+      "id": 89172,
+      "name": "Salt Palace | Level 2 | 253 A",
+      "sort": 8
+    },
+    {
+      "id": 89294,
+      "name": "TBD",
+      "sort": 9
+    }
+  ]
+}

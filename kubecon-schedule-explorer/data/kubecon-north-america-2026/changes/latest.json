@@ -1,22 +1,24 @@
 {
-  "captured_at": "2026-09-02T17:14:17+00:00",
+  "captured_at": "2026-09-02T16:43:01+00:00",
   "events": {
-    "inserted": 0,
+    "inserted": 3,
     "updated": 0,
     "removed": 0
   },
   "sessions": {
-    "inserted": 0,
+    "inserted": 602,
     "updated": 0,
     "removed": 0
   },
   "speakers": {
-    "inserted": 0,
+    "inserted": 809,
     "updated": 0,
     "removed": 0
   },
   "sources_fetched": [
-    "official-sponsor-hosted"
+    "kubecon-na-main",
+    "cncf-hosted-colocated-na",
+    "maintainer-summit-na"
   ],
   "discovery_candidates": 0
 }

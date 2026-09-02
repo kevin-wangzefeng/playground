@@ -1,0 +1,2698 @@
+{
+  "sessions": [
+    {
+      "id": "1282440",
+      "title": "Registration & Badge Pick-Up",
+      "description": null,
+      "startsAt": "2026-09-06T12:30:00",
+      "endsAt": "2026-09-06T18:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494082
+      ],
+      "questionAnswers": [],
+      "roomId": 87131,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282501",
+      "title": "Solutions Showcase",
+      "description": "In order to facilitate networking and business relationships at the event, you may choose to visit a third party’s booth or access sponsored content. You are never required to visit third party booths or to access sponsored content. When visiting a booth or participating in sponsored activities, the third party will receive some of your registration data. This data includes your first name, last name, title, company, address, email, standard demographics questions (i.e. job function, industry), and details about the sponsored content or resources you interacted with. If you choose to interact with a booth or access sponsored content, you are explicitly consenting to receipt and use of such data by the third-party recipients, which will be subject to their own privacy policies.",
+      "startsAt": "2026-09-06T12:30:00",
+      "endsAt": "2026-09-06T19:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494086
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1283822",
+      "title": "Keynote: Angie Jones, VP, Developer Experience, Agentic AI Foundation",
+      "description": null,
+      "startsAt": "2026-09-06T13:30:00",
+      "endsAt": "2026-09-06T13:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "6b0134fe-89a7-48b6-a245-7471eacd01e9"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1283825",
+      "title": "Keynote: Mazin Gilbert, Executive Director, Agentic AI Foundation",
+      "description": null,
+      "startsAt": "2026-09-06T13:35:00",
+      "endsAt": "2026-09-06T13:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "92000eaa-ac12-4f87-96ff-f48c1042094f"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1314303",
+      "title": "Keynote: Junlan Feng, Chief Scientist, China Mobile Group",
+      "description": null,
+      "startsAt": "2026-09-06T13:47:00",
+      "endsAt": "2026-09-06T13:57:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "167785b9-c6c5-45b7-b904-c8282df6fb2f"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1282497",
+      "title": "Keynote: Building Together Through Open Source: Advancing Toward the Agent-Native Era",
+      "description": "The advent of the Agentic era is reshaping opensource collaboration models\r\nand enterprise intelligence paradigms. Centered on forwardlooking insights\r\ninto the Agentnative era, this talk analyzes the core logic of how AgentNative\r\narchitecture reconstructs enterprise systems and multiagent collaboration,\r\nand shares cuttingedge practices from the openJiuwen opensource project.\r\nLet us jointly build an open and collaborative AgentNative era.",
+      "startsAt": "2026-09-06T13:59:00",
+      "endsAt": "2026-09-06T14:09:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "be465cee-9df4-4d55-a3a8-da224cac912e"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1314311",
+      "title": "Keynote: From Connection to Control: Building the Open Agentic Stack",
+      "description": "MCP is making it easier for AI agents to connect to tools, data, and systems. But connection is only the beginning.\r\n\r\nAs agents move from demos to real-world applications, developers face a new set of questions: How does an agent decide what to do next? How do we control tool use? How do multiple agents work together? And how do we keep these systems secure, observable, and reliable?\r\n\r\nIn this session, we’ll look beyond the protocol itself and explore the emerging open agentic stack — from open protocols such as MCP, to open-source agent frameworks and the infrastructure needed to run agents in production. We’ll also look at new examples from AWS, including Strands Agents and Kiro Crew, and how open technologies are helping developers move from connecting agents to building agentic systems they can trust.",
+      "startsAt": "2026-09-06T14:11:00",
+      "endsAt": "2026-09-06T14:21:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "b22a19f7-a067-4d05-83da-8ed2c74fbaf4"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1319349",
+      "title": "Keynote: The State and Future of A2A",
+      "description": "The State and Future of A2A\r\nAs organizations build more capable agents, those agents will need a common way to communicate and work together across frameworks, vendors, and platforms. This keynote examines the current state of A2A, the problems it is designed to solve, and where the project is headed. We'll also see A2A in action through a production multi-agent system, including what happens when one of its agents is compromised.",
+      "startsAt": "2026-09-06T14:25:00",
+      "endsAt": "2026-09-06T14:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "04038740-eb23-4a17-a732-18cdd644a571"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1311847",
+      "title": "Keynote: Zhou Qi, Head, Cloud-Native Application Platform, Alibaba Cloud Intelligence Group",
+      "description": null,
+      "startsAt": "2026-09-06T14:37:00",
+      "endsAt": "2026-09-06T14:47:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "41d06bb8-1002-4d34-a4ef-7e72ac7b0444"
+      ],
+      "categoryItems": [
+        459543,
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1283832",
+      "title": "Keynote: Architecting Open Intelligence for the Real World",
+      "description": "Join us for Richard's session, Architecting Open Intelligence for the Real World: Token Efficiency, Model-Harness Co-design, and the Agent Ecosystem.\r\n\r\nThe era of brute-force \"token-maxing\" and isolated foundation models is giving way to a more pragmatic, ecosystem-centric approach. As we deploy AI agents into high-value, real-world scenarios, the focus must shift from raw scale to the \"Intelligence-to-Efficiency Ratio.\" This keynote, presented by an Ant Ling foundation model practitioner and AAIF ambassador, dissects the technical imperatives of this transition. We will examine why true agentic capabilities require treating real-world business environments as the ultimate reinforcement layer, and why deep co-design among models, open protocols, and harnesses is crucial. By aligning Ant Ling's strategy of building versatile, token-efficient base models with AAIF's open infrastructure, we present a unified blueprint for Open Intelligence.",
+      "startsAt": "2026-09-06T14:50:00",
+      "endsAt": "2026-09-06T15:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "15e1d96a-86c0-4b74-b0a1-562b70f6c751"
+      ],
+      "categoryItems": [
+        494092
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1282498",
+      "title": "Coffee Break",
+      "description": null,
+      "startsAt": "2026-09-06T15:00:00",
+      "endsAt": "2026-09-06T15:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1282547",
+      "title": "Workshop: Governing AI Agent Actions: MCP and Beyond",
+      "description": "Enterprise adoption of the Model Context Protocol is accelerating, and MCP has become the primary way agents connect to enterprise tools and data. But MCP is only part of how agents act. Agents also run CLIs, execute Skills, and generate code that calls APIs directly. Governing MCP well matters. Governing everything else agents can do matters just as much.\r\n\r\nBuilding MCP servers and writing Skills isn't particularly hard. The real challenges are deciding which actions agents are allowed to take, controlling who can take them, and proving it all later. These are architectural questions, and they need answers before agents scale across an organization.\r\nIn this workshop, we will:\r\n\r\n1. Show how to control agent actions with policies that apply across MCP servers, CLIs, Skills, and agent-generated code — including allowlists, access control by users and groups, and human-in-the-loop approvals.\r\n2. Explain why enterprises need managed registries for MCP servers and Skills, and how admin review and approval change the trust model.\r\n3. Work through audit and compliance requirements: capturing complete logs of agent and tool activity, exporting to enterprise storage, and generating reports.\r\n4. Demonstrate how to discover shadow AI — unmanaged agents, MCPs, and Skills already running in your organization — and how to block them or bring them under management.\r\n5. Look at token usage and spend visibility by agent, user, and group.\r\n\r\nYou'll leave with a clear picture of the architectural decisions ahead of you, and a better sense of what your security team will require before signing off on scaling AI agents across your organization.",
+      "startsAt": "2026-09-06T15:25:00",
+      "endsAt": "2026-09-06T16:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "bb49b501-3893-40cb-b17a-70b7371bd6ff",
+        "086e5046-4859-4d89-8b51-cba297b4ba03"
+      ],
+      "categoryItems": [
+        497945
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282507",
+      "title": "Coffee Break",
+      "description": null,
+      "startsAt": "2026-09-06T16:40:00",
+      "endsAt": "2026-09-06T16:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1260651",
+      "title": "Workshop: Building Secure AI Agent Runtimes on Kubernetes",
+      "description": "As AI agents execute untrusted LLM-generated code in production, infrastructure teams need isolation, persistent state, and elastic resources—patterns traditional Kubernetes primitives don't address well.\r\n\r\nThis session presents a practical solution using kubernetes  AgentSandbox , a vendor-neutral alternative to AWS Bedrock Agents and Azure AI Agent Service.\r\n\r\nHere we will deep dive\r\n\r\n1. Isolation with MicroVM for untrusted code execution\r\n2. Stateful lifecycle management with automatic hibernation/resume and persistent storage\r\n3. Security boundaries using OPA Gatekeeper to prevent privilege escalation\r\n4. Network isolation patterns for multi-tenant agent platforms\r\n5. Self-service provisioning through SandboxClaim/SandboxTemplate abstractions",
+      "startsAt": "2026-09-06T16:55:00",
+      "endsAt": "2026-09-06T18:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "cdf5e752-a613-4e67-bd52-4acc6c4b6c63",
+        "e3302b74-9cd5-47c3-9c84-e922e29daae3"
+      ],
+      "categoryItems": [
+        459543,
+        497945,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 87132,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282500",
+      "title": "Attendee Reception",
+      "description": null,
+      "startsAt": "2026-09-06T18:10:00",
+      "endsAt": "2026-09-06T19:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1282446",
+      "title": "Registration & Badge Pick-Up",
+      "description": null,
+      "startsAt": "2026-09-07T08:00:00",
+      "endsAt": "2026-09-07T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494082
+      ],
+      "questionAnswers": [],
+      "roomId": 87131,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282503",
+      "title": "Solutions Showcase",
+      "description": "In order to facilitate networking and business relationships at the event, you may choose to visit a third party’s booth or access sponsored content. You are never required to visit third party booths or to access sponsored content. When visiting a booth or participating in sponsored activities, the third party will receive some of your registration data. This data includes your first name, last name, title, company, address, email, standard demographics questions (i.e. job function, industry), and details about the sponsored content or resources you interacted with. If you choose to interact with a booth or access sponsored content, you are explicitly consenting to receipt and use of such data by the third-party recipients, which will be subject to their own privacy policies.",
+      "startsAt": "2026-09-07T08:00:00",
+      "endsAt": "2026-09-07T17:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494086
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1255652",
+      "title": "From MCP Tools to Managed Agents: Building a Runtime-Agnostic Control Plane for Enterprise Agents",
+      "description": "MCP has quickly become a critical standard for connecting AI agents with tools, data, and enterprise systems. But when teams move from demos to production, a new challenge appears: the agent runtime itself becomes fragmented. A single enterprise may use Claude Code, Codex, ADK, internal runtimes, and many MCP servers at the same time. Each runtime brings its own configuration, permissions, execution lifecycle, and observability surface.\r\n\r\nThis talk shares practical lessons from building AgentRun, a Managed Agents platform built on Alibaba Cloud Function Compute. Instead of treating MCP as only a tool protocol, we use it as part of a broader production control plane: declarative agent specs, runtime adapters, MCP gateway integration, human-in-the-loop checkpoints, action audit logs, cost attribution, and serverless execution.\r\n\r\nAttendees will learn architecture patterns for moving agent systems from \"works in demo\" to \"can be governed in production\": preserving native runtime capabilities, designing policy interception and audit trails around MCP calls, making human oversight meaningful, and using serverless for bursty agent workloads.",
+      "startsAt": "2026-09-07T09:05:00",
+      "endsAt": "2026-09-07T09:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "7157e9a5-049f-419d-80a5-f931c33a17f0"
+      ],
+      "categoryItems": [
+        459541,
+        499588,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": false
+    },
+    {
+      "id": "1268963",
+      "title": "From Cloud Native to Agentic AI: Do Enterprise Agents Need a New Infrastructure Stack?",
+      "description": "For more than a decade, cloud-native technologies have been the foundation for modern applications. As enterprises begin deploying autonomous and long-running agents, we're starting to ask a new question: are these abstractions still enough?\r\n\r\nThe four of us come from AWS, Huawei, Kong Inc., and Tencent. We work across different layers of the stack, from gateways and sandboxes to orchestration and scheduling, and on different open-source and cloud platforms. Despite these differences, we keep running into the same set of challenges when it comes to agentic workloads: managing long-running state, safely executing tools, observing and debugging agent behavior, defining security boundaries, supporting human-in-the-loop approvals, and coordinating multiple agents in a reliable way.\r\n\r\nIn this panel, we'll share what we're learning from building and operating agent systems at scale in practice, and debate whether enterprise agents are simply another workload on today's infrastructure or something that demands new primitives and new abstractions. It's a conversation between infrastructure builders about what it really takes to move agents from demos to production.",
+      "startsAt": "2026-09-07T09:05:00",
+      "endsAt": "2026-09-07T09:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2027aa98-ba2b-42eb-abaa-35f691ddf697",
+        "1b814ba0-bc81-4245-880a-097b1e7e3b75",
+        "2d9aa720-d192-44c9-87e6-a1a2f0c53d35",
+        "e267ecba-4979-4a04-a745-0729b4395007"
+      ],
+      "categoryItems": [
+        459543,
+        459545,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1212086",
+      "title": "Securing MCP Pipelines: Defending Against Prompt Injection & PII Leakage",
+      "description": "As MCP servers become the primary interface between Al agents and external data, they introduce a new attack surface: responses from MCP tool calls flow directly into LLM context windows, creating opportunities for indirect prompt injection and PII leakage.\r\n\r\nThis talk demonstrates an approach to securing MCP pipelines using open-source tools. We show how Meta's Prompt Guard can be utilised as a pre-processing layer to detect injection attempts in MCP server responses before they reach the LLM, and how Microsoft's Presidio can scan agent outputs for PII before they reach end users.\r\n\r\nAttendees will see a customer support MCP server go from fully exposed to Pll-protected, and leave with a reusable pattern for their own MCP servers.",
+      "startsAt": "2026-09-07T09:35:00",
+      "endsAt": "2026-09-07T10:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "5c0e7a6b-a0d3-40aa-a1a9-aa669d70d434",
+        "b8e24708-5e80-4209-a097-7f889bc9e699"
+      ],
+      "categoryItems": [
+        459540,
+        499588
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1268978",
+      "title": "Running Millions of Agents at Tencent: CubeSandbox as the Hands Behind the Harness Brain",
+      "description": "From training Hunyuan LLM with large-scale RL, to powering CodeBuddy's coding agent with 400K+ concurrent sandboxes and 5M+ creates/day, to enabling WorkBuddy's AI office automation, each workload demands a different execution environment.  What unifies them is CubeSandbox, the open-source agent runtime we operate as the \"hands\" behind the harness \"brain.\"\r\n\r\nAgent harnesses are evolving from monolithic (brain+hands in one process) local-first mode to distributed (brain/session/hands separated) to managed harness. A critical enabler of this evolution is fast, hardware-isolated sandboxing for the \"hands\" layer, which most agent frameworks lack. We share Tencent's end-user journey scaling CubeSandbox to 600K sandbox creations/minute with P99 startup < 1s: snapshot-based instant restore for 35M hibernated sandboxes, block-level deduplicated image acceleration delivering 100K+ SWE images in < 1 minute, and CubeVS, our kernel-level eBPF isolation module. \r\n\r\nAttendees will leave with concrete patterns for building agent-native infrastructure that is secure, elastic, and cost-efficient at millions of daily sandbox executions, plus an E2B-compatible API for drop-in adoption.",
+      "startsAt": "2026-09-07T09:35:00",
+      "endsAt": "2026-09-07T10:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2027aa98-ba2b-42eb-abaa-35f691ddf697",
+        "25cacc91-2dd9-4027-a3a7-bf4642876788"
+      ],
+      "categoryItems": [
+        459543,
+        459545,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1248843",
+      "title": "Auditing the MCP Supply Chain",
+      "description": "Every MCP server you install pulls in a supply chain you don't see: the npm or PyPI packages it depends on, the registry you fetched it from, and the official SDK it's built on. \r\n\r\nMost teams never audit any of it. In 2026 that gap turned into real incidents. \r\n- The postmark-mcp package silently BCC'd emails from 300+ organizations \r\n- The Smithery registry breach exposed credentials for 3,243 hosted MCP apps through a single path traversal\r\n- A design flaw in the official MCP SDKs allowed command execution over the STDIO transport, across 150 million downloads. \r\n\r\nOWASP now lists supply chain as its own entry, MCP04, separate from tool poisoning and prompt injection.\r\n\r\nThis talk maps the MCP supply chain attack surface across its three layers: package, registry, and SDK and shows how to audit each one. \r\n\r\nWe'll cover what SBOM tooling catches, where it falls short on MCP specifically, and what a practical defense stack looks like in production.\r\n \r\nYou'll leave knowing how to audit an MCP server before you trust it.",
+      "startsAt": "2026-09-07T10:05:00",
+      "endsAt": "2026-09-07T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1d9fc8c4-b6d9-40b7-a071-4c3a83d70101"
+      ],
+      "categoryItems": [
+        459541,
+        499588,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1249836",
+      "title": "I Taught an Agent to Build TV Apps: Lessons from Building a Coding Harness",
+      "description": "TV apps are one of the hardest places to be productive as a developer. More than 5 platforms. Different input models. Endless focus bugs. With the rise of the AI driven development I decided to evolve my daily task of writing  (and fixing) TV boilerplate and teach an AI agent to do it instead. A real coding harness with tools, skills, and a sense of how TV apps actually work.\r\n\r\nIn this talk I'll share what I learned building that harness on top of the Claude Agent SDK and Strands SDK: how to structure tools, when to use one SDK versus the other, how to keep the agent honest with SOPs and evals, and how to bridge it into Android Studio, Gradle, and platform CLIs. \r\nExpect live demos, real failure modes, and a takeaway repo you can use as a starting point for your own domain-specific agent, TV or not.",
+      "startsAt": "2026-09-07T10:05:00",
+      "endsAt": "2026-09-07T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "106dc281-fe8b-40ac-b16b-240832b27b47"
+      ],
+      "categoryItems": [
+        459541,
+        481845,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282508",
+      "title": "Coffee Break",
+      "description": null,
+      "startsAt": "2026-09-07T10:35:00",
+      "endsAt": "2026-09-07T11:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1261426",
+      "title": "From MCP Gateway to Agent Identity: Building Enterprise-Grade Access Infrastructure for AI Agents",
+      "description": "As MCP adoption accelerates, enterprises face challenges the protocol doesn't address: how to onboard tens of thousands of existing APIs without rewriting them, and how to govern agent access across a fragmented auth landscape.\r\n\r\nThis talk covers two interconnected problems solved in production:\r\n\r\n1. MCP Gateway: Protocol Translation for Legacy APIs\r\nThe MCP Gateway performs protocol translation centrally — converting HTTP and Thrift interfaces into standard MCP at the network layer, with zero changes to upstream services.\r\n\r\n2. Agent Identity: Beyond API Keys\r\n\r\nAgents operate autonomously — without login sessions or stable credentials. Traditional API keys are a poor fit: long-lived, coarse-grained, and hard to audit. But replacing keys isn't enough — downstream services still need user identity without the agent holding raw credentials. We present a unified identity layer integrating with existing multi-dimensional auth systems (user, merchant, and employee-facing), so every agent call is identity-aware and policy-enforced.\r\n\r\nWe share what worked, what didn't, and the hard lessons from running this in production.",
+      "startsAt": "2026-09-07T11:10:00",
+      "endsAt": "2026-09-07T11:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "20280fc7-29e6-4d8a-8756-7ca803aaa2b7"
+      ],
+      "categoryItems": [
+        459543,
+        499588,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1252251",
+      "title": "Lost in Conversation: Why Voice Agents Break When Users Interrupt",
+      "description": "Most voice agents work well when conversations follow a script: the user speaks, the model thinks, and the agent replies. But real conversations are messy. Users interrupt, pause mid-thought, correct themselves, talk over the agent, or change direction before the system has finished responding.\r\n\r\nThis talk argues that many voice agents break because they are designed like linear request-response pipelines, while real conversation is interruptible and stateful. Interruption handling should not be treated as an edge case. It should be designed as a first-class system behavior.\r\n\r\nRather than covering the full voice AI stack, this session focuses on one failure point: what happens when a user interrupts while the agent is responding, updating state, or preparing a tool action. I will walk through practical patterns for turn-taking, barge-in handling, partial transcript updates, stopping or revising ongoing responses, and recovering state after interruptions.\r\n\r\nI will also connect these ideas to agentic systems and MCP-style tool use, where interruptions can affect tool calls, API actions, and the agent’s understanding of the user’s intent.\r\n",
+      "startsAt": "2026-09-07T11:10:00",
+      "endsAt": "2026-09-07T11:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "3e15b5d8-45c3-42a0-85c0-77a0e71f18ed"
+      ],
+      "categoryItems": [
+        459541,
+        481846,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1261176",
+      "title": "Sandboxed Doesn't Mean Safe: Threat-Modeling MCP Apps and the New UI Attack Surface",
+      "description": "Working in payment and auth integrations teaches you fast that \"runs in a sandbox\" isn't the same as \"safe.\" When MCP Apps landed, letting servers render interactive HTML UIs right inside the chat, it needed stress-testing the same way any new payment flow does: assume the server is hostile, assume the channel is being watched, and trace exactly where trust is handed over versus just assumed.\r\nThis talk walks through three ways it breaks, with live demos. First, postMessage trust, what happens when origin validation is wrong or missing. Second, tool poisoning through the UI, where instructions the user never sees quietly end up in the model's context. Third, a confused-deputy case where a UI-triggered tool call uses more of the host's access than the user ever agreed to.\r\nFor each one, the failure gets mapped against what the spec says should stop it, CSP, consent prompts, auditable JSON-RPC, showing honestly what holds and what you as the implementer are still on the hook for. Leave with a checklist to run before shipping any MCP App.",
+      "startsAt": "2026-09-07T11:40:00",
+      "endsAt": "2026-09-07T12:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "81a1841a-0f05-4d9b-928e-c8e74ba0b570",
+        "ceb969d0-839e-4cda-b59e-dd5c714e0b79"
+      ],
+      "categoryItems": [
+        459541,
+        499588,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1268646",
+      "title": "From Token Explosion to Semantic Trajectories: Optimizing Agent Execution in DeerFlow",
+      "description": "An agent run can finish successfully and still be extremely inefficient. While debugging a DeerFlow Deep Research task, we found that a failed tool call echoed a large payload into the conversation state. Input tokens grew from 29K to 71K across consecutive model calls, causing expensive retries and unpredictable execution costs.\r\nTo diagnose such problems, we built an intent-aware observability system for DeerFlow. It correlates LLM interactions, MCP and internal tool calls, errors, retries, latency, token usage, and LangGraph checkpoints. The agent declares whether it intends to explore, decide, act, verify, retry, or produce, while a human or observer model evaluates its actual behavior. A semantic trajectory dashboard exposes divergence between declared intent and observed actions, and checkpoint replay helps developers reproduce Agent Harness defects.\r\nThis talk presents the motivating failure, system architecture, implementation lessons, and a live demonstration. Attendees will learn how semantic trajectories can reveal inefficient exploration and tool usage that conventional traces often miss.",
+      "startsAt": "2026-09-07T11:40:00",
+      "endsAt": "2026-09-07T12:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "11322c46-7378-4bad-b651-343f6daec380",
+        "0937d166-47c5-47f7-8fcf-acb4607f6fc8"
+      ],
+      "categoryItems": [
+        459540,
+        459545,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1254713",
+      "title": "Your MCP Server Needs a Context Graph",
+      "description": "As MCP servers evolve from simple tool gateways into long-running backends for agentic systems, protocol compliance alone is no longer enough. Servers need a durable, inspectable way to manage context across requests, tools, resources, and sessions. Without this, MCP implementations struggle with debugging, replayability, security boundaries, and consistent behavior over time.\r\n\r\nThis talk focuses on MCP server internals and shows how adding a context graph inside the server improves reliability and operability. We will explore how graph-based context models capture relationships between clients, prompts, tool calls, resources, policies, and outcomes, turning transient MCP interactions into structured, queryable state. The session covers practical patterns for mapping MCP concepts to graphs and using them to support traceability, incremental context enrichment, permission enforcement, and safe multi-tenant operation.\r\n\r\nAttendees will leave with concrete guidance for building MCP servers that use context graphs to power observability, evaluation, and security while remaining fully aligned with the MCP protocol.",
+      "startsAt": "2026-09-07T12:10:00",
+      "endsAt": "2026-09-07T12:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0793b99f-1282-4674-9d21-f88e30c8232e"
+      ],
+      "categoryItems": [
+        459543,
+        499588,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1321936",
+      "title": "From Solo to Fleet: Building Scalable Multi-Agent Systems with the A2A Protocol",
+      "description": "As AI agents evolve from single-task execution to orchestrating complex enterprise workflows, monolithic agent architectures quickly hit scalability bottlenecks, state bloat, and maintainability limits. How can we break down silos and enable seamless collaboration across heterogeneous frameworks and organizational boundaries?\r\nThis session delivers an architectural deep dive into the Agent2Agent (A2A) Protocol, an open standard for multi-agent interoperability. We will explore key primitives including dynamic capability discovery via Agent Cards, asynchronous long-running task orchestration across the Task Lifecycle, and a clear architectural comparison between A2A (horizontal agent-to-agent collaboration) and MCP (vertical agent-to-tool integration). Through real-world deployment patterns and live demos, you'll learn how to leverage A2A to build a resilient, decoupled, and enterprise-grade Agent Mesh.",
+      "startsAt": "2026-09-07T12:10:00",
+      "endsAt": "2026-09-07T12:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "a9d6b5d5-1103-412e-b8f9-344069787393"
+      ],
+      "categoryItems": [
+        459544,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1282499",
+      "title": "Attendee Lunch",
+      "description": null,
+      "startsAt": "2026-09-07T12:35:00",
+      "endsAt": "2026-09-07T14:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1242199",
+      "title": "openJiuwen A2X Registry: An Efficient MCP Service Registration and Discovery Solution",
+      "description": "Anthropic reports that an agent with 1,000 MCP tools spends ~500K tokens on tool prompts alone. Embedding methods miss tools relevant to the query but not semantically similar, capping recall. We share a hierarchical progressive disclosure approach and its implementation, the A2X Registry.\r\n\r\nAn LLM auto-builds and searches a taxonomy over service descriptions: it reads only highly relevant options, prunes irrelevant branches early, and keeps token cost close to O(log N). On 1,839 tools it cuts cost ~25x (193K to 7K) and lifts recall over SOTA embeddings by 15+ percentage points.\r\n\r\nWe share three challenges that surface during auto-building the taxonomy, and their solutions. Completeness: how to cover every service when the LLM's limited context prevents reading all descriptions in one pass. Mutual exclusivity: how to keep the LLM from mixing classification axes inside one taxonomy, weakening pruning. Domain expertise: how to keep query-service matching accurate when descriptions are distilled into a taxonomy, since the matcher would otherwise rely on pre-training and confuse siblings.\r\n\r\nCode: https://gitcode.com/openJiuwen/agent-protocol",
+      "startsAt": "2026-09-07T14:05:00",
+      "endsAt": "2026-09-07T14:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "09294e41-e1a4-469e-89ea-7f6b5113a8cf"
+      ],
+      "categoryItems": [
+        459543,
+        499588,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1321940",
+      "title": "Sponsored: Dynamic Model Routing for Agent Workloads: Balancing Quality, Latency, and Cost",
+      "description": "As AI applications increasingly rely on multiple models with different strengths, latency profiles, and costs, choosing the right model for each task is becoming an important part of agent system design.\r\n\r\nThis session will explore how dynamic model routing works across agent workloads, including the signals that inform routing decisions, the trade-offs between quality, latency, and cost, and practical considerations for coding and agent workflows.",
+      "startsAt": "2026-09-07T14:05:00",
+      "endsAt": "2026-09-07T14:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "bfd19def-3013-4ce2-b621-cd3d9e0c4a7e"
+      ],
+      "categoryItems": [
+        481845
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1203741",
+      "title": "Stop Embedding Your Database: When MCP Beats RAG for Real-Time AI",
+      "description": "Your AI agent returns the wrong answer not because the model hallucinated, but because it retrieved stale data from an embedding pipeline that has not caught up with recent writes. A user asks for “latest orders,” but the answer reflects yesterday’s state. The system is working as designed, but still wrong.\r\n\r\nThis is an architecture problem.\r\n\r\nRetrieval-Augmented Generation works well for unstructured data, but struggles with frequently changing relational data. A 2025 LlamaIndex survey found that 67 percent of enterprise teams hit accuracy issues with RAG on complex queries, especially when applied to structured, frequently updated data.\r\n\r\nThe Model Context Protocol offers a different approach. Agents call typed tools backed by SQL queries and receive deterministic, real-time results. The failure modes shift from retrieval quality to API design and query safety.\r\n\r\nIn this talk, you will learn how to design MCP tools, structure agent-friendly schemas, and handle production concerns like retries and connection limits. A live demo shows the full flow from prompt to SQL with tracing.\r\n\r\nThe session ends with a simple decision framework based on data freshness and query correctness.",
+      "startsAt": "2026-09-07T14:35:00",
+      "endsAt": "2026-09-07T15:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "cb2d185c-738b-4c7b-8e67-0eb94f5db76e"
+      ],
+      "categoryItems": [
+        459541,
+        499588
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1227642",
+      "title": "Coordination Engineering：AI Agent 工程范式的下一次跃迁",
+      "description": "AI Agent 的工程范式正在持续演进。从 Prompt Engineering 到 Context Engineering，再到当下成为主流的 Harness Engineering，单智能体的\"驾驭与治理\"已经形成了相对清晰的方法论体系。\r\n\r\n但当任务复杂度跨越单 Agent 的能力边界，需要多个智能体分工协作来完成时，原有的工程方法论便不再适用。如何让多个智能体自主分工、高效沟通、无缝协作，成为下一阶段的核心命题。我们将这一新阶段称为 **Coordination Engineering**——它不是对 Harness Engineering 的替代，而是其在团队协作维度上的自然延伸。\r\n\r\n本次演讲将以华为支持的 openJiuwen 开源社区的实践为切入点，分享对这一范式的思考：从 JiuwenClaw AgentTeam 的多智能体协同机制，到业界首个面向多 Agent 协作的标准化能力包规范 Team Skills，探讨多智能体协同从\"运行时机制\"到\"协作经验沉淀\"的完整工程闭环。\r\n\r\n内容面向关注 Agent 架构设计、多 Agent 系统构建以及 AI 工程范式演进的开发者与技术决策者。",
+      "startsAt": "2026-09-07T14:35:00",
+      "endsAt": "2026-09-07T15:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2b048fe3-f1e1-4063-8164-e1d646ce1797"
+      ],
+      "categoryItems": [
+        459541,
+        481845,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1258725",
+      "title": "From Ralph-Loops to Dynamic Workflows: Designing Mission-Critical Agentic OS",
+      "description": "This talk uses Humanize as an example of a harness for long-running coding tasks. Instead of relying on one prompt, Humanize uses Ralph-loops, review gates, artifacts, and dynamic workflow orchestration to make coding work iterative and reviewable. This helps keep implementation quality high and reduces goal drift.\r\n\r\nBuilding on that idea, the talk looks at Agentic OS runtime design for mission-critical systems. The core proposal is to build OS-ready flow primitives and an Agent runtime that can manage OS features, app and process execution, device and tool permissions, runtime state, fault handling, human approval, and audit. In aerospace, onboard space computing, automotive, industrial control, robotics, and embodied AI, this runtime should make agents execute critical tasks more predictably across LLMs with different capability levels.\r\n\r\nHumanize Repo: https://github.com/PolyArch/humanize",
+      "startsAt": "2026-09-07T15:05:00",
+      "endsAt": "2026-09-07T15:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "ade75bf2-5135-41f8-8028-115881f59ed3"
+      ],
+      "categoryItems": [
+        459541,
+        481845,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1282509",
+      "title": "Coffee Break",
+      "description": null,
+      "startsAt": "2026-09-07T15:30:00",
+      "endsAt": "2026-09-07T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [
+        494083
+      ],
+      "questionAnswers": [],
+      "roomId": 87130,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "1256396",
+      "title": "Agents Can Pay. Can They Prove It?",
+      "description": "Where the global open agent-credential stack is heading, and what cross-border interop would take.\r\n\r\nEvery \"agent that verifies you\" or \"agent that pays\" demo skips the hard part: how does an AI agent request a real, government- or bank-grade credential from your device, on any phone, any wallet, Android or iOS, and prove who authorized it?\r\n\r\nWe'll run the full chain live. An MCP server renders a verifier inside Claude and ChatGPT; the W3C Digital Credentials API requests a credential over OpenID4VP; FIDO caBLE carries it cross-device to your phone; the wallet returns an mdoc or SD-JWT credential held in hardware (StrongBox, TEE, Secure Enclave); an AP2 mandate binds your intent.\r\n\r\nIdentity is the headline, age, membership, passport, healthcare, with payments as one example. And it's not a stage trick: it's an open-source Digital Credential MCP server, soon to be released and donated, that you can clone, point at your own credential, and ship. Built on open standards, across every platform, with UCP & ACP conformance on the roadmap.\r\n\r\nHere are some examples of the demos we're planning to showcase: https://github.com/dzuluaga/mcp-apps-shopping-demo\r\n",
+      "startsAt": "2026-09-07T16:05:00",
+      "endsAt": "2026-09-07T16:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "a5ba4771-b70b-4441-a9b4-3bca839c213f",
+        "27273a23-23ea-44a9-b30b-39e99582e150"
+      ],
+      "categoryItems": [
+        459541,
+        481846,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1261499",
+      "title": "Blade AI: An Autonomous Chaotic Engineering Agent Based on LangGraph",
+      "description": "Blade AI is the intelligent agent layer in the ChaosBlade ecosystem. Built on LangGraph, it utilizes a multi-stage state machine to reduce fault simulation costs from 20-30 minutes to just one sentence + 30 seconds.\r\n\r\nThis presentation covers:\r\n- Natural Language Driven: Agent proactively investigates and clarifies intent, not just simple questioning.\r\n- Multi-layered Security Depth: Rule engine deterministic verification + human-in-the-loop confirmation gate.\r\n- Two-layer Effect Verification: Programmatic confirmation + LLM semantic baseline comparison.\r\n- Complete Recovery Closed Loop: Intelligent routing matches destruction paths, recovery state is tiered.\r\n\r\n- FCAT Adaptive: Target health pre-check, automatically adjusts injection parameters.\r\n\r\n- Replanning: Automatic rollback in case of execution errors, multi-round tracing.\r\n\r\n- Plugin-based Expansion: Driven by SKILL.md, 19 built-in scenarios with 500ms hot reloading.\r\n\r\n- Cross-process Architecture: TUI with zero startup burden, persistent checkpoint recovery.\r\n\r\nOpen Source Address: github.com/chaosblade-io/chaosblade",
+      "startsAt": "2026-09-07T16:35:00",
+      "endsAt": "2026-09-07T17:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "d339f07a-febf-4df0-a7aa-48fe6db43b0e"
+      ],
+      "categoryItems": [
+        459541,
+        459545,
+        471946
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1228837",
+      "title": "**From \"Works on My Prompt\" to Production SLOs: Building Agent Observability",
+      "description": "When we shipped an AI agent powered by Cosmos DB's MCP server internally at Microsoft, it passed every test we threw at it—until real users found creative ways to break it. The agent would silently degrade: returning plausible-but-wrong query results, calling tools in inefficient loops, or burning through token budgets without completing tasks. Traditional monitoring showed green dashboards while users filed complaints. We needed observability designed for agents.\r\n\r\nThis talk presents the observability and evaluation stack I built to make agent failures visible, measurable, and catchable before users notice—combining OpenTelemetry instrumentation, LLM-as-judge evaluation, and automated regression gates in CI/CD.",
+      "startsAt": "2026-09-07T16:35:00",
+      "endsAt": "2026-09-07T17:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "108ca8ac-46c1-4821-aaaa-a31d2ce81849",
+        "fb42df47-d1e3-4aeb-9580-57b8608ba922"
+      ],
+      "categoryItems": [
+        459542,
+        459545,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1244038",
+      "title": "How we built Reliable and Self-Evolving Agent Skills",
+      "description": "Needless to say the recent advances in autonomous agents like OpenClaw & Hermes Agent. Agent frameworks have made developer life easier with tool calling, skills & MCPs adding scaffold and orchestration harness. Almost all agentic architecture layers are prompt driven. Prompts are a great way of interacting with LLMs, but often leads to unreliable outputs. Tuning prompts is quite a manual intrinsic work, given the non-deterministic nature of LLMs. \r\n\r\nHence the next wave of prompting is through reflection driven methodologies that don’t essentially need explicitly RL or fine tuning but can still invoke the self evolving nature in agents. Can we build a system that learns through its own mistakes and makes it better at each turn?\r\n\r\nWe essentially need to optimize and quantify which change leads to affecting the overall system. One way to achieve this is through text space optimization by refining the behavioral patterns, validation and feedback loops via evaluation structures. ",
+      "startsAt": "2026-09-07T17:05:00",
+      "endsAt": "2026-09-07T17:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "cfa227f5-2722-4e91-a2d6-4032885fa958",
+        "ceb969d0-839e-4cda-b59e-dd5c714e0b79"
+      ],
+      "categoryItems": [
+        459543,
+        481845,
+        471945
+      ],
+      "questionAnswers": [],
+      "roomId": 82123,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1258161",
+      "title": "Distributed Orchestration and Architecture Evolution for Edge-Cloud Collaborative AI Inference",
+      "description": "As LLMs evolve into Multi-Agent Systems, cloud-only inference faces high latency and privacy risks, while on-device execution suffers from compute constraints. This session introduces a production-grade \"Device-Edge-Cloud\" collaborative AI inference architecture for scalable agentic workloads. We discuss functional partitioning: on-device NPUs for intent filtration, edge nodes for local RAG/PII sanitization, and cloud for heavy reasoning.\r\nWe deep-dive into three critical engineering implementations: Heterogeneous Compute Synergy: Runtime computation graph partitioning and weight split-execution across mixed hardware (Xeon, Gaudi, and NPUs); Network-Aware Scheduling: A telemetry-driven engine enabling microsecond-level execution shifting between edge and cloud based on real-time QoS; Disconnected Self-Healing: Utilizing pre-staged localized fallback inference with OTA delta-weight patching to guarantee edge availability during network failures.\r\nFinally we will introduce that the above architecture is evolved to be the base of Agent OS in the Open Agentic AI Foundation for references.",
+      "startsAt": "2026-09-07T17:05:00",
+      "endsAt": "2026-09-07T17:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "a1d80bb7-42b1-46b1-981d-2263ffa6618d"
+      ],
+      "categoryItems": [
+        459541,
+        459545,
+        471947
+      ],
+      "questionAnswers": [],
+      "roomId": 82124,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": false
+    }
+  ],
+  "speakers": [
+    {
+      "id": "bfd19def-3013-4ce2-b621-cd3d9e0c4a7e",
+      "firstName": "Amazon",
+      "lastName": "Tao",
+      "bio": "Tao Bingzhe is Head of Product for the StepFun Open Platform, responsible for the platform and commercialization of the Step series of models. His current focus includes intelligent routing, Agent Runtime, and related product directions.\r\n\r\n",
+      "tagLine": "Dynamic Model Routing for Agent Workloads: Balancing Quality",
+      "profilePicture": "https://cdn.sessionize.com/image/494b-400o400o1-sSASJcxzEPjm3JoGfYxtDY.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1321940
+      ],
+      "fullName": "Amazon Tao",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "StepFun"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Head of Product for the StepFun Open Platform"
+        }
+      ]
+    },
+    {
+      "id": "6b0134fe-89a7-48b6-a245-7471eacd01e9",
+      "firstName": "Angie",
+      "lastName": "Jones",
+      "bio": "Angie Jones is the VP of Developer Experience at the Agentic AI Foundation where she guides how agentic systems are designed, implemented, and adopted across the global developer ecosystem.\r\n\r\nAngie is an award-winning teacher and international keynote speaker who shares her wealth of knowledge at software companies and conferences all over the world.\r\n\r\nAs a Master Inventor, Angie is known for her innovative and out-of-the-box thinking style which has resulted in more than 25 patented inventions in the areas of virtual worlds, collaboration software, social networking, smarter planet, and software development processes.",
+      "tagLine": "VP, Developer Experience",
+      "profilePicture": "https://cdn.sessionize.com/image/a8ff-400o400o1-4540110a-dbd5-4770-8754-1571adc82bee.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/techgirl1908",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/angiejones/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/techgirl1908/",
+          "linkType": "Instagram"
+        },
+        {
+          "title": "Blog",
+          "url": "https://angiejones.tech",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://aaif.io/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Personal Website",
+          "url": "https://angiejones.tech/",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/angiejones",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1283822
+      ],
+      "fullName": "Angie Jones",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "5c0e7a6b-a0d3-40aa-a1a9-aa669d70d434",
+      "firstName": "Anika",
+      "lastName": "Tibrewala",
+      "bio": "Hello there! About myself, I’m currently working as a Software Engineer at Visa, and I absolutely love communities and hackathons. Love coding and all things tech, interacting with tech enthusiasts, organising various community events, workshops and more!",
+      "tagLine": "SWE@Visa",
+      "profilePicture": "https://cdn.sessionize.com/image/b195-400o400o1-uWwQYpo3LAXJGAmhb3Gcn.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/anika-tibrewala/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.visa.co.in/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/anika-tibrewala",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1212086
+      ],
+      "fullName": "Anika Tibrewala",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Visa"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "e3302b74-9cd5-47c3-9c84-e922e29daae3",
+      "firstName": "Ben",
+      "lastName": "Chou",
+      "bio": "He gets Bachelor's degree graduate in Tongji University, currently Master's degree in Tongji University.Being Active in Volcano community.Former intern at Huawei's Software Special Forces (ICT BG)",
+      "tagLine": "Master of Tongji University  & Open source enthusiast",
+      "profilePicture": "https://cdn.sessionize.com/image/ecee-400o400o1-N5aGCN1KnhcPC2gx4h1xLm.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1260651
+      ],
+      "fullName": "Ben Chou",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Tongji University"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Master"
+        }
+      ]
+    },
+    {
+      "id": "b22a19f7-a067-4d05-83da-8ed2c74fbaf4",
+      "firstName": "Betty",
+      "lastName": "Zheng",
+      "bio": "Betty Zheng is a Senior Developer Advocate at Amazon Web Services, working with developer and open-source communities across Greater China. Her current focus includes generative AI, AI agents, open-source agent frameworks, and production agentic systems. She regularly speaks at developer and open-source conferences and works with communities to help developers understand and adopt emerging technologies.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/c7de-400o400o1-f4Q61dYPze2wDB3nqCjk4L.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1314311
+      ],
+      "fullName": "Betty Zheng",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Amazon Web Services"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Sr. Developer Advocate, GCR"
+        }
+      ]
+    },
+    {
+      "id": "e267ecba-4979-4a04-a745-0729b4395007",
+      "firstName": "Betty",
+      "lastName": "Zheng",
+      "bio": "Yubin Zheng is a seasoned engineer with over 20 years of experience in ICT and digital transformation. She focuses on building real-world AI systems, including agent runtime design, multi-agent coordination, and production deployment. She is an active contributor to developer and open-source communities, and a frequent speaker at cloud-native and AI events.",
+      "tagLine": "Senior Developer",
+      "profilePicture": "https://cdn.sessionize.com/image/faf5-400o400o1-YHrrcdU4oFpW6vdwzDoAvS.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "http://linkedin.com/in/zhengyubin714",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://aws.amazon.com/cn/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1268963
+      ],
+      "fullName": "Betty Zheng",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "AWS"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Developer Advocate"
+        }
+      ]
+    },
+    {
+      "id": "b8e24708-5e80-4209-a097-7f889bc9e699",
+      "firstName": "Bhavuk",
+      "lastName": "Kalra",
+      "bio": "Bhavuk Kalra is a backend-focused software engineer with expertise in AWS, Python, CI/CD, and containerized systems. He has led scalable infrastructure initiatives at JPMorgan Chase, improved deployment pipelines, and contributed to open-source and research, combining practical engineering with strong DevOps and system design skills.",
+      "tagLine": "SDE 3 @ Oracle",
+      "profilePicture": "https://cdn.sessionize.com/image/3a6f-400o400o1-NhacfbkarSVbtrCob6Vr4H.PNG",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/itsbhavuk",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/bhavukkalra-software-engineer/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://bhavukkalra.hashnode.dev/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.oracle.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/bhavuk-kalra",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1212086
+      ],
+      "fullName": "Bhavuk Kalra",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Oracle"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "SDE 3 @Oracle"
+        }
+      ]
+    },
+    {
+      "id": "ade75bf2-5135-41f8-8028-115881f59ed3",
+      "firstName": "Chao",
+      "lastName": "Liu",
+      "bio": "Chao Liu is a senior software engineer at Process Mission (Shanghai) Technology Co., Ltd., working on AI-native software development workflows, agentic engineering, and human-in-the-loop systems. He focuses on turning coding agents into review-gated engineering loops with explicit plans, artifacts, workflow orchestration, and audit trails.",
+      "tagLine": "QEMU RISC-V Reviewer, Humainze Maintainer, Linux and Zephyr Contributor",
+      "profilePicture": "https://cdn.sessionize.com/image/6d75-400o400o1-LiaQCYw5gFF7TbiruvxfjR.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/chao-liu-a67a793aa/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        1258725
+      ],
+      "fullName": "Chao Liu",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Process Mission (Shanghai) Technology Co., Ltd."
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "25cacc91-2dd9-4027-a3a7-bf4642876788",
+      "firstName": "Charlie",
+      "lastName": "Xu",
+      "bio": "Charlie Xu is an R&D Engineering Lead at Tencent Cloud Infrastructure, working across AI agent platforms, high-performance networking, and cloud-native architectures. As a core maintainer of CubeSandbox, he builds and operates large-scale AI agent infrastructure that runs reliably in production.",
+      "tagLine": "R&D Engineering Lead & CubeSandbox Maintainer, Tencent Cloud Infrastructure",
+      "profilePicture": "https://cdn.sessionize.com/image/2e0b-400o400o1-DRj96XsjnvmNhdTbRyF653.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1268978
+      ],
+      "fullName": "Charlie Xu",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Tencent"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Engineering Lead"
+        }
+      ]
+    },
+    {
+      "id": "086e5046-4859-4d89-8b51-cba297b4ba03",
+      "firstName": "Chris",
+      "lastName": "Urwin",
+      "bio": "Chris Urwin is VP of Field Engineering at Obot AI and a veteran engineering leader. With deep hands-on experience in cloud‑native platforms, Kubernetes, containers, CI/CD, and developer tooling, he builds and scales global technical teams. Chris bridges product, engineering, and developers to turn complex distributed systems into practical, production‑ready platforms.",
+      "tagLine": "VP of Field Engineering at Obot AI",
+      "profilePicture": "https://cdn.sessionize.com/image/f52b-400o400o1-fB19cd9zzn8f1T8u7FiCLE.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/chrisurwin/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://obot.ai",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1282547
+      ],
+      "fullName": "Chris Urwin",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Obot AI"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "VP of Field Engineering"
+        }
+      ]
+    },
+    {
+      "id": "a5ba4771-b70b-4441-a9b4-3bca839c213f",
+      "firstName": "Diego",
+      "lastName": "Zuluaga",
+      "bio": "Diego Zuluaga: Leads agentic commerce on Multipaz (OpenWallet Foundation's mdoc credential library, what Google Wallet runs on) and heads Open Mobile Hub under the Linux Foundation. Represents Futurewei in the Agentic AI Foundation (Agentic Commerce, Identity & Trust working groups), alongside Mastercard, Visa, and Google. Ex-Google (Cloud, Assistant, Android DevRel).",
+      "tagLine": "Solution Partner Director",
+      "profilePicture": "https://cdn.sessionize.com/image/1954-400o400o1-vsc7eXAmvyF6R4XSc6oSK.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/diego-zuluaga-7119508/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://openmobilehub.org",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/dfzuluaga",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1256396
+      ],
+      "fullName": "Diego Zuluaga",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Open Mobile Hub"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Lead, Open Mobile Hub (Linux Foundation)"
+        }
+      ]
+    },
+    {
+      "id": "167785b9-c6c5-45b7-b904-c8282df6fb2f",
+      "firstName": "Dr. Junlan",
+      "lastName": "Feng",
+      "bio": "Dr. Feng Junlan is the Chief Scientist of China Mobile Group, an IEEE Fellow, and served as Chair of the Linux Foundation Networking Board of Directors (2020-2023). She earned her Ph.D. in Acoustics from the Chinese Academy of Sciences in 2001 and subsequently worked as a Senior and Principal Researcher at AT&T Labs Research.\r\n\r\nSince joining China Mobile in 2013, Dr. Feng has led the company's AI team in developing core algorithms and technologies. Her work has shaped the comprehensive \"Jiutian\" AI portfolio, which now supports over 3,700 production applications. Under her leadership, her team has undertaken 21 national-level research projects and won more than 30 international algorithm competitions, alongside numerous national and ministerial honors.\r\n\r\nAs an accomplished author, Dr. Feng has published over 200 academic papers, co-authored a book, and holds more than 150 patents. She actively contributes to the global academic community as a reviewer and program committee member for top AI conferences and journals, and has held over 15 roles, including committee member or vice chair, in organizations such as the IEEE.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/6352-400o400o1-Vo8MHTuFFSjzpoGAT6vHes.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1314303
+      ],
+      "fullName": "Dr. Junlan Feng",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "China Mobile Group"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Chief Scientist"
+        }
+      ]
+    },
+    {
+      "id": "2027aa98-ba2b-42eb-abaa-35f691ddf697",
+      "firstName": "Feynman",
+      "lastName": "Zhou",
+      "bio": "Feynman Zhou is a Senior Product Manager at Tencent Cloud and a CNCF Ambassador. He has spent the past eight years working with CNCF projects and open source communities, and is a maintainer of ORAS, the Notary Project, and Ratify. Today, he focuses on building infrastructure for agentic AI systems and how they can run reliably in production. He is also active in the cloud native community and has helped organize Kubernetes Community Days China.",
+      "tagLine": "Tencent, Senior Product Manager",
+      "profilePicture": "https://cdn.sessionize.com/image/d20a-400o400o1-wYph3m1gGHqemaZVoNZ8uh.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/FeynmanZhou",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/feynman-zhou/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://www.feynmanzhou.com/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/FeynmanZhou",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/feynman-zhou",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1268963,
+        1268978
+      ],
+      "fullName": "Feynman Zhou",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Tencent"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Product Manager"
+        }
+      ]
+    },
+    {
+      "id": "106dc281-fe8b-40ac-b16b-240832b27b47",
+      "firstName": "Giovanni",
+      "lastName": "Laquidara",
+      "bio": "Giovanni Laquidara is a Senior Dev Advocate at Amazon, where he works on supporting developers around the world using the Amazon Appstore across many devices. Previously, Giovanni worked as a software engineer building mobile apps, real-time defense systems, and VR/AR experiences. For fun, Giovanni enjoys low level programming, IoT hacking and Dancing Bachata around the world 🕺\r\n\r\nYou can connect with Giovanni on Twitter, Linkedin, and giolaq.dev.\r\n",
+      "tagLine": "Sr Developer Evangelist @ Amazon",
+      "profilePicture": "https://cdn.sessionize.com/image/b15d-400o400o1-ApRiuodv2w5hqDwSS8JD3.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/giolaq",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/glaquidara/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/giolaqdev/",
+          "linkType": "Instagram"
+        },
+        {
+          "title": "Blog",
+          "url": "https://giolaq.dev/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://developer.amazon.com/apps-and-games/blogs",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/glaquidara",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1249836
+      ],
+      "fullName": "Giovanni Laquidara",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Amazon"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Sr Developer Advocate"
+        }
+      ]
+    },
+    {
+      "id": "1d9fc8c4-b6d9-40b7-a071-4c3a83d70101",
+      "firstName": "Himanshu",
+      "lastName": "Sangshetti",
+      "bio": "Himanshu Sangshetti is an AI Engineer at Mem0 (50k+ Github stars)\r\n\r\nWith a background in AI, cloud, and DevOps, he builds the memory layer for AI agents and helps engineers design and operate them in production.\r\n\r\nAn AWS Community Builder, HashiCorp Ambassador, and former AWS Cloud Captain, he has delivered 30+ talks across global tech communities and organizes Pune's Build Club AI community, now 1k+ members.\r\n\r\nHe also founded CloudFluently, a free cloud learning platform with 10k+ learners.",
+      "tagLine": "AI Engineer @ Mem0",
+      "profilePicture": "https://cdn.sessionize.com/image/5dfd-400o400o1-ncXzRy4t9tVPkk4DycgtVK.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://x.com/himanshutwtxs",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/himanshu-sangshetti",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://mem0.ai/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/himanshu-sangshetti",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1248843
+      ],
+      "fullName": "Himanshu Sangshetti",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Mem0"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "AI Engineer"
+        }
+      ]
+    },
+    {
+      "id": "3e15b5d8-45c3-42a0-85c0-77a0e71f18ed",
+      "firstName": "Irvin",
+      "lastName": "Cardoza",
+      "bio": "Irvin Cardoza is a Computer Science student at Simon Fraser University and a software engineering intern focused on backend systems, infrastructure, and applied AI. He has worked on AI-integrated internal tools, cloud-native workflows, and production engineering systems. His interests include real-time AI applications, developer infrastructure, and building reliable systems around modern machine learning models.",
+      "tagLine": "SDE @EA, Dialpad, KPMG",
+      "profilePicture": "https://cdn.sessionize.com/image/1cb6-400o400o1-LpzbwczK2ExPtX1fzuX1MM.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/irvincardoza/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/irvin-cardoza",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1252251
+      ],
+      "fullName": "Irvin Cardoza",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Simon Fraser University"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "cfa227f5-2722-4e91-a2d6-4032885fa958",
+      "firstName": "Jayita",
+      "lastName": "Bhattacharyya",
+      "bio": "Jayita Bhattacharyya, a Generative AI Engineer, international conference speaker, and Co-Organizer of the Bangalore Python User Group, one of India's largest Python communities under the PSF ecosystem. Jayita specializes in Agentic AI, RAG systems, Knowledge Graphs, and production AI engineering, and has spoken at global conferences including PyData Global, PyCon Finland, Open Source India, NVIDIA AI Inference Day, and AI_dev Europe. ",
+      "tagLine": "Hackathon Wizard| Official Code-breaker | Generative AI | Machine Learning | Software Engineer | Traveller",
+      "profilePicture": "https://cdn.sessionize.com/image/96fd-400o400o1-BuwUpjxfCY2kFZw57hyJew.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://x.com/jayitabhattac11",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jayita-bhattacharyya/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/jayita.bhattacharyya.10",
+          "linkType": "Facebook"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/jayita__b/",
+          "linkType": "Instagram"
+        },
+        {
+          "title": "Blog",
+          "url": "https://itsjb13.medium.com/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.domyn.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/jayita-bhattacharyya",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1244038
+      ],
+      "fullName": "Jayita Bhattacharyya",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Domyn"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "AI Engineer"
+        }
+      ]
+    },
+    {
+      "id": "04038740-eb23-4a17-a732-18cdd644a571",
+      "firstName": "Jingyi",
+      "lastName": "Wang",
+      "bio": "Jingyi Wang is a Forward Deployed Engineer at Google Cloud who specializes in architecting advanced GenAI systems and multi-agent solutions. She excels at transforming intricate technical challenges into scalable, enterprise-grade applications through high-impact strategic engagements with clients. ",
+      "tagLine": "Google, Forward Deployed Engineer",
+      "profilePicture": "https://cdn.sessionize.com/image/1bb0-400o400o1-hVPk4dApc45FiGY4SpsBSP.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1319349
+      ],
+      "fullName": "Jingyi Wang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Google"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Forward Deployed Engineer"
+        }
+      ]
+    },
+    {
+      "id": "2d9aa720-d192-44c9-87e6-a1a2f0c53d35",
+      "firstName": "Jintao",
+      "lastName": "Zhang",
+      "bio": "Jintao Zhang is a Microsoft MVP, CNCF Ambassador, Apache PMC, and Kubernetes Ingress-NGINX maintainer, he is good at cloud-native technology and Azure technology stack.",
+      "tagLine": "CNCF Ambassador, Microsoft MVP, Kubernetes Ingress-NGINX maintainer",
+      "profilePicture": "https://cdn.sessionize.com/image/5006-400o400o1-49m4bfz5vgWAu1XESM2cFP.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/zhangjintao9020",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jintao-zhang-402645193/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://moelove.info/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://konghq.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/zhangjintao9020",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1268963
+      ],
+      "fullName": "Jintao Zhang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Kong Inc."
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "1b814ba0-bc81-4245-880a-097b1e7e3b75",
+      "firstName": "Kevin",
+      "lastName": "Wang",
+      "bio": "Kevin Wang has been an outstanding contributor in the CNCF community since its beginning and is the leader of the cloud native open source team at Huawei. Kevin has contributed critical enhancements to Kubernetes, led the incubation of the KubeEdge, Volcano, Karmada projects in CNCF, actively participated in the TOC, and played a critical role in building and supporting the growth of CNCF technologies and the CNCF community in the globe.",
+      "tagLine": "CNCF TOC Vice Chair, Ambassador, Kubernetes emeritus Maintainer, Founder and Maintainer of multiple CNCF projects, Lead of Cloud Native Open Source Team at Huawei",
+      "profilePicture": "https://cdn.sessionize.com/image/9c71-400o400o1-h2y88cTaoPHJW7cQM2PScp.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/kevin-wangzefeng/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://huaweicloud.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/kevin-wang",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1268963
+      ],
+      "fullName": "Kevin Wang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Huawei"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Lead of Cloud Native Open Source"
+        }
+      ]
+    },
+    {
+      "id": "108ca8ac-46c1-4821-aaaa-a31d2ce81849",
+      "firstName": "Manik",
+      "lastName": "Khandelwal",
+      "bio": "Manik Khandelwal is an Engineer at Microsoft and a core maintainer of the Azure Cosmos DB Node.js SDK. He builds tools that make modern apps more scalable and intelligent—using AI, real-time data, and JavaScript.",
+      "tagLine": "Senior Engineer @ Microsoft | Building the brains behind scalable apps with Cosmos DB & AI",
+      "profilePicture": "https://cdn.sessionize.com/image/d456-400o400o1-4nE1chaizm51XeBzKhgoDN.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://x.com/Manikkhandelwa2",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/manik-khandelwal-bb2943143/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/ManikKhandelwal",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1228837
+      ],
+      "fullName": "Manik Khandelwal",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Microsoft"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Software engineer"
+        }
+      ]
+    },
+    {
+      "id": "81a1841a-0f05-4d9b-928e-c8e74ba0b570",
+      "firstName": "Mayukh",
+      "lastName": "Hazari",
+      "bio": "Mayukh Hazari is a software engineer who builds and secures integration systems the plumbing connecting payments, identity, and authentication across services. Years of wiring up money and identity flows taught him one habit: assume every input is hostile, and always check where trust is actually being handed over. He likes systems that are reliable, secure, and boring in all the right ways. Outside work, you'll find him playing cricket.",
+      "tagLine": "Software Engineer at Trivelta",
+      "profilePicture": "https://cdn.sessionize.com/image/1d02-400o400o1-LGQS2mWeCWtYHZ7jji8d75.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://x.com/mayukdev",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/mayukhhazari",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://trivelta.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Portfolio",
+          "url": "https://www.mhazari.in",
+          "linkType": "Other"
+        }
+      ],
+      "sessions": [
+        1261176
+      ],
+      "fullName": "Mayukh Hazari",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Trivelta"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "92000eaa-ac12-4f87-96ff-f48c1042094f",
+      "firstName": "Mazin",
+      "lastName": "Gilbert",
+      "bio": "Mazin Gilbert is the Executive Director of the Agentic AI Foundation, part of the Linux Foundation. An IEEE Fellow with a Ph.D. in Artificial Intelligence and a Wharton MBA, Mazin brings 25+ years of experience driving AI innovation from research to global-scale deployment. His career spans senior leadership at Google as Director of Engineering for Google Distributed Cloud AI/ML, and at AT&T as VP of Network Analytics and Automation.\r\n\r\nMazin has built production-grade GenAI, machine learning, and agentic AI platforms at scale. He co-founded open-source landmarks including ONAP, Akraino, and Acumos, and helped found the LF Networking, LF Edge, and LF AI. He has served on the boards of the Open Network Foundation, NSF MLWINS, and the International Computer Science Institute at Berkeley.\r\n\r\nMazin holds 260+ U.S. patents, has authored 100+ research papers, and became an IEEE Fellow in 2012 for pioneering contributions to speech processing.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/0c92-400o400o1-TVaA8U2KsGyJr9Z3DzD7QF.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1283825
+      ],
+      "fullName": "Mazin Gilbert",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Agentic AI Foundation"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Executive Director"
+        }
+      ]
+    },
+    {
+      "id": "0937d166-47c5-47f7-8fcf-acb4607f6fc8",
+      "firstName": "Nan",
+      "lastName": "Gao",
+      "bio": "Was a graphics programmer in Youkia game engine team.",
+      "tagLine": "independent developer",
+      "profilePicture": "https://cdn.sessionize.com/image/1b31-400o400o1-DrdCy1XPiNaAfEg9pzfkMh.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/nan-gao",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1268646
+      ],
+      "fullName": "Nan Gao",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "None"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "deer-flow contributor"
+        }
+      ]
+    },
+    {
+      "id": "cb2d185c-738b-4c7b-8e67-0eb94f5db76e",
+      "firstName": "Nasiullha",
+      "lastName": "Chaudhari",
+      "bio": "Nasiullha Chaudhari works as a Developer Engagement Manager at YugabyteDB, focusing on AI systems, distributed databases, and cloud-native architectures. He works on real-world AI agent systems and focuses on what it takes to run them reliably in production.\r\n\r\nHe is a Docker Captain and an international speaker who has spoken at developer and infrastructure conferences globally. He shares practical insights through his YouTube channel with 180K+ subscribers and with 70K+ followers on LinkedIn.\r\n",
+      "tagLine": "Educator & Developer Engagement Manager at Yugabyte",
+      "profilePicture": "https://cdn.sessionize.com/image/a314-400o400o1-PRy2v72m6WXVZM6AQSpjLu.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://in.linkedin.com/in/nasiullha-chaudhari",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://in.linkedin.com/in/nasiullha-chaudhari",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://yugabyte.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/nasiullha-chaudhari8987",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1203741
+      ],
+      "fullName": "Nasiullha Chaudhari",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "YugabyteDB"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Developer Engagement Manager"
+        }
+      ]
+    },
+    {
+      "id": "fb42df47-d1e3-4aeb-9580-57b8608ba922",
+      "firstName": "Prerit",
+      "lastName": "Khandalwal",
+      "bio": null,
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/7c5f-400o400o1-HcPvhoKxTHRB2fuMERdHxB.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1228837
+      ],
+      "fullName": "Prerit Khandalwal",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Razorpay"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Director, Product Analytics"
+        }
+      ]
+    },
+    {
+      "id": "7157e9a5-049f-419d-80a5-f931c33a17f0",
+      "firstName": "Qingjie",
+      "lastName": "Zhao",
+      "bio": "Qingjie Zhao works on AgentRun, a Managed Agents platform from Alibaba Cloud Function Compute. His work focuses on production agent infrastructure, runtime-agnostic orchestration, MCP integration, human-in-the-loop governance, and serverless execution for enterprise AI agents. He is interested in helping teams move agent systems from prototypes to reliable, governable production workflows.",
+      "tagLine": "Product Technical Lead, Serverless AgentRun, Alibaba CloudAgentRun, Alibaba Cloud Function Compute",
+      "profilePicture": "https://cdn.sessionize.com/image/7742-400o400o1-UdKW36otmK5w6G5TPCUbgR.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1255652
+      ],
+      "fullName": "Qingjie Zhao",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Alibaba Cloud "
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Jack Zhao works on AgentRun, a Managed Agents platform from Alibaba Cloud Function Compute. His work focuses on production agent infrastructure, runtime-agnostic orchestration, MCP integration, human-in-the-loop governance, and serverless execution for enterprise AI agents. He is interested in helping teams move agent systems from prototypes to reliable, governable production workflows."
+        }
+      ]
+    },
+    {
+      "id": "15e1d96a-86c0-4b74-b0a1-562b70f6c751",
+      "firstName": "Richard",
+      "lastName": "Sikang Bian",
+      "bio": "Richard Sikang Bian is the Head of Product and Operations for Ant Ling, the foundational LLM at Ant inclusionAI. Leading the \"Model as a Product\" team, he drives GTM strategy, ecosystem development, and data sourcing while building innovative proofs-of-concept. A former software engineer at Microsoft and Square/Block, Richard previously served as Head of Open Source at Ant, successfully scaling the initiative into a dedicated cross-functional team through internal incubation. With extensive international experience spanning Singapore, Canada, the US, and China, he specializes in steering zero-to-one strategic initiatives and fostering cross-cultural collaboration to build world-class, user-centric products.\r\n\r\nRichard is also an AAIF Ambassador and the former Outreach Chair of LFAI & Data Foundation.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/9688-400o400o1-fUJEVJYAeamRLD8zZ9XW9s.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1283832
+      ],
+      "fullName": "Richard Sikang Bian",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Ant Group"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Head of Product and Operations, Ant Ling LLM by InclusionAI"
+        }
+      ]
+    },
+    {
+      "id": "27273a23-23ea-44a9-b30b-39e99582e150",
+      "firstName": "Saurabh",
+      "lastName": "Goyal",
+      "bio": "Saurabh is a Senior Director at OMH with 20 years of experience in the technology industry. In his current role, he is focused on developing the agentic ecosystem and contributing to Open Source Projects.\r\nPrior to his current role, Saurabh worked with Google for 10.5 years, where he helped launch AI-based advertising campaign features, working on product management, strategy, sales, and analytics. \r\n",
+      "tagLine": "Senior Director, Open Mobile Hub",
+      "profilePicture": "https://cdn.sessionize.com/image/953b-400o400o1-N9sR2hksbdN7o9xomXxgsC.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1256396
+      ],
+      "fullName": "Saurabh Goyal",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Open Mobile Hub"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Director, Open Mobile Hub"
+        }
+      ]
+    },
+    {
+      "id": "a1d80bb7-42b1-46b1-981d-2263ffa6618d",
+      "firstName": "Shane",
+      "lastName": "Wang",
+      "bio": "Director at Intel. Having served as an independent individual director of the Open Infrastructure Foundation for 9 consecutive years (2015-2023),  a CNCF Ambassador, a TOC member of the OpenAtom Foundation, TOC chair of the Open Intelligent Computing Industry Alliance (COIA) and Open Agentic AI Foundation (OAAIF), a Technical Committee Member of the Mulan Open Source Community, and a standing Committee Member of the China Computer Federation (CCF) Open Source Development Committee.",
+      "tagLine": "Intel, Director, Cloud, Enterprise AI",
+      "profilePicture": "https://cdn.sessionize.com/image/856f-400o400o1-XQBixHNE1eABWKQcXJyt99.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/shane-wang-cloud/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.intel.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1258161
+      ],
+      "fullName": "Shane Wang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Intel"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Director"
+        }
+      ]
+    },
+    {
+      "id": "bb49b501-3893-40cb-b17a-70b7371bd6ff",
+      "firstName": "Shannon",
+      "lastName": "Williams",
+      "bio": "I am the President and co-founder of Obot AI, and have been building open source software for the last 20 years. Prior to starting Obot, I co-founded Cloud.com (creator of CloudStack) and Rancher Labs (creator of Rancher, k3s, Longhorn, etc). I was a board member of the CNCF for 4 years, and have been through infrastructure transformation cycles before with cloud computing and containers. Now at Obot AI, I work with organizations implementing MCP at scale. ",
+      "tagLine": "President, Obot AI",
+      "profilePicture": "https://cdn.sessionize.com/image/d4f6-400o400o1-VEVBis7GLu9hbnFkrjvraU.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "http://linkedin.com/in/smw355",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://obot.ai",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        1282547
+      ],
+      "fullName": "Shannon Williams",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "0793b99f-1282-4674-9d21-f88e30c8232e",
+      "firstName": "Stephen",
+      "lastName": "Chin",
+      "bio": "Stephen Chin is VP of Developer Relations at Neo4j, conference chair of the LF AI & Data Foundation, and author of numerous titles including the upcoming GraphRAG: The Definitive Guide for O'Reilly. He has given keynotes at numerous conferences around the world including AI Engineer Summit, AI DevSummit, Devoxx, DevNexus, JNation, JavaOne, Shift, swampUP, and GIDS. When he is not traveling, he enjoys teaching kids how to do AI, embedded, and robot programming together with his daughters.",
+      "tagLine": "VP of Developer Relations",
+      "profilePicture": "https://cdn.sessionize.com/image/67c7-400o400o1-94UgqvdxnaQUpj38o9TkBX.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/steveonjava",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/steveonjava/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://steveonjava.com/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://neo4j.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/steveonjava",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1254713
+      ],
+      "fullName": "Stephen Chin",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Neo4j"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "VP of Developer Relations"
+        }
+      ]
+    },
+    {
+      "id": "ceb969d0-839e-4cda-b59e-dd5c714e0b79",
+      "firstName": "Suvrakamal",
+      "lastName": "Das",
+      "bio": "Suvrakamal is an ML Engineer at Mattoboard. He works on AI for interior design. He is passionate about applying machine learning and data engineering to bring real design workflows to life.\r\nHe has given talks and published papers across AI, and recently presented a poster/papers at PyCon US 2026, Pytorch 2025.\r\n",
+      "tagLine": "Machine Learning Engineer",
+      "profilePicture": "https://cdn.sessionize.com/image/38b1-400o400o1-QaMBHncFRT1mJrQCNJ7UqZ.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://x.com/SuvrakamalD",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/suvrakamaldas/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://www.suvrakamaldas.icu/blog",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.suvrakamaldas.icu/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/suvrakamaldas",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1261176,
+        1244038
+      ],
+      "fullName": "Suvrakamal Das",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "mattoboard "
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "ml engineer "
+        }
+      ]
+    },
+    {
+      "id": "a9d6b5d5-1103-412e-b8f9-344069787393",
+      "firstName": "Sylph",
+      "lastName": "Lin",
+      "bio": "Cloud & AI Engineering Leader with 25+ years building high-performance technical organizations across APAC. Currently leading Google Cloud's Partner Solution Architect function for Greater China & APAC ISV.\r\n\r\nKey Impact:\r\n- Orchestrated 80+ partner AI deployments across APAC, with 50+ focused on Generative AI (RAG, Agents, Gemini)\r\n- Built Partner SA teams from 0→12 in North Asia and APAC ISV; executed 90+ interviews in a single year to meet aggressive growth targets\r\n- Achieved 100% Favorable manager rating (2022); 91.85/100 average across 7 consecutive reviews\r\n\r\nDeep expertise in generative AI application and enterprise AI transformation at scale. Trusted technical advisor to C-suite executives across China, Hong Kong, Taiwan, and Korea.\r\n\r\nOpen to connecting with leaders building the next wave of AI-powered enterprises across APAC.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/6fd4-400o400o1-PgAfAEp618YQJ2SZyacB6T.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1321936
+      ],
+      "fullName": "Sylph Lin",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Google"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "AI Evangelist, Greater China"
+        }
+      ]
+    },
+    {
+      "id": "09294e41-e1a4-469e-89ea-7f6b5113a8cf",
+      "firstName": "Wei",
+      "lastName": "Zheng",
+      "bio": "Dr. Wei Zheng leads the openJiuwen A2X Registry open-source project and is a Senior Engineer at Huawei's Computer Network and Protocol Lab. His work spans agent protocols and communication, LLM-native service discovery, and infrastructure for the agent protocol layer. He has presented the A2X protocol family at the inaugural meeting of the Agent Communication Committee of the China Institute of Communications.",
+      "tagLine": "openJiuwen A2X Registry Lead | Senior Engineer, Huawei",
+      "profilePicture": "https://cdn.sessionize.com/image/6214-400o400o1-W8ze9nvKGtcshrrJx2yc8Q.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/wei-zheng",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1242199
+      ],
+      "fullName": "Wei Zheng",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Huawei"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Engineer"
+        }
+      ]
+    },
+    {
+      "id": "11322c46-7378-4bad-b651-343f6daec380",
+      "firstName": "Willem",
+      "lastName": "Jiang",
+      "bio": "Willem Jiang (Jiang Ning), DeerFlow maintainer. He was the Principal Open Source Evangelist of ByteDance OSPO and served as a board director of the Apache Software Foundation. He has contributed to various Apache projects, including Camel, CXF, ServiceMix, and ServiceComb. Prior to joining ByteDance, Willem was the open source technical expert of Huawei. Before that, he was  the principal engineer of RedHat working on Fuse ESB. He also worked for FuseSource, IONA and Travelsky.inc.",
+      "tagLine": "Open Source and Agentic AI Consultant",
+      "profilePicture": "https://cdn.sessionize.com/image/7248-400o400o1-BjZnK4uk17L2eC9ZJkMqHU.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "X (Twitter)",
+          "url": "https://twitter.com/willemjiang",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jiangning/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/willem.jiang/",
+          "linkType": "Facebook"
+        },
+        {
+          "title": "Blog",
+          "url": "https://willemjiang.github.io/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.bytedance.com/en/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/willem-jiang",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1268646
+      ],
+      "fullName": "Willem Jiang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Independent"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Open Source and Agentic AI Consultant"
+        }
+      ]
+    },
+    {
+      "id": "be465cee-9df4-4d55-a3a8-da224cac912e",
+      "firstName": "Xudong (Bill)",
+      "lastName": "Ren",
+      "bio": "Bill Ren holds an EMBA and Master Degree from Peking University, and a CS\r\nBachelor Degree from Shanghai Jiaotong University. He also obtained a\r\nPh.D. degree from Tsinghua University in 2026. Since Joining Huawei in\r\n2000，Bill served as an Intelligent Network Research and Development\r\nEngineer, Product Manager and Architect of India Branch, General Manager\r\nof Business OSS, Vice President of Network OSS, Vice President of Network\r\nOSS Strategy and MKT, Vice President of Solution MKTG, etc. He has\r\naccumulated rich experience in R&amp;D, marketing and product management.\r\nMr. Ren Xudong（Bill Ren）now serves as the Chief Open Source Liaison\r\nOfficer of Huawei. Now he is a board member of CNCF and OWF. He has\r\nparticipated in the launch and building out of open source projects, such as\r\nONAP, OPNFV, Akraino, OPEN-O, OpenHarmony and openEuler. In this\r\nrole，he is fully responsible for using open source means to build industrial\r\necology, expand industrial space, build a healthy and harmonious industrial\r\nenvironment. He is also the author of several specialized books on open\r\nsource, such as ONAP Technical Essentials.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/cb1f-400o400o1-4YgTnQkUz9WxEwn5GuVokc.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1282497
+      ],
+      "fullName": "Xudong (Bill) Ren",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Huawei"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Board Member of CNCF & Chief Open Source Liaison Officer"
+        }
+      ]
+    },
+    {
+      "id": "20280fc7-29e6-4d8a-8756-7ca803aaa2b7",
+      "firstName": "YaTing",
+      "lastName": "Mou",
+      "bio": "Martina Mou is a software engineer on the Gateway team at Xiaohongshu (Rednote), where she focuses on building agent infrastructure, including the MCP Gateway and unified identity authentication system for AI agents.",
+      "tagLine": "Infrastructure Engineer @Xiaohongshu/Rednote ",
+      "profilePicture": "https://cdn.sessionize.com/image/58ea-400o400o1-KUTuSS6rDw7QJBEMJqdGgR.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/yt-mou",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1261426
+      ],
+      "fullName": "YaTing Mou",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Xiaohongshu (Little Red Book)"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Infrastructure Engineer, Xiaohongshu"
+        }
+      ]
+    },
+    {
+      "id": "d339f07a-febf-4df0-a7aa-48fe6db43b0e",
+      "firstName": "Zelin",
+      "lastName": "Jiang",
+      "bio": "Senior R&D Engineer at Alibaba Cloud Computing. ChaosBlade maintainer and creator of Blade-AI, an autonomous chaos engineering agent built on LangGraph that compresses fault drills from 20-30 minutes of command-line work into one sentence plus 30 seconds. Focused on making AI agents safe for production: deterministic rule-engine verification, human-in-the-loop gates, and closed-loop recovery.\r\nGitHub: https://github.com/woyaonidish",
+      "tagLine": "Senior R&D Engineer at Alibaba Cloud · ChaosBlade Maintainer · Creator of Blade-AI",
+      "profilePicture": "https://cdn.sessionize.com/image/c597-400o400o1-LYj36BHhM9hFExsk5uB9t6.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Company Website",
+          "url": "https://www.alibabacloud.com",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/zelin-jiang",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1261499
+      ],
+      "fullName": "Zelin Jiang",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Alibaba Cloud"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior R&D Engineer"
+        }
+      ]
+    },
+    {
+      "id": "cdf5e752-a613-4e67-bd52-4acc6c4b6c63",
+      "firstName": "Zhonghu",
+      "lastName": "Xu",
+      "bio": "Zhonghu currently serves as CNCF TAG-Infra Tech Lead, Istio Steering Committe and he is a maintainer of many CNCF projects, volcano, agentcube, istio, kmesh etc.  Also Kubernetes TOP 100 contributors.\r\nHe is focusing on agentic infra and ai in the last few years.\r\nZhonghu is also the co-author of 《Cloud Native Service Mesh Istio》, the best-selling service mesh book in China. In 2023, he published another istio book《The definitive guide of Istio》",
+      "tagLine": "Istio Steering Committee & CNCF TAG-Network Tech Lead, Senior Technical Expert, Huawei Cloud. ",
+      "profilePicture": "https://cdn.sessionize.com/image/13a4-400o400o1-TgVPMKAqmgk9sLaaN1PtHY.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/ZhonghuXu",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/zhonghu-xu-90380b177/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://huawei.com/",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/hzxuzhonghu",
+          "linkType": "Other"
+        },
+        {
+          "title": "Sessionize",
+          "url": "https://sessionize.com/zhonghu-xu",
+          "linkType": "Sessionize"
+        }
+      ],
+      "sessions": [
+        1260651
+      ],
+      "fullName": "Zhonghu Xu",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Alibaba"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Senior Technical Expert"
+        }
+      ]
+    },
+    {
+      "id": "41d06bb8-1002-4d34-a4ef-7e72ac7b0444",
+      "firstName": "Zhou",
+      "lastName": "Qi",
+      "bio": "Zhou Qi is Head of Cloud-Native Application Platform and Vice Chair of the Open Source Committee, Alibaba Cloud Intelligence Group.",
+      "tagLine": null,
+      "profilePicture": "https://cdn.sessionize.com/image/ebdc-400o400o1-RWADbV67f1DyMAyoYoFPma.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1311847
+      ],
+      "fullName": "Zhou Qi",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Alibaba Cloud Intelligence Group"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Head of Cloud-Native Application Platform & Vice Chair, Open Source Committee"
+        }
+      ]
+    },
+    {
+      "id": "2b048fe3-f1e1-4063-8164-e1d646ce1797",
+      "firstName": "程",
+      "lastName": "烁",
+      "bio": "程烁，毕业于浙江大学，现就职于华为2012实验室，拥有十年软件开发与架构设计经验，在分布式系统架构领域有深厚积累。当前作为 openJiuwen Agent Core 与 JiuwenClaw 项目的 Committer，主导 AgentTeam 多智能体协同机制的整体设计与实现，长期专注于 AI Agent 工程化与多智能体协同方向的探索与落地，是Coordination Engineering 理念在开源社区落地的核心推动者之一。",
+      "tagLine": "openJiuwen Agent Core 与 JiuwenClaw 项目的 Committer",
+      "profilePicture": "https://cdn.sessionize.com/image/be18-400o400o1-hcy37xjkxoKZtKpC95QTfs.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        1227642
+      ],
+      "fullName": "程 烁",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 127319,
+          "answerValue": "Huawei"
+        },
+        {
+          "questionId": 127320,
+          "answerValue": "Agent领域技术专家"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 127319,
+      "question": "Company",
+      "questionType": "Short_Text",
+      "sort": 28
+    },
+    {
+      "id": 127320,
+      "question": "Speaker Title",
+      "questionType": "Short_Text",
+      "sort": 29
+    },
+    {
+      "id": 135645,
+      "question": "Presentation Slides",
+      "questionType": "File_upload",
+      "sort": 46
+    }
+  ],
+  "categories": [
+    {
+      "id": 127336,
+      "title": "Topic",
+      "items": [
+        {
+          "id": 459544,
+          "name": "Interoperability & Standards",
+          "sort": 1
+        },
+        {
+          "id": 459545,
+          "name": "Building Reliable Agent Systems ",
+          "sort": 2
+        },
+        {
+          "id": 481843,
+          "name": "Evals & Testing",
+          "sort": 3
+        },
+        {
+          "id": 481844,
+          "name": "Open Source Tools",
+          "sort": 4
+        },
+        {
+          "id": 481845,
+          "name": "Agentic Engineering",
+          "sort": 5
+        },
+        {
+          "id": 481846,
+          "name": "Human-Agent Collaboration",
+          "sort": 6
+        },
+        {
+          "id": 481847,
+          "name": "Enterprise Adoption in Practice",
+          "sort": 7
+        },
+        {
+          "id": 481848,
+          "name": "Multi-Agent and Distributed Systems",
+          "sort": 8
+        },
+        {
+          "id": 481849,
+          "name": "Open Source Community & Ecosystem Health",
+          "sort": 9
+        },
+        {
+          "id": 481850,
+          "name": "Agentic Commerce",
+          "sort": 10
+        },
+        {
+          "id": 494082,
+          "name": "Registration",
+          "sort": 11
+        },
+        {
+          "id": 494083,
+          "name": "Meals, Breaks & Special Events",
+          "sort": 12
+        },
+        {
+          "id": 494086,
+          "name": "Solutions Showcase",
+          "sort": 13
+        },
+        {
+          "id": 494092,
+          "name": "Keynote Sessions",
+          "sort": 14
+        },
+        {
+          "id": 497945,
+          "name": "Workshops",
+          "sort": 15
+        },
+        {
+          "id": 499588,
+          "name": "MCPCon",
+          "sort": 16
+        }
+      ],
+      "sort": 1,
+      "type": "session"
+    },
+    {
+      "id": 127334,
+      "title": "Audience Level",
+      "items": [
+        {
+          "id": 459540,
+          "name": "Beginner",
+          "sort": 1
+        },
+        {
+          "id": 459541,
+          "name": "Intermediate",
+          "sort": 2
+        },
+        {
+          "id": 459542,
+          "name": "Advanced",
+          "sort": 3
+        },
+        {
+          "id": 459543,
+          "name": "Any",
+          "sort": 4
+        }
+      ],
+      "sort": 3,
+      "type": "session"
+    },
+    {
+      "id": 130414,
+      "title": "Which language will you use for your presentation?",
+      "items": [
+        {
+          "id": 471945,
+          "name": "English",
+          "sort": 1
+        },
+        {
+          "id": 471946,
+          "name": "Chinese",
+          "sort": 2
+        },
+        {
+          "id": 471947,
+          "name": "Chinese with English slides",
+          "sort": 3
+        },
+        {
+          "id": 507343,
+          "name": "Mandarin",
+          "sort": 4
+        }
+      ],
+      "sort": 8,
+      "type": "session"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 82123,
+      "name": "Mandarin Hall 1",
+      "sort": 0
+    },
+    {
+      "id": 82124,
+      "name": "Mandarin Hall 2",
+      "sort": 1
+    },
+    {
+      "id": 87131,
+      "name": "First Floor Foyer",
+      "sort": 2
+    },
+    {
+      "id": 87130,
+      "name": "Mandarin Hall Foyer | Solutions Showcase",
+      "sort": 3
+    },
+    {
+      "id": 87132,
+      "name": "Mandarin Hall 1+2",
+      "sort": 4
+    }
+  ]
+}

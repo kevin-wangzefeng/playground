@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "slug": "kubecon-north-america-2026",
+  "display_name": "KubeCon + CloudNativeCon North America 2026",
+  "default": false,
+  "official_urls": [
+    "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
+  ],
+  "keywords": [
+    "KubeCon",
+    "CloudNativeCon",
+    "CNCF",
+    "co-located",
+    "Maintainer Summit"
+  ],
+  "event_window": {
+    "start": "2026-11-08",
+    "end": "2026-11-12",
+    "city": "Salt Lake City, Utah",
+    "location": "Salt Palace Convention Center",
+    "timezone": "America/Denver"
+  },
+  "sources": [
+    {
+      "id": "kubecon-na-main",
+      "source_type": "sessionize_api",
+      "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/api/schedule",
+      "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/",
+      "detail_base_url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com",
+      "event_name": "KubeCon + CloudNativeCon North America 2026",
+      "conference_name": "KubeCon + CloudNativeCon North America 2026",
+      "event_type": "conference",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-12",
+      "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+      "organizer": "Cloud Native Computing Foundation",
+      "organizer_type": "foundation",
+      "relationship_strength": "primary_conference",
+      "source_name": "KubeCon + CloudNativeCon NA official Sessionize schedule"
+    },
+    {
+      "id": "cncf-hosted-colocated-na",
+      "source_type": "sessionize_api",
+      "url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com/api/schedule",
+      "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cncf-hosted-co-located-schedule/",
+      "detail_base_url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com",
+      "event_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+      "conference_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+      "event_type": "community_or_colocated",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-09",
+      "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+      "organizer": "Cloud Native Computing Foundation",
+      "organizer_type": "foundation",
+      "relationship_strength": "official_colocated",
+      "source_name": "CNCF-hosted co-located events official Sessionize schedule"
+    },
+    {
+      "id": "maintainer-summit-na",
+      "source_type": "sessionize_api",
+      "url": "https://maintainer-summit-na-2026.sessionize.com/api/schedule",
+      "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/features-add-ons/maintainer-summit/",
+      "detail_base_url": "https://maintainer-summit-na-2026.sessionize.com",
+      "event_name": "CNCF Maintainer Summit — KubeCon NA 2026",
+      "conference_name": "CNCF Maintainer Summit — KubeCon NA 2026",
+      "event_type": "community_or_colocated",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-08",
+      "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+      "organizer": "Cloud Native Computing Foundation",
+      "organizer_type": "foundation",
+      "relationship_strength": "official_addon",
+      "source_name": "CNCF Maintainer Summit official Sessionize schedule"
+    }
+  ]
+}
