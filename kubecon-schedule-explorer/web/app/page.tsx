@@ -8,6 +8,7 @@ import {
   useState,
   type CSSProperties,
 } from "react";
+import Link from "next/link";
 
 type Speaker = {
   speaker_id: string;
@@ -23,6 +24,11 @@ type EventRecord = {
   event_id: string;
   event_name: string;
   location?: string | null;
+  start_date?: string | null;
+  end_date?: string | null;
+  organizer?: string | null;
+  relationship_strength?: string | null;
+  home_listing?: "event" | "tracks" | "sessions";
 };
 type Session = {
   session_id: string;
@@ -59,7 +65,10 @@ type ScheduleData = {
 type EventSummary = {
   slug: string;
   display_name: string;
+  city?: string | null;
   location?: string | null;
+  start_date?: string | null;
+  end_date?: string | null;
   timezone?: string | null;
   default?: boolean;
   data_url: string;
@@ -83,16 +92,37 @@ type CalendarRangeSelection = {
   currentX: number;
   currentY: number;
 };
+type HomeActivity = {
+  key: string;
+  name: string;
+  organizer?: string | null;
+  eventName: string;
+  trackName?: string;
+  query?: string;
+  dates: string[];
+};
 
 const dimensions = [
   ["event_name", "Event"],
   ["track_name", "Track"],
   ["level", "Level"],
+  ["session_type", "Session type"],
   ["companies", "Company"],
   ["location", "Location"],
   ["meeting_room", "Meeting room"],
   ["date", "Date"],
   ["topics", "Topic"],
+] as const;
+const filterParams = [
+  ["event", "event_name"],
+  ["track", "track_name"],
+  ["level", "level"],
+  ["type", "session_type"],
+  ["company", "companies"],
+  ["location", "location"],
+  ["room", "meeting_room"],
+  ["date", "date"],
+  ["topic", "topics"],
 ] as const;
 const searchableFilterDimensions = new Set([
   "track_name",
@@ -106,6 +136,68 @@ const TIME_WINDOW_STEP = 15;
 const MIN_TIME_WINDOW = 30;
 const timestampHasOffset = (value: string) =>
   /(?:Z|[+-]\d\d:\d\d)$/i.test(value);
+
+function urlParams() {
+  return typeof window === "undefined"
+    ? new URLSearchParams()
+    : new URLSearchParams(window.location.search);
+}
+
+function filtersFromUrl(): Filters {
+  const params = urlParams();
+  return Object.fromEntries(
+    filterParams
+      .map(([param, dimension]) => [dimension, new Set(params.getAll(param))])
+      .filter(([, values]) => (values as Set<string>).size),
+  ) as Filters;
+}
+
+function dateRangeText(start?: string | null, end?: string | null) {
+  if (!start) return "Dates to be announced";
+  const parts = (value: string) => {
+    const date = new Date(`${value}T00:00:00Z`);
+    return {
+      month: new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        timeZone: "UTC",
+      }).format(date),
+      day: date.getUTCDate(),
+      year: date.getUTCFullYear(),
+    };
+  };
+  const first = parts(start);
+  if (!end || end === start)
+    return `${first.month} ${first.day}, ${first.year}`;
+  const last = parts(end);
+  if (first.year === last.year && first.month === last.month)
+    return `${first.month} ${first.day}–${last.day}, ${first.year}`;
+  if (first.year === last.year)
+    return `${first.month} ${first.day}–${last.month} ${last.day}, ${first.year}`;
+  return `${first.month} ${first.day}, ${first.year}–${last.month} ${last.day}, ${last.year}`;
+}
+
+function scheduleHref(
+  slug: string,
+  options: {
+    eventName?: string;
+    date?: string;
+    trackName?: string;
+    query?: string;
+  } = {},
+) {
+  const { eventName, date, trackName, query } = options;
+  const params = new URLSearchParams();
+  if (eventName) params.set("event", eventName);
+  if (trackName) params.set("track", trackName);
+  if (query) params.set("q", query);
+  if (date) {
+    params.set("date", date);
+    params.set("day", date);
+  }
+  if (eventName || date || trackName || query) params.set("view", "calendar");
+  const queryString = params.toString();
+  return `/${slug}/${queryString ? `?${queryString}` : ""}`;
+}
 const isPanel = (session: Session) => (session.speaker_ids?.length ?? 0) > 3;
 const isSpecialTrack = (session: Session) =>
   SPECIAL_TRACK.test(session.track_name ?? "");
@@ -345,19 +437,25 @@ export function ScheduleExplorer({
   const [data, setData] = useState<ScheduleData | null>(null);
   const [eventIndex, setEventIndex] = useState<EventSummary[]>([]);
   const [eventSlug, setEventSlug] = useState<string | null>(null);
-  const [query, setQuery] = useState("");
-  const [filters, setFilters] = useState<Filters>({});
+  const [query, setQuery] = useState(() => urlParams().get("q") ?? "");
+  const [filters, setFilters] = useState<Filters>(filtersFromUrl);
   const [optionQueries, setOptionQueries] = useState<Record<string, string>>(
     {},
   );
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>("track_name");
-  const [view, setView] = useState<View>("list");
-  const [calendarMode, setCalendarMode] = useState<CalendarMode>("rooms");
+  const [view, setView] = useState<View>(() =>
+    urlParams().get("view") === "calendar" ? "calendar" : "list",
+  );
+  const [calendarMode, setCalendarMode] = useState<CalendarMode>(() =>
+    urlParams().get("mode") === "tracks" ? "tracks" : "rooms",
+  );
   const [calendarDensity, setCalendarDensity] =
     useState<CalendarDensity>("standard");
-  const [calendarDay, setCalendarDay] = useState<string | null>(null);
+  const [calendarDay, setCalendarDay] = useState<string | null>(() =>
+    urlParams().get("day"),
+  );
   const [timeWindows, setTimeWindows] = useState<Record<string, TimeWindow>>(
     {},
   );
@@ -368,8 +466,12 @@ export function ScheduleExplorer({
   const [calendarRangeSelection, setCalendarRangeSelection] =
     useState<CalendarRangeSelection | null>(null);
   const calendarBoardRef = useRef<HTMLDivElement>(null);
-  const [showSpecialTracks, setShowSpecialTracks] = useState(true);
-  const [panelOnly, setPanelOnly] = useState(false);
+  const [showSpecialTracks, setShowSpecialTracks] = useState(
+    () => urlParams().get("special") !== "hide",
+  );
+  const [panelOnly, setPanelOnly] = useState(
+    () => urlParams().get("panel") === "1",
+  );
   const [hiddenRooms, setHiddenRooms] = useState<Set<string>>(new Set());
   const [hiddenTracks, setHiddenTracks] = useState<Set<string>>(new Set());
   const [expandedRooms, setExpandedRooms] = useState<Set<string>>(new Set());
@@ -418,6 +520,38 @@ export function ScheduleExplorer({
         setData({ captured_at: "", events: [], sessions: [], speakers: [] }),
       );
   }, [eventIndex, eventSlug]);
+  useEffect(() => {
+    if (!eventSlug) return;
+    const url = new URL(window.location.href);
+    url.searchParams.delete("q");
+    url.searchParams.delete("view");
+    url.searchParams.delete("mode");
+    url.searchParams.delete("day");
+    url.searchParams.delete("special");
+    url.searchParams.delete("panel");
+    filterParams.forEach(([param]) => url.searchParams.delete(param));
+    if (query.trim()) url.searchParams.set("q", query.trim());
+    if (view !== "list") url.searchParams.set("view", view);
+    if (calendarMode !== "rooms") url.searchParams.set("mode", calendarMode);
+    if (calendarDay) url.searchParams.set("day", calendarDay);
+    if (!showSpecialTracks) url.searchParams.set("special", "hide");
+    if (panelOnly) url.searchParams.set("panel", "1");
+    filterParams.forEach(([param, dimension]) => {
+      [...(filters[dimension] ?? [])]
+        .sort((a, b) => a.localeCompare(b))
+        .forEach((value) => url.searchParams.append(param, value));
+    });
+    window.history.replaceState({}, "", url);
+  }, [
+    calendarDay,
+    calendarMode,
+    eventSlug,
+    filters,
+    panelOnly,
+    query,
+    showSpecialTracks,
+    view,
+  ]);
   useEffect(() => {
     if (!detailOpen || !window.matchMedia("(max-width: 1100px)").matches)
       return;
@@ -982,6 +1116,9 @@ export function ScheduleExplorer({
     <main className="app-shell">
       <header className="hero">
         <div>
+          <Link className="schedule-home-link" href="/">
+            ← All conferences
+          </Link>
           <p className="eyebrow">
             {activeEvent?.location || "Conference schedule"}
           </p>
@@ -1422,5 +1559,211 @@ export function ScheduleExplorer({
 }
 
 export default function Home() {
-  return <ScheduleExplorer />;
+  const [conferences, setConferences] = useState<
+    { summary: EventSummary; schedule: ScheduleData }[]
+  >([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`/data/events/index.json?refresh=${Date.now()}`, {
+      cache: "no-store",
+    })
+      .then((response) => (response.ok ? response.json() : Promise.reject()))
+      .then(async (index: { events: EventSummary[] }) => {
+        const loaded = await Promise.all(
+          index.events.map(async (summary) => {
+            const response = await fetch(
+              `${summary.data_url}?refresh=${Date.now()}`,
+              { cache: "no-store" },
+            );
+            if (!response.ok) throw new Error("Schedule data unavailable");
+            return {
+              summary,
+              schedule: normalizeScheduleData(
+                (await response.json()) as ScheduleData,
+              ),
+            };
+          }),
+        );
+        setConferences(loaded);
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <div className="loading">Loading conferences…</div>;
+
+  return (
+    <main className="home-shell">
+      <header className="home-hero">
+        <p className="home-kicker">Conference schedule explorer</p>
+        <h1>Find your path through KubeCon.</h1>
+        <p>
+          Browse the main conferences and jump directly into their co-located
+          and community schedules with filters already applied.
+        </p>
+      </header>
+      <section className="conference-grid">
+        {conferences.map(({ summary, schedule }) => {
+          const primary =
+            schedule.events.find(
+              (event) => event.relationship_strength === "primary_conference",
+            ) ?? schedule.events[0];
+          const related = schedule.events
+            .filter((event) => event.event_id !== primary?.event_id)
+            .flatMap<HomeActivity>((event) => {
+              const eventSessions = schedule.sessions.filter(
+                (session) => session.event_id === event.event_id,
+              );
+              const datesFor = (sessions: Session[]) =>
+                [
+                  ...new Set(
+                    sessions
+                      .map((session) => session.date)
+                      .filter(Boolean) as string[],
+                  ),
+                ].sort();
+              if (event.home_listing === "sessions")
+                return eventSessions.map((session) => ({
+                  key: session.session_id,
+                  name: session.title || "Untitled activity",
+                  organizer: event.organizer,
+                  eventName: event.event_name,
+                  query: session.title || undefined,
+                  dates: datesFor([session]),
+                }));
+              if (event.home_listing === "tracks") {
+                const tracks = [
+                  ...new Set(
+                    eventSessions
+                      .map((session) => session.track_name?.trim())
+                      .filter(
+                        (track): track is string =>
+                          Boolean(track) && !/^main track$/i.test(track || ""),
+                      ),
+                  ),
+                ].sort((a, b) => a.localeCompare(b));
+                if (tracks.length)
+                  return tracks.map((track) => ({
+                    key: `${event.event_id}:${track}`,
+                    name: track,
+                    organizer: event.organizer,
+                    eventName: event.event_name,
+                    trackName: track,
+                    dates: datesFor(
+                      eventSessions.filter(
+                        (session) => session.track_name?.trim() === track,
+                      ),
+                    ),
+                  }));
+              }
+              const dates = datesFor(eventSessions);
+              return [
+                {
+                  key: event.event_id,
+                  name: event.event_name,
+                  organizer: event.organizer,
+                  eventName: event.event_name,
+                  dates: dates.length
+                    ? dates
+                    : ([event.start_date].filter(Boolean) as string[]),
+                },
+              ];
+            })
+            .sort(
+              (a, b) =>
+                (a.dates[0] || "").localeCompare(b.dates[0] || "") ||
+                a.name.localeCompare(b.name),
+            );
+          return (
+            <article className="conference-card" key={summary.slug}>
+              <div className="conference-card-main">
+                <p className="conference-location">
+                  <span aria-hidden="true">●</span> {summary.city || summary.location}
+                </p>
+                <h2>{primary?.event_name || summary.display_name}</h2>
+                <p className="conference-date">
+                  {dateRangeText(primary?.start_date, primary?.end_date)}
+                </p>
+                <Link className="browse-schedule" href={scheduleHref(summary.slug)}>
+                  Browse full schedule <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+              <div className="related-events">
+                <div className="related-heading">
+                  <h3>Co-located events</h3>
+                  <span>{related.length}</span>
+                </div>
+                {related.length ? (
+                  <div className="related-list">
+                    {related.map((event) => {
+                      return (
+                        <div className="related-event" key={event.key}>
+                          <div>
+                            <Link
+                              className="related-event-name"
+                              href={scheduleHref(summary.slug, {
+                                eventName: event.eventName,
+                                trackName: event.trackName,
+                                query: event.query,
+                              })}
+                            >
+                              {event.name}
+                            </Link>
+                            {event.organizer ? <small>{event.organizer}</small> : null}
+                          </div>
+                          <div className="related-dates" aria-label="Event dates">
+                            {event.dates.map((date) => (
+                              <Link
+                                key={date}
+                                href={scheduleHref(summary.slug, {
+                                  eventName: event.eventName,
+                                  date,
+                                  trackName: event.trackName,
+                                  query: event.query,
+                                })}
+                                title={`Open ${event.name} on ${date}`}
+                              >
+                                {dateRangeText(date, date)}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <p className="no-related-events">No related events listed yet.</p>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </section>
+      <footer className="home-footer">
+        <div>
+          <strong>KubeCon Schedule Explorer</strong>
+          <p>Public conference schedules, organized for easier comparison.</p>
+        </div>
+        <div>
+          <strong>Data notes</strong>
+          <p>
+            Data comes from official public schedules and listed community
+            activities. Session links return to the original source. Schedule
+            content remains subject to its original source terms.
+          </p>
+        </div>
+        <div>
+          <strong>About this site</strong>
+          <p>Code is Apache-2.0. Schedule details belong to their original sources.</p>
+        </div>
+        <nav aria-label="Conference shortcuts">
+          {conferences.map(({ summary }) => (
+            <Link key={summary.slug} href={scheduleHref(summary.slug)}>
+              {summary.display_name}
+            </Link>
+          ))}
+        </nav>
+      </footer>
+    </main>
+  );
 }

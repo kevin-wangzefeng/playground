@@ -78,3 +78,11 @@ use Netlify Deploy Previews.
 To publish refreshed agenda data, run the importer locally, review the changes,
 commit the updated `web/public/data/events/` JSON with the source changes, and
 push. Do not add the generated `out/` directory to Git.
+
+## License and source content
+
+The original software and documentation in this repository are licensed under
+[Apache-2.0](LICENSE). Imported schedule data is **not** relicensed: session
+titles, descriptions, speaker information, images, logos, trademarks, and raw
+source snapshots remain subject to the terms and rights of their original
+owners. See [NOTICE](NOTICE) for the exact scope and attribution policy.

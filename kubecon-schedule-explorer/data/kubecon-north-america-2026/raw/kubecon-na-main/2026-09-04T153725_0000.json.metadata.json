@@ -1,0 +1,39 @@
+{
+  "source": {
+    "event_name": "KubeCon + CloudNativeCon North America 2026",
+    "conference_name": "KubeCon + CloudNativeCon North America 2026",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-12",
+    "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+    "timezone": "America/Denver",
+    "source_name": "KubeCon + CloudNativeCon NA official Sessionize schedule",
+    "id": "kubecon-na-main",
+    "source_type": "sessionize_api",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/api/schedule",
+    "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/",
+    "detail_base_url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com",
+    "event_type": "conference",
+    "organizer": "Cloud Native Computing Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "primary_conference"
+  },
+  "headers": {
+    "content-length": "1382268",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 04 Sep 2026 15:37:26 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=5",
+    "expires": "Fri, 04 Sep 2026 15:37:31 GMT",
+    "last-modified": "Fri, 04 Sep 2026 15:37:26 GMT",
+    "set-cookie": "sessionize_settings=90=ae4c1df4-da47-4cb4-9940-2759b3962253; expires=Thu, 04-Mar-2027 15:37:26 GMT; path=/; secure; HttpOnly",
+    "vary": "host,Accept-Encoding",
+    "strict-transport-security": "max-age=31536000",
+    "x-sz-datahash": "78192c6f925fe97823f7dfe89072b5d49745d280",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb",
+    "x-powered-by": "ASP.NET"
+  },
+  "content_hash": "9e9afe2d0dfae8dd3f1f2807d0373ed1d9351afede21acf4ffcb56037ca2129e",
+  "captured_at": "2026-09-04T15:37:25+00:00"
+}

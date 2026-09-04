@@ -1,18 +1,18 @@
 {
-  "captured_at": "2026-09-02T16:43:01+00:00",
+  "captured_at": "2026-09-04T15:37:25+00:00",
   "events": {
-    "inserted": 3,
+    "inserted": 0,
     "updated": 0,
     "removed": 0
   },
   "sessions": {
-    "inserted": 602,
+    "inserted": 0,
     "updated": 0,
     "removed": 0
   },
   "speakers": {
-    "inserted": 809,
-    "updated": 0,
+    "inserted": 0,
+    "updated": 2,
     "removed": 0
   },
   "sources_fetched": [

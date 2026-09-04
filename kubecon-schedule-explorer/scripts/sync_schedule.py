@@ -69,7 +69,7 @@ def load_manifest(event_slug: str) -> dict[str, Any]:
     source_ids = [source.get("id") for source in manifest.get("sources", [])]
     if len(source_ids) != len(set(source_ids)) or not all(source_ids):
         raise ValueError(f"manifest contains missing or duplicate source ids: {path}")
-    unsupported = {source.get("source_type") for source in manifest.get("sources", [])} - {"sessionize_api", "web_page"}
+    unsupported = {source.get("source_type") for source in manifest.get("sources", [])} - {"sessionize_api", "luma_page", "web_page"}
     if unsupported:
         raise ValueError(f"unsupported source type(s): {', '.join(sorted(unsupported))}")
     if any(not source.get("url") for source in manifest.get("sources", [])):
@@ -249,6 +249,7 @@ def normalize_sessionize(source: dict[str, Any], schedule: dict[str, Any], captu
             "organizer": source.get("organizer"),
             "organizer_type": source.get("organizer_type"),
             "relationship_strength": source.get("relationship_strength"),
+            "home_listing": source.get("home_listing", "event"),
             "start_date": source.get("start_date"),
             "end_date": source.get("end_date"),
             "location": source.get("location"),
@@ -329,6 +330,139 @@ def deduplicate_sessions(sessions: list[dict[str, Any]], sources: list[dict[str,
     return [session for session in sessions if session["session_id"] not in discarded_ids]
 
 
+def luma_text(node: dict[str, Any]) -> str:
+    if node.get("type") == "text":
+        return str(node.get("text", ""))
+    return "".join(luma_text(child) for child in node.get("content", []))
+
+
+def luma_sections(document: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    sections: dict[str, list[dict[str, Any]]] = {}
+    heading: str | None = None
+    for node in document.get("content", []):
+        if node.get("type") == "heading":
+            heading = luma_text(node).strip().casefold()
+            sections.setdefault(heading, [])
+        elif heading:
+            sections[heading].append(node)
+    return sections
+
+
+def luma_section_items(nodes: list[dict[str, Any]]) -> list[str]:
+    items: list[str] = []
+    for node in nodes:
+        if node.get("type") == "bullet_list":
+            items.extend(luma_text(item).strip() for item in node.get("content", []))
+        elif node.get("type") == "paragraph":
+            text = luma_text(node).strip()
+            if text:
+                items.append(text)
+    return items
+
+
+def luma_speaker_records(source: dict[str, Any], items: list[str], captured_at: str) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for item in items:
+        name_part, separator, affiliation = item.partition("—")
+        if not separator:
+            continue
+        for full_name in (name.strip() for name in name_part.split(",")):
+            if not full_name:
+                continue
+            speaker_key = re.sub(r"[^a-z0-9]+", "-", full_name.casefold()).strip("-")
+            records.append({
+                "speaker_id": f"{source['id']}:{speaker_key}",
+                "source_speaker_id": speaker_key,
+                "source_id": source["id"],
+                "full_name": full_name,
+                "company": affiliation.strip() or None,
+                "speaker_title": None,
+                "affiliation_raw": affiliation.strip() or None,
+                "bio": None,
+                "profile_picture": None,
+                "links": [],
+                "captured_at": captured_at,
+            })
+    return records
+
+
+def luma_time(start_at: str, time_text: str, timezone: str) -> str:
+    start = dt.datetime.fromisoformat(start_at.replace("Z", "+00:00")).astimezone(ZoneInfo(timezone))
+    hour, minute = (int(part) for part in time_text.split(":"))
+    return start.replace(hour=hour, minute=minute, second=0, microsecond=0).isoformat()
+
+
+def normalize_luma_page(source: dict[str, Any], body: bytes, captured_at: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    document = body.decode("utf-8", errors="replace")
+    match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', document, re.DOTALL)
+    if not match:
+        raise ValueError(f"Luma page does not contain __NEXT_DATA__: {source['url']}")
+    payload = json.loads(html.unescape(match.group(1)))
+    data = payload["props"]["pageProps"]["initialData"]["data"]
+    event_data = data["event"]
+    timezone = event_data.get("timezone", source["timezone"])
+    start_at = event_data["start_at"]
+    end_at = event_data["end_at"]
+    event_name = event_data.get("name", source["event_name"])
+    event = {
+        "event_id": source["id"], "event_name": event_name, "conference_name": source["conference_name"],
+        "event_type": source.get("event_type", "community_or_colocated"), "organizer": source.get("organizer"),
+        "organizer_type": source.get("organizer_type"), "relationship_strength": source.get("relationship_strength"),
+        "home_listing": source.get("home_listing", "event"),
+        "start_date": luma_time(start_at, dt.datetime.fromisoformat(start_at.replace("Z", "+00:00")).astimezone(ZoneInfo(timezone)).strftime("%H:%M"), timezone)[:10],
+        "end_date": luma_time(end_at, dt.datetime.fromisoformat(end_at.replace("Z", "+00:00")).astimezone(ZoneInfo(timezone)).strftime("%H:%M"), timezone)[:10],
+        "location": source.get("location"), "timezone": timezone, "detail_url": source["url"], "source_url": source["url"],
+        "source_name": source["source_name"], "captured_at": captured_at, "record_status": "confirmed",
+    }
+    sections = luma_sections(data.get("description_mirror", {}))
+    speakers = luma_speaker_records(source, luma_section_items(sections.get("speakers", [])), captured_at)
+    speaker_by_name = {speaker["full_name"].casefold(): speaker for speaker in speakers}
+    speaker_aliases = {
+        alias.casefold(): canonical.casefold()
+        for alias, canonical in source.get("speaker_aliases", {}).items()
+    }
+    agenda: list[tuple[str, str]] = []
+    for item in luma_section_items(sections.get("agenda", [])):
+        agenda_match = re.match(r"^(\d{1,2}:\d{2})\s*[—–-]\s*(.+)$", item)
+        if agenda_match:
+            agenda.append((agenda_match.group(1), agenda_match.group(2).strip()))
+    sessions: list[dict[str, Any]] = []
+    for index, (time_text, agenda_text) in enumerate(agenda):
+        agenda_text_folded = agenda_text.casefold()
+        matched_names = [name for name in speaker_by_name if name in agenda_text_folded]
+        matched_names.extend(
+            alias for alias, canonical in speaker_aliases.items()
+            if alias in agenda_text_folded and canonical in speaker_by_name
+        )
+        matched_speakers = list({
+            speaker_by_name[speaker_aliases.get(name, name)]["speaker_id"]: speaker_by_name[speaker_aliases.get(name, name)]
+            for name in matched_names
+        }.values())
+        title = agenda_text
+        for name in matched_names:
+            title = re.sub(rf"^{re.escape(name)}\s*[,，—–-]?\s*", "", title, flags=re.IGNORECASE)
+            title = re.sub(rf"\s*[,，—–-]?\s*{re.escape(name)}$", "", title, flags=re.IGNORECASE)
+        title = re.sub(r"^\([^)]*\)\s*[,，]?\s*", "", title)
+        starts_at = luma_time(start_at, time_text, timezone)
+        ends_at = luma_time(start_at, agenda[index + 1][0], timezone) if index + 1 < len(agenda) else end_at
+        sessions.append({
+            "session_id": f"{source['id']}:agenda-{index + 1}", "source_session_id": f"agenda-{index + 1}",
+            "event_id": source["id"], "event_name": event_name, "conference_name": source["conference_name"],
+            "track_name": source.get("track_name", "main track"), "track_color": None, "level": None,
+            "session_type": source.get("session_type", "meetup"), "date": starts_at[:10], "start_time": starts_at,
+            "end_time": ends_at, "timezone": timezone, "title_original": title or agenda_text, "title_zh_assist": None,
+            "abstract_original": agenda_text, "abstract_zh_assist": None, "room": source.get("location"),
+            "speaker_ids": [speaker["speaker_id"] for speaker in matched_speakers],
+            "speakers": [speaker["full_name"] for speaker in matched_speakers],
+            "companies": list(dict.fromkeys(speaker["company"] for speaker in matched_speakers if speaker["company"])),
+            "speaker_companies": [speaker["company"] for speaker in matched_speakers],
+            "topics": source.get("topics", []), "detail_url": source["url"], "source_url": source["url"],
+            "link_level": "activity", "link_note": "Luma does not publish session-specific detail pages.",
+            "record_status": "confirmed", "captured_at": captured_at,
+        })
+    return [event], sessions, speakers
+
+
 def normalize_web_page(source: dict[str, Any], captured_at: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     event = {
         "event_id": source["id"],
@@ -338,6 +472,7 @@ def normalize_web_page(source: dict[str, Any], captured_at: str) -> tuple[list[d
         "organizer": source.get("organizer"),
         "organizer_type": source.get("organizer_type"),
         "relationship_strength": source.get("relationship_strength"),
+        "home_listing": source.get("home_listing", "event"),
         "start_date": source.get("start_date"),
         "end_date": source.get("end_date"),
         "location": source.get("location"),
@@ -475,6 +610,7 @@ def write_event_index() -> None:
         events.append({
             "slug": slug,
             "display_name": manifest.get("display_name", slug),
+            "city": window.get("city"),
             "location": window.get("location") or window.get("city"),
             "start_date": window.get("start"),
             "end_date": window.get("end"),
@@ -540,6 +676,8 @@ def main() -> int:
             write_json(snapshot_path.with_suffix(snapshot_path.suffix + ".metadata.json"), {"source": source, "headers": headers, "content_hash": content_hash, "captured_at": captured_at})
         if source["source_type"] == "sessionize_api":
             events, sessions, speakers = normalize_sessionize(source, json.loads(body), captured_at)
+        elif source["source_type"] == "luma_page":
+            events, sessions, speakers = normalize_luma_page(source, body, captured_at)
         else:
             events, sessions, speakers = normalize_web_page(source, captured_at)
             candidates.extend(discover_links(source, body, captured_at, manifest.get("keywords", [])))

@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-09-02T17:14:19+00:00",
+  "generated_at": "2026-09-04T15:37:36+00:00",
   "events": [
     {
       "slug": "kubecon-china-2026",
       "display_name": "KubeCon + CloudNativeCon China 2026",
+      "city": "Shanghai",
       "location": "Shanghai",
-      "start_date": "2026-09-06",
+      "start_date": "2026-09-05",
       "end_date": "2026-09-10",
       "timezone": "Asia/Shanghai",
       "default": true,
@@ -14,6 +15,7 @@
     {
       "slug": "kubecon-north-america-2026",
       "display_name": "KubeCon + CloudNativeCon North America 2026",
+      "city": "Salt Lake City, Utah",
       "location": "Salt Palace Convention Center",
       "start_date": "2026-11-08",
       "end_date": "2026-11-12",

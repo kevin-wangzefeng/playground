@@ -8,7 +8,7 @@
   ],
   "keywords": ["KubeCon", "CloudNativeCon", "OpenInfra", "PyTorch", "AGNTCon", "MCPCon"],
   "event_window": {
-    "start": "2026-09-06",
+    "start": "2026-09-05",
     "end": "2026-09-10",
     "city": "Shanghai",
     "timezone": "Asia/Shanghai"
@@ -66,7 +66,26 @@
       "organizer": null,
       "organizer_type": "sponsor_or_community",
       "relationship_strength": "officially_listed",
+      "home_listing": "sessions",
       "source_name": "LF Open Source sponsor-hosted co-located schedule"
+    },
+    {
+      "id": "aaif-shanghai-meetup",
+      "source_type": "luma_page",
+      "url": "https://luma.com/m4ygi0b2",
+      "event_name": "Agentic AI Shanghai Meetup",
+      "conference_name": "KubeCon + CloudNativeCon China 2026",
+      "event_type": "community_or_colocated",
+      "location": "Shanghai (venue shared with registrants)",
+      "organizer": "AAIF Community Shanghai",
+      "organizer_type": "community",
+      "relationship_strength": "community_colocated",
+      "home_listing": "event",
+      "track_name": "main track",
+      "session_type": "meetup",
+      "topics": ["Agentic AI", "AAIF Community Shanghai"],
+      "speaker_aliases": {"Wei Zheng": "Wei Zhang"},
+      "source_name": "Luma public event page"
     }
   ]
 }

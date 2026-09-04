@@ -1,0 +1,49 @@
+{
+  "source": {
+    "event_name": "Agentic AI Shanghai Meetup",
+    "conference_name": "KubeCon + CloudNativeCon China 2026",
+    "start_date": "2026-09-05",
+    "end_date": "2026-09-10",
+    "location": "Shanghai (venue shared with registrants)",
+    "timezone": "Asia/Shanghai",
+    "source_name": "Luma public event page",
+    "id": "aaif-shanghai-meetup",
+    "source_type": "luma_page",
+    "url": "https://luma.com/m4ygi0b2",
+    "event_type": "community_or_colocated",
+    "organizer": "AAIF Community Shanghai",
+    "organizer_type": "community",
+    "relationship_strength": "community_colocated",
+    "track_name": "main track",
+    "session_type": "meetup",
+    "topics": [
+      "Agentic AI",
+      "AAIF Community Shanghai"
+    ],
+    "speaker_aliases": {
+      "Wei Zheng": "Wei Zhang"
+    }
+  },
+  "headers": {
+    "date": "Fri, 04 Sep 2026 15:17:33 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "close",
+    "age": "0",
+    "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "set-cookie": "__cf_bm=6_R5zHUiAjYC0QsQMg01S01TMukVp.XcPEqd4W1VVx0-1788535053.1340575-1.0.1.1-w.aMachGZ8wuW9tuMhby09Gj03CrN5rtAj9i3Aqi_nCDebTfTnMo2ll8yqDyss3pD_Keq_HGW5BjSWqAEjJhr1kltlFfE2YDTkhUhlgXtEzTFYp2uY2MXEnZSNRdHHBu; HttpOnly; SameSite=None; Secure; Path=/; Domain=luma.com; Expires=Fri, 04 Sep 2026 15:47:33 GMT",
+    "server": "cloudflare",
+    "vary": "accept-encoding",
+    "strict-transport-security": "max-age=300; includeSubDomains",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-matched-path": "/[...url]",
+    "x-powered-by": "Next.js",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "icn1::pdx1::nfrjr-1788535053136-be71201124d4",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a35df6321b29d1de-ICN"
+  },
+  "content_hash": "309c7f48c80b312cfddde17a5eacb6fac89f785a67c5ba921c20fcf20cd3e132",
+  "captured_at": "2026-09-04T15:17:32+00:00"
+}

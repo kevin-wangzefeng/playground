@@ -1,0 +1,40 @@
+{
+  "source": {
+    "event_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+    "conference_name": "CNCF-hosted Co-located Events — KubeCon NA 2026",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-09",
+    "location": "Salt Palace Convention Center, Salt Lake City, Utah",
+    "timezone": "America/Denver",
+    "source_name": "CNCF-hosted co-located events official Sessionize schedule",
+    "id": "cncf-hosted-colocated-na",
+    "source_type": "sessionize_api",
+    "url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com/api/schedule",
+    "source_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cncf-hosted-co-located-schedule/",
+    "detail_base_url": "https://cncf-hosted-co-located-events-north-america-2026.sessionize.com",
+    "event_type": "community_or_colocated",
+    "organizer": "Cloud Native Computing Foundation",
+    "organizer_type": "foundation",
+    "relationship_strength": "official_colocated",
+    "home_listing": "tracks"
+  },
+  "headers": {
+    "content-length": "475185",
+    "connection": "close",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 04 Sep 2026 15:37:30 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "public, max-age=5",
+    "expires": "Fri, 04 Sep 2026 15:37:35 GMT",
+    "last-modified": "Fri, 04 Sep 2026 15:37:30 GMT",
+    "set-cookie": "sessionize_settings=90=9cd6e1eb-9e2b-4f7b-ab0f-8ee2e9e0f7b4; expires=Thu, 04-Mar-2027 15:37:30 GMT; path=/; secure; HttpOnly",
+    "vary": "host,Accept-Encoding",
+    "strict-transport-security": "max-age=31536000",
+    "x-sz-datahash": "13142ea76b01142bc62c43f592ae2e8237fdcccd",
+    "request-context": "appId=cid-v1:b2e2c870-e93c-4b5e-b327-c68def57aebb",
+    "x-powered-by": "ASP.NET"
+  },
+  "content_hash": "25775ef4b8e7d258eaabe044cf3928670ec8f78dfd665f0da7c051f71255d591",
+  "captured_at": "2026-09-04T15:37:25+00:00"
+}

@@ -1,0 +1,50 @@
+{
+  "source": {
+    "event_name": "Agentic AI Shanghai Meetup",
+    "conference_name": "KubeCon + CloudNativeCon China 2026",
+    "start_date": "2026-09-05",
+    "end_date": "2026-09-10",
+    "location": "Shanghai (venue shared with registrants)",
+    "timezone": "Asia/Shanghai",
+    "source_name": "Luma public event page",
+    "id": "aaif-shanghai-meetup",
+    "source_type": "luma_page",
+    "url": "https://luma.com/m4ygi0b2",
+    "event_type": "community_or_colocated",
+    "organizer": "AAIF Community Shanghai",
+    "organizer_type": "community",
+    "relationship_strength": "community_colocated",
+    "home_listing": "event",
+    "track_name": "main track",
+    "session_type": "meetup",
+    "topics": [
+      "Agentic AI",
+      "AAIF Community Shanghai"
+    ],
+    "speaker_aliases": {
+      "Wei Zheng": "Wei Zhang"
+    }
+  },
+  "headers": {
+    "date": "Fri, 04 Sep 2026 15:36:57 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "close",
+    "age": "0",
+    "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "set-cookie": "__cf_bm=HudlaAQfl.17fNm2df5bbnnXpzCBbSXLaRu5NJAfDhc-1788536216.8806157-1.0.1.1-BRCVvh.gETO83hi1jgucpySdSZ.o0cRhyajUoMgoyHt4mDyfzqVhCRfa6n1SNCxV6pKh5qsirjRthtKcpUZuUFWIWBBUSWx7AwwZc..TgxWFcRdgiY4AWc9gxfs4kVKs; HttpOnly; SameSite=None; Secure; Path=/; Domain=luma.com; Expires=Fri, 04 Sep 2026 16:06:57 GMT",
+    "server": "cloudflare",
+    "vary": "accept-encoding",
+    "strict-transport-security": "max-age=300; includeSubDomains",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-matched-path": "/[...url]",
+    "x-powered-by": "Next.js",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "icn1::pdx1::nwx9j-1788536216878-c13600273959",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a35e129b7cf2feab-ICN"
+  },
+  "content_hash": "9d1f1bf209cf4385d1161114d506c47e1591b02fb29f09991b1f68d7d3bccc7b",
+  "captured_at": "2026-09-04T15:36:48+00:00"
+}
